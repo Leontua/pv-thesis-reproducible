@@ -1,0 +1,41 @@
+benchmark_id: etsidi-six-technology-physical-model-benchmark-v1.0
+version: '1.0'
+status: FROZEN
+scope_systems:
+- T1-S1
+- T1-S2
+- T1-S3
+- T1-S4
+- T1-S5
+- T1-S6
+no_imputation: true
+new_training: false
+frequency: 5min
+long_rows: 323574
+unique_timestamps: 53929
+unique_days: 290
+timestamp_start: '2025-05-02 06:00:00'
+timestamp_end: '2026-03-31 21:55:00'
+split_day_counts:
+  calibration: 176
+  test: 57
+  validation: 57
+source_sha256:
+  electrical_zip: 47290b628aa7d74db89281526465b59955fdd2d75cd3821f8dd63279b5531c76
+  weather_zip: 74057e03494eb5a07d8ffc7b9d03c1b031ce13141bfa3544c240c85fb3e3eec4
+  config: 3893960d2e9c5e54bc28af84d912e03bb9ecbddc02bb4df0fed3e045941edd5c
+artifact_sha256:
+  benchmark_summary.md: de388eb287118e97de988829ca03be409a1c954fd38eac2c74b95df2d3ab3ba7
+  calibrated_parameters.csv: 27bac7c17d0572b2a5c63999a5352ca603c0e9ebd095f9cf74d52d3ad95cb028
+  component_and_end_to_end_metrics.csv: 4aee5038a15f3bc6fd4f993319649340e068cf5b412826821403c3bc55f999c7
+  day_block_split.csv: 65a58e31895ce6bcdf4be518df13ae558f336b091b9da7c5872da34fb7cfdc53
+  etsidi_six_technology_5min.parquet: 53fe111f9bfdfceb31db290c6a023722899358797b47d7f79438b6ef6251fa20
+  locked_module_desoto_parameters.csv: 5b3decdae1572afcd369285847425df3109ea8d05412665fd8b9dba9adad6bc9
+  physical_model_predictions.parquet: 768701d44b3fa3a55cc41ab4c9a7ac381b9f533f9586da4eab4ab0c4e12e904a
+figure_sha256:
+  01_split_day_counts.png: b3d1a8988ce2a81a9b49f2f69f39c4ec8b42d64aea8f58d54414c5208d966589
+  02_faiman_test_parity.png: 2a082326d0c0d285b4ac22c1929333194ef0c77efd4dfbac3c8a4b865389a833
+  03_dc_ac_test_parity.png: 4b4601a3838dd3e9ea0a68411f43a95c16468ce267941320b9e72f539972a7f0
+  04_test_nrmse_by_system.png: 4a9aef014e51db6590ca64c27664b2d7491c9f09f8c59830beb2a58832f4da82
+  05_representative_test_days.png: eacc81f354c5b884782c39cc11f01f454adc0c940f46bfcfa770482fb1b1f75d
+  06_calibrated_dc_loss.png: 5c37b59984e8fb57fa3f79b5356e74d8badf7e3c154d221c84d355bc4c1e114c

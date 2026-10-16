@@ -1,0 +1,488 @@
+{
+  "generated_at": "2026-10-16T07:49:52+03:00",
+  "records": [
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/benchmark_manifest.yaml",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\benchmark_manifest.yaml",
+      "sha256": "d88029d3254e50f047757ed236c4089ac3b5650d3eb57966ffd0fc40eddb56e0",
+      "bytes": 1997
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/benchmark_summary.md",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\benchmark_summary.md",
+      "sha256": "de388eb287118e97de988829ca03be409a1c954fd38eac2c74b95df2d3ab3ba7",
+      "bytes": 2219
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/calibrated_parameters.csv",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\calibrated_parameters.csv",
+      "sha256": "27bac7c17d0572b2a5c63999a5352ca603c0e9ebd095f9cf74d52d3ad95cb028",
+      "bytes": 895
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/component_and_end_to_end_metrics.csv",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\component_and_end_to_end_metrics.csv",
+      "sha256": "4aee5038a15f3bc6fd4f993319649340e068cf5b412826821403c3bc55f999c7",
+      "bytes": 9246
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/day_block_split.csv",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\day_block_split.csv",
+      "sha256": "65a58e31895ce6bcdf4be518df13ae558f336b091b9da7c5872da34fb7cfdc53",
+      "bytes": 7192
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/etsidi_six_technology_5min.parquet",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\etsidi_six_technology_5min.parquet",
+      "sha256": "53fe111f9bfdfceb31db290c6a023722899358797b47d7f79438b6ef6251fa20",
+      "bytes": 21287761
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/locked_module_desoto_parameters.csv",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\locked_module_desoto_parameters.csv",
+      "sha256": "5b3decdae1572afcd369285847425df3109ea8d05412665fd8b9dba9adad6bc9",
+      "bytes": 2229
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "outputs/etsidi_physical_benchmark_v1_0/physical_model_predictions.parquet",
+      "target": "artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\physical_model_predictions.parquet",
+      "sha256": "768701d44b3fa3a55cc41ab4c9a7ac381b9f533f9586da4eab4ab0c4e12e904a",
+      "bytes": 15263589
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/01_split_day_counts.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\01_split_day_counts.png",
+      "sha256": "b3d1a8988ce2a81a9b49f2f69f39c4ec8b42d64aea8f58d54414c5208d966589",
+      "bytes": 28480
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/02_faiman_test_parity.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\02_faiman_test_parity.png",
+      "sha256": "2a082326d0c0d285b4ac22c1929333194ef0c77efd4dfbac3c8a4b865389a833",
+      "bytes": 302758
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/03_dc_ac_test_parity.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\03_dc_ac_test_parity.png",
+      "sha256": "4b4601a3838dd3e9ea0a68411f43a95c16468ce267941320b9e72f539972a7f0",
+      "bytes": 437718
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/04_test_nrmse_by_system.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\04_test_nrmse_by_system.png",
+      "sha256": "4a9aef014e51db6590ca64c27664b2d7491c9f09f8c59830beb2a58832f4da82",
+      "bytes": 33334
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/05_representative_test_days.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\05_representative_test_days.png",
+      "sha256": "eacc81f354c5b884782c39cc11f01f454adc0c940f46bfcfa770482fb1b1f75d",
+      "bytes": 290212
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "figures/etsidi_physical_benchmark_v1_0/06_calibrated_dc_loss.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\etsidi_physical_benchmark_v1_0\\06_calibrated_dc_loss.png",
+      "sha256": "5c37b59984e8fb57fa3f79b5356e74d8badf7e3c154d221c84d355bc4c1e114c",
+      "bytes": 24945
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "config/etsidi_physical_benchmark_v1_0.yaml",
+      "target": "config\\physical\\etsidi_physical_benchmark_v1_0.yaml",
+      "sha256": "3893960d2e9c5e54bc28af84d912e03bb9ecbddc02bb4df0fed3e045941edd5c",
+      "bytes": 5953
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/__init__.py",
+      "target": "src\\physical_benchmark\\__init__.py",
+      "sha256": "a189a4997ba23d682b8ccb3333c718f80690e9e6313c99a833b28878ec40863b",
+      "bytes": 78
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/data.py",
+      "target": "src\\physical_benchmark\\data.py",
+      "sha256": "fcbc532a2cd088edc8b7d216b5f1b7cde92e3095e0306a37303334717c0c20c9",
+      "bytes": 6823
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/metrics.py",
+      "target": "src\\physical_benchmark\\metrics.py",
+      "sha256": "894fb376b6d335ec317878018fb36a6ad1412ab68a16c068e44d640cbdde46b3",
+      "bytes": 2649
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/models.py",
+      "target": "src\\physical_benchmark\\models.py",
+      "sha256": "3e07a594376e640473c45b081382f4d6bbaa726a617c50dd0a73a73334d23e20",
+      "bytes": 4873
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/pipeline.py",
+      "target": "src\\physical_benchmark\\pipeline.py",
+      "sha256": "4041881d71482faa92ccdeee850981543592974b28513ce52fdc635991d88645",
+      "bytes": 17125
+    },
+    {
+      "package": "etsidi-six-technology-physical-model-benchmark-v1.0.zip",
+      "member": "src/physical_benchmark/verify.py",
+      "target": "src\\physical_benchmark\\verify.py",
+      "sha256": "b8ed1dbd9a1e3d2a54f38651808e56086637e2a00ac0bf3ae70a313f2f3c9731",
+      "bytes": 3977
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/addendum_manifest.yaml",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\addendum_manifest.yaml",
+      "sha256": "7091b1bc11365532666cfdb02e55f98514f0993dbb35a8055ead79282c079372",
+      "bytes": 2302
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/array_normalized_ac_mode_metrics.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\array_normalized_ac_mode_metrics.csv",
+      "sha256": "05c5a4ef535dac753d93f98608e0ad5e76185a098d0317bbbabcd90973ea3294",
+      "bytes": 7422
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/consistency_transferability_summary.md",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\consistency_transferability_summary.md",
+      "sha256": "27785d1374a4450461213c91684ccf2c4b57353ff5a80fa71dd17dcba3a887be",
+      "bytes": 3176
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/dc_factor_stability_by_irradiance.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_irradiance.csv",
+      "sha256": "3066bd8cca484f9f6a7b0358f488342fc70a164322f062484f175cb14749e16f",
+      "bytes": 3135
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/dc_factor_stability_by_month.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_month.csv",
+      "sha256": "ebfd355bf0e9969fa9d5ea784cf3c356c670bc115e2514a8f6ab72106eaa716b",
+      "bytes": 5315
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/dc_factor_stability_by_split.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_split.csv",
+      "sha256": "46044ebe663945730494e4aed92ae4ee2e4883797170a71bf29b7484d4e644ba",
+      "bytes": 1563
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/dc_factor_stability_summary.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_summary.csv",
+      "sha256": "04ee6453e750b82d28f698e014adcaa4c4f4165abb2dde9151693ea0993dd77a",
+      "bytes": 820
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/mode_a_predictions.parquet",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\mode_a_predictions.parquet",
+      "sha256": "e7b26db699d288e445e44b09df45eb9e0488bd68649001b8815804b2db78222b",
+      "bytes": 19509759
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/transferability_flags.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\transferability_flags.csv",
+      "sha256": "c7f3f0f4d5cd04eb97faeb6ec4427dc17ed2d08a3def33f519a329205a98652d",
+      "bytes": 1561
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "outputs/physical_model_consistency_transferability_v1_1/voltage_current_error_decomposition.csv",
+      "target": "artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\voltage_current_error_decomposition.csv",
+      "sha256": "083b5312a8985d769c62fff223364324aacbac454881aa1e0f16f4234f2c9849",
+      "bytes": 8962
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "figures/physical_model_consistency_transferability_v1_1/01_mode_a_vs_b_test_nrmse.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\physical_model_consistency_transferability_v1_1\\01_mode_a_vs_b_test_nrmse.png",
+      "sha256": "14e3164aea938b1106a0a6eafb498d9d6447288f21ec3e25fc952b582242a91d",
+      "bytes": 45354
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "figures/physical_model_consistency_transferability_v1_1/02_voltage_current_error_decomposition.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\physical_model_consistency_transferability_v1_1\\02_voltage_current_error_decomposition.png",
+      "sha256": "2eae0e91f840bafdb9a4b0298238d50554ea1256c215ef193d123fbd7f7db9e4",
+      "bytes": 42450
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "figures/physical_model_consistency_transferability_v1_1/03_dc_factor_split_stability.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\physical_model_consistency_transferability_v1_1\\03_dc_factor_split_stability.png",
+      "sha256": "24823c6c099da4462369b8d0c9c6339a6b716784c56182602037f2af6ef0e21c",
+      "bytes": 42253
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "figures/physical_model_consistency_transferability_v1_1/04_transferability_matrix.png",
+      "target": "artifacts\\approved_reference\\physical\\figures\\physical_model_consistency_transferability_v1_1\\04_transferability_matrix.png",
+      "sha256": "a0332a3470ac847bc636b380119eb198007455c084583cd3d5efccfde260d497",
+      "bytes": 48941
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "config/physical_model_consistency_transferability_v1_1.yaml",
+      "target": "config\\physical\\physical_model_consistency_transferability_v1_1.yaml",
+      "sha256": "35488802da660422bc579171b4593e9ae299c71e4be3c4330b2c920db7d8d59c",
+      "bytes": 1496
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "src/physical_benchmark/addendum_v1_1.py",
+      "target": "src\\physical_benchmark\\addendum_v1_1.py",
+      "sha256": "519e039e317b4fbe12769005f2ae407975e2dc21c857b30a6719188628f951f8",
+      "bytes": 24971
+    },
+    {
+      "package": "physical-model-consistency-transferability-addendum-v1.1.zip",
+      "member": "src/physical_benchmark/verify_addendum_v1_1.py",
+      "target": "src\\physical_benchmark\\verify_addendum_v1_1.py",
+      "sha256": "9055992b52b84819c88782616fb6790ea4dc45160c770cbe05489e010f98043b",
+      "bytes": 4583
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/annual_scenario_metrics.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\annual_scenario_metrics.csv",
+      "sha256": "3ce2ceca94f518cf80e87a794727a3c57239837bc53dbd61025b629e4b44029a",
+      "bytes": 60573
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/annual_scenario_metrics.parquet",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\annual_scenario_metrics.parquet",
+      "sha256": "c0270fcab541dde42d3f0424b8ae6d1257a738d02a334c8fcf4cd4fe79173eb2",
+      "bytes": 34934
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/artifact_sha256.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\artifact_sha256.csv",
+      "sha256": "5a6c54fa295d21f0d837a1d7494d51137fb8924b5fb5f1f1185b97d95526b37f",
+      "bytes": 3049
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/capacity_scale_invariance.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\capacity_scale_invariance.csv",
+      "sha256": "8afdfa3da0a286ccfe74512ea987fb305afe40f046d0814cdcc5ff753811ca18",
+      "bytes": 4569
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/factorial_effects.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\factorial_effects.csv",
+      "sha256": "d585903e0f94acaa8cbdd4298657718124932b023b85529b2fae430006f7fadf",
+      "bytes": 77228
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/hourly_scenario_outputs.parquet",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\hourly_scenario_outputs.parquet",
+      "sha256": "3256077efd2429a28c2f373c90541eb2fa90dfb9d9b44aaeb95058078f66a4ac",
+      "bytes": 18022570
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/interaction_variance_decomposition.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\interaction_variance_decomposition.csv",
+      "sha256": "894ead5081e10f745da37944be264bd57b46c47564c9a0ce0fac6f87b8303b88",
+      "bytes": 2201
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_poa_weather.parquet",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_poa_weather.parquet",
+      "sha256": "1342a1f37534dd1bc697d1456e8a7bc7e80a14e98dba02f354bcbc01c870d0ac",
+      "bytes": 2665271
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_provenance.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_provenance.csv",
+      "sha256": "5f5a6c6b63c0e616f6ecf6d931320474fc09eb71eada0a49d08487ae78212058",
+      "bytes": 1139
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Aw.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Aw.json",
+      "sha256": "0079deeda65beac52f77aa085062bc31045c5195d01f832602da38d929b7fe21",
+      "bytes": 2372247
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/BSk.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\BSk.json",
+      "sha256": "f2d25e86ddf5702ceeeed8bbced86bce18a8123a2d9c32c6dd70c9c782fbf571",
+      "bytes": 2372466
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/BWh.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\BWh.json",
+      "sha256": "e82faa8ba2d95cf7e3d3b0824298adc90f5257d98e54ae9a638c18954a4e529d",
+      "bytes": 2373657
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfa.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Cfa.json",
+      "sha256": "16ac9c728121b1ecf2fb78c11c73da6ab6f5f194dca419833d10713d007eb554",
+      "bytes": 2374841
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfb.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Cfb.json",
+      "sha256": "1a70d1a74f4f948a8e95aa9f5afed2702a2fb950603e9009b7aa13b587982b29",
+      "bytes": 2374180
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Csa.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Csa.json",
+      "sha256": "2fc7e84ccceffaf5bdbc0b4014eff28c01f352486ef305286158adf6dcdd3710",
+      "bytes": 2375939
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/pvgis_tmy_selected_months.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_selected_months.csv",
+      "sha256": "745ad5a1ed32fe8dfa3634d937cffe2ac2107993658ea3905f44bb5e2057321f",
+      "bytes": 2159
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/scenario_registry.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\scenario_registry.csv",
+      "sha256": "7faf72f1f49519c3faa4dfc17f4a8bd3e268c709bedaeb11f68d38fb0c361d8c",
+      "bytes": 13647
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/study_manifest.yaml",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\study_manifest.yaml",
+      "sha256": "44b7f7ce835ac890ecc02aee95d4d59e20b7512d012a98ba4eeb6089ac4fda7b",
+      "bytes": 4020
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/study_summary.md",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\study_summary.md",
+      "sha256": "9c897b41259e53e94c7607bdabcf619a8868ce0719b965606300ef9654addfd1",
+      "bytes": 1373
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/technology_climate_summary.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\technology_climate_summary.csv",
+      "sha256": "29b9883b2906510dd213857f7856d7586d3c73f7520bcb70b6f0b9815a8cdb77",
+      "bytes": 4794
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/technology_parameter_archetypes.csv",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\technology_parameter_archetypes.csv",
+      "sha256": "5f9f4aead2a92c024d1b86385d790f7cdd7aedcfd6b2719ff66b556ee7414ee4",
+      "bytes": 2224
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "outputs/parametric_pv_study_v1_0/verification_report.json",
+      "target": "artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\verification_report.json",
+      "sha256": "cdc3a3e1cce33896c8add9eecc2fc9425e3f31423b4e82888fa646c3de89663f",
+      "bytes": 2883
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "figures/parametric_pv_study_v1_0/01_specific_yield_heatmap.png",
+      "target": "artifacts\\approved_reference\\parametric\\figures\\parametric_pv_study_v1_0\\01_specific_yield_heatmap.png",
+      "sha256": "fb6048faf2ac5d239a9b69e54b11a463c271098c313bce425b43ad0ee26f80cf",
+      "bytes": 135420
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "figures/parametric_pv_study_v1_0/02_thermal_loss_heatmap.png",
+      "target": "artifacts\\approved_reference\\parametric\\figures\\parametric_pv_study_v1_0\\02_thermal_loss_heatmap.png",
+      "sha256": "d97fa1a5004ce7bfaafc5c1a9d230a64f1aae5866ba3c8e8de269586b6cfc074",
+      "bytes": 128321
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "figures/parametric_pv_study_v1_0/03_clipping_heatmap.png",
+      "target": "artifacts\\approved_reference\\parametric\\figures\\parametric_pv_study_v1_0\\03_clipping_heatmap.png",
+      "sha256": "d1a33fc5fd018e2656632aad48d9f5f9a2425f80486d5085cd1aea3caaa7914a",
+      "bytes": 101187
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "figures/parametric_pv_study_v1_0/04_specific_yield_interaction.png",
+      "target": "artifacts\\approved_reference\\parametric\\figures\\parametric_pv_study_v1_0\\04_specific_yield_interaction.png",
+      "sha256": "8ad1fe4a8b46c8ccceb0eaacc45e8f19e527f02d390ff3572c5bc91ac9011ea1",
+      "bytes": 123797
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "figures/parametric_pv_study_v1_0/05_capacity_scale_invariance.png",
+      "target": "artifacts\\approved_reference\\parametric\\figures\\parametric_pv_study_v1_0\\05_capacity_scale_invariance.png",
+      "sha256": "b1360e8e959d04069c10122c7b93ef5bf5d4b05cd724ae7cd584fdeee4e0abd4",
+      "bytes": 66527
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "config/parametric_pv_study_v1_0.yaml",
+      "target": "config\\parametric\\parametric_pv_study_v1_0.yaml",
+      "sha256": "5f9643246b97d8e90b00850d227b1a8b4322733271f4e6fddcd19b90bc753343",
+      "bytes": 2119
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "src/parametric_pv/pipeline.py",
+      "target": "src\\parametric_pv\\pipeline.py",
+      "sha256": "8fd07a683e93d2e92ba6cdfc6ef25aa55dd05615cd12212f72202ac375583917",
+      "bytes": 26563
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "src/parametric_pv/physics.py",
+      "target": "src\\parametric_pv\\physics.py",
+      "sha256": "3bee7e91b0c4f586083822cd2f49b9f043f6696c0fd29fbdda1463235bb2e160",
+      "bytes": 3454
+    },
+    {
+      "package": "parametric-pv-technology-capacity-climate-study-v1.0.zip",
+      "member": "src/parametric_pv/verify.py",
+      "target": "src\\parametric_pv\\verify.py",
+      "sha256": "5726089ed3fb03b072174effa5088f6b7c298546a8ad96da38776a3367d171e6",
+      "bytes": 5323
+    }
+  ]
+}

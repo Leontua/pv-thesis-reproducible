@@ -1,0 +1,7 @@
+climate,location,latitude,longitude,elevation_m,radiation_database,meteorological_database,source_year_min,source_year_max,use_horizon,raw_file,raw_sha256
+BWh,"Aswan, Egypt",24.0889,32.8998,107.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/BWh.json,e82faa8ba2d95cf7e3d3b0824298adc90f5257d98e54ae9a638c18954a4e529d
+BSk,"Zaragoza, Spain",41.6488,-0.8891,226.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/BSk.json,f2d25e86ddf5702ceeeed8bbced86bce18a8123a2d9c32c6dd70c9c782fbf571
+Csa,"Athens, Greece",37.9838,23.7275,88.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/Csa.json,2fc7e84ccceffaf5bdbc0b4014eff28c01f352486ef305286158adf6dcdd3710
+Cfb,"London, United Kingdom",51.5074,-0.1278,19.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/Cfb.json,1a70d1a74f4f948a8e95aa9f5afed2702a2fb950603e9009b7aa13b587982b29
+Cfa,"Milan, Italy",45.4642,9.19,131.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/Cfa.json,16ac9c728121b1ecf2fb78c11c73da6ab6f5f194dca419833d10713d007eb554
+Aw,"Accra, Ghana",5.6037,-0.187,60.0,PVGIS-SARAH3,ERA5,2005,2023,True,pvgis_tmy_raw/Aw.json,0079deeda65beac52f77aa085062bc31045c5195d01f832602da38d929b7fe21

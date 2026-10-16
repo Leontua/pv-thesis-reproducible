@@ -1,0 +1,82 @@
+version: "1.0"
+study_id: "parametric-pv-technology-capacity-climate-v1.0"
+random_seed: 20261007
+output_dir: "outputs/parametric_pv_study_v1_0"
+figure_dir: "figures/parametric_pv_study_v1_0"
+module_parameter_source: "outputs/etsidi_physical_benchmark_v1_0/locked_module_desoto_parameters.csv"
+
+pvgis:
+  endpoint: "https://re.jrc.ec.europa.eu/api/v5_3/tmy"
+  radiation_database: "PVGIS-SARAH3"
+  use_horizon: true
+  output_format: "json"
+  timeout_seconds: 120
+  retries: 5
+
+geometry:
+  surface_tilt_deg: 30.0
+  northern_hemisphere_azimuth_deg: 180.0
+  southern_hemisphere_azimuth_deg: 0.0
+  transposition_model: "perez"
+  albedo: 0.20
+
+thermal_model:
+  name: "Faiman"
+  u0_wm2k: 25.0
+  u1_wsm3k: 6.84
+  source_note: "Fixed open-rack glass/polymer reference coefficients; no ETSIDI calibration."
+
+loss_contract:
+  name: "common standardized downstream DC loss"
+  loss_fraction: 0.14
+  retention_fraction: 0.86
+  application_point: "after De Soto module MPP and before inverter"
+  note: "Identical deterministic loss for every technology, capacity and climate; not fitted."
+
+inverter:
+  name: "PVWatts"
+  dc_ac_ratio: 1.20
+  eta_nom: 0.96
+  eta_ref: 0.9637
+
+capacities_kwp: [5.0, 50.0, 500.0, 5000.0]
+
+climates:
+  BWh:
+    label: "hot desert"
+    representative_location: "Aswan, Egypt"
+    latitude: 24.0889
+    longitude: 32.8998
+  BSk:
+    label: "cold semi-arid"
+    representative_location: "Zaragoza, Spain"
+    latitude: 41.6488
+    longitude: -0.8891
+  Csa:
+    label: "hot-summer Mediterranean"
+    representative_location: "Athens, Greece"
+    latitude: 37.9838
+    longitude: 23.7275
+  Cfb:
+    label: "oceanic"
+    representative_location: "London, United Kingdom"
+    latitude: 51.5074
+    longitude: -0.1278
+  Cfa:
+    label: "humid subtropical"
+    representative_location: "Milan, Italy"
+    latitude: 45.4642
+    longitude: 9.1900
+  Aw:
+    label: "tropical savanna"
+    representative_location: "Accra, Ghana"
+    latitude: 5.6037
+    longitude: -0.1870
+
+frozen_design:
+  technologies: 6
+  capacities: 4
+  climates: 6
+  scenarios: 144
+  synthetic_tmy_year: 2001
+  prohibit_etsidi_empirical_scalars: true

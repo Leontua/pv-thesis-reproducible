@@ -1,0 +1,197 @@
+version: "1.0"
+benchmark_id: "etsidi-six-technology-physical-model-benchmark-v1.0"
+random_seed: 20261006
+timezone: "Europe/Madrid"
+raw_sources:
+  electrical_zip: "../_drive_cache/PV_electrical_all.zip"
+  weather_zip: "../_drive_cache/weather_companion.zip"
+  local_system_reference_pdf: "../tmp/pdfs/TFM_ANTONIO_GARCIA_HORTELANO.pdf"
+output_dir: "outputs/etsidi_physical_benchmark_v1_0"
+figure_dir: "figures/etsidi_physical_benchmark_v1_0"
+dataset:
+  frequency: "5min"
+  poa_column: "Pinc"
+  ambient_temperature_column: "temp"
+  wind_speed_column: "ws"
+  daylight_poa_min_wm2: 20.0
+  poa_valid_range_wm2: [-10.0, 1400.0]
+  ambient_temperature_valid_range_c: [-25.0, 60.0]
+  wind_speed_valid_range_ms: [0.0, 40.0]
+  dc_voltage_valid_range_v: [0.0, 400.0]
+  ac_voltage_valid_range_v: [180.0, 270.0]
+split:
+  unit: "local_calendar_day"
+  stratification: "calendar_month"
+  calibration_fraction: 0.60
+  validation_fraction: 0.20
+  test_fraction: 0.20
+thermal_model:
+  name: "Faiman"
+  u0_bounds_wm2k: [1.0, 100.0]
+  u1_bounds_wsm3k: [0.0, 50.0]
+  objective: "robust least-squares on calibration rows"
+  no_sensor_policy: "T1-S4 receives the median calibrated U0/U1 of the five instrumented systems"
+dc_model:
+  name: "De Soto five-parameter single diode"
+  parameter_extraction: "NREL SAM/CEC six-parameter fit from locked datasheet values"
+  poa_as_effective_irradiance: true
+  scalar_loss_bounds: [0.0, 1.0]
+  scalar_loss_fit: "closed-form least-squares retention factor on calibration rows"
+inverter_model:
+  name: "PVWatts"
+  model: "SMA Sunny Boy 1200"
+  pac0_w: 1200.0
+  eta_nom: 0.921
+  eta_ref: 0.9637
+  pdc0_w: 1302.931596091205
+  vdc_mpp_range_v: [100.0, 320.0]
+  vdc_max_v: 400.0
+  idc_max_a: 12.6
+
+# STC and temperature coefficients are locked before looking at benchmark outcomes.
+# alpha_sc and beta_voc are absolute A/K and V/K. gamma_pmp is %/K.
+systems:
+  T1_S1:
+    display_id: "T1-S1"
+    technology: "mc-Si"
+    manufacturer: "LG Electronics"
+    module_model: "LG250S1C-G2"
+    module_year: 2012
+    modules_series: 5
+    strings_parallel: 1
+    dc_current_measurement_multiplier: 1
+    nominal_array_w: 1250.0
+    cells_in_series: 60
+    celltype_sam: "monoSi"
+    pmp_w: 250.0
+    vmp_v: 29.9
+    imp_a: 8.37
+    voc_v: 37.1
+    isc_a: 8.76
+    alpha_sc_a_per_k: 0.00378
+    beta_voc_v_per_k: -0.128
+    gamma_pmp_pct_per_k: -0.469
+    eg_ref_ev: 1.121
+    d_eg_dt_ev_per_k: -0.0002677
+    module_temperature_columns: ["T1_S1_Tc"]
+    datasheet_url: "https://www.lg.com/us/business/download/resources/BT00002151/BT00002151_315.pdf"
+  T1_S2:
+    display_id: "T1-S2"
+    technology: "pc-Si"
+    manufacturer: "Yingli Energy"
+    module_model: "YL220P-29b"
+    module_year: 2009
+    modules_series: 5
+    strings_parallel: 1
+    dc_current_measurement_multiplier: 1
+    nominal_array_w: 1100.0
+    cells_in_series: 60
+    celltype_sam: "multiSi"
+    pmp_w: 220.0
+    vmp_v: 29.0
+    imp_a: 7.59
+    voc_v: 36.5
+    isc_a: 8.15
+    alpha_sc_a_per_k: 0.00489
+    beta_voc_v_per_k: -0.13505
+    gamma_pmp_pct_per_k: -0.45
+    eg_ref_ev: 1.121
+    d_eg_dt_ev_per_k: -0.0002677
+    module_temperature_columns: ["T1_S2_Tc"]
+    datasheet_url: "https://planete-solar.fr/wp-content/uploads/2013/06/Module-Supplement_IEC_FR_201205_v03.pdf"
+  T1_S3:
+    display_id: "T1-S3"
+    technology: "a-Si/micro-Si tandem"
+    manufacturer: "Sharp"
+    module_model: "NA-V115H1"
+    module_year: 2009
+    modules_series: 1
+    strings_parallel: 10
+    dc_current_measurement_multiplier: 1
+    nominal_array_w: 1150.0
+    cells_in_series: 180
+    celltype_sam: "amorphous"
+    pmp_w: 115.0
+    vmp_v: 174.0
+    imp_a: 0.661
+    voc_v: 238.0
+    isc_a: 0.810
+    alpha_sc_a_per_k: 0.000567
+    beta_voc_v_per_k: -0.714
+    gamma_pmp_pct_per_k: -0.24
+    eg_ref_ev: 1.70
+    d_eg_dt_ev_per_k: -0.0002677
+    module_temperature_columns: ["T1_S3_Tc", "T1_S3_Tc2"]
+    datasheet_url: "https://www.suntreksolar.com/solarElectricity/files/Sharp_Solar/Sharp%20Thin%20Film%20Announcement%205.8.09.pdf"
+  T1_S4:
+    display_id: "T1-S4"
+    technology: "CdTe/CdS"
+    manufacturer: "Calyxo"
+    module_model: "CX3-77"
+    module_year: 2010
+    modules_series: 5
+    strings_parallel: 2
+    dc_current_measurement_multiplier: 2
+    nominal_array_w: 775.0
+    cells_in_series: 78
+    celltype_sam: "cdte"
+    pmp_w: 77.5
+    vmp_v: 46.7
+    imp_a: 1.68
+    voc_v: 62.5
+    isc_a: 1.98
+    alpha_sc_a_per_k: 0.000396
+    beta_voc_v_per_k: -0.15
+    gamma_pmp_pct_per_k: -0.25
+    eg_ref_ev: 1.475
+    d_eg_dt_ev_per_k: -0.0003
+    module_temperature_columns: []
+    datasheet_url: "https://www.go-pure.eu/download/datenblatt_CX3_eng_85.pdf"
+  T1_S5:
+    display_id: "T1-S5"
+    technology: "CIS"
+    manufacturer: "Wuerth Solar"
+    module_model: "WSG0036E075"
+    module_year: 2008
+    modules_series: 8
+    strings_parallel: 2
+    dc_current_measurement_multiplier: 2
+    nominal_array_w: 1200.0
+    cells_in_series: 66
+    celltype_sam: "cis"
+    pmp_w: 75.0
+    vmp_v: 34.0
+    imp_a: 2.21
+    voc_v: 43.4
+    isc_a: 2.40
+    alpha_sc_a_per_k: 0.00120
+    beta_voc_v_per_k: -0.12586
+    gamma_pmp_pct_per_k: -0.36
+    eg_ref_ev: 1.15
+    d_eg_dt_ev_per_k: -0.0003
+    module_temperature_columns: ["T1_S5_Tc"]
+    datasheet_url: "https://www.aeet-energy.com/en/page/fabrikant/wuerthsolar.php"
+  T1_S6:
+    display_id: "T1-S6"
+    technology: "mc-dc-Si"
+    manufacturer: "SunPower"
+    module_model: "SPR-333NE-WHT-D"
+    module_year: 2012
+    modules_series: 4
+    strings_parallel: 1
+    dc_current_measurement_multiplier: 1
+    nominal_array_w: 1332.0
+    cells_in_series: 96
+    celltype_sam: "monoSi"
+    pmp_w: 333.0
+    vmp_v: 54.7
+    imp_a: 6.09
+    voc_v: 65.3
+    isc_a: 6.46
+    alpha_sc_a_per_k: 0.00350
+    beta_voc_v_per_k: -0.1766
+    gamma_pmp_pct_per_k: -0.38
+    eg_ref_ev: 1.121
+    d_eg_dt_ev_per_k: -0.0002677
+    module_temperature_columns: ["T1_S6_Tc"]
+    datasheet_url: "https://studylibfr.com/doc/4180537/modules-solaires-e20-333-et-e20-327"

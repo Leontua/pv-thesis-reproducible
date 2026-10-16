@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-16T07:58:58+03:00",
+  "status": "PASS",
+  "scope": "Frozen artifact verification and metric recomputation only",
+  "full_experimental_rerun": "NOT TESTED",
+  "github_publication": "NOT PERFORMED",
+  "branches": {
+    "forecasting": {
+      "original_source_code": "AVAILABLE",
+      "frozen_inputs": "AVAILABLE",
+      "frozen_scientific_outputs": "AVAILABLE",
+      "metric_recomputation": "PASS",
+      "complete_scientific_rerun": "NOT TESTED",
+      "scientific_differences": {
+        "maximum_headline_delta": 4.610020809536763e-09
+      }
+    },
+    "physical": {
+      "original_source_code": "AVAILABLE",
+      "frozen_inputs": "AVAILABLE",
+      "frozen_scientific_outputs": "AVAILABLE",
+      "metric_recomputation": "PASS",
+      "complete_scientific_rerun": "NOT TESTED",
+      "scientific_differences": {
+        "maximum_ac_nRMSE_delta": 0.0
+      }
+    },
+    "parametric": {
+      "original_source_code": "AVAILABLE",
+      "frozen_inputs": "AVAILABLE",
+      "frozen_scientific_outputs": "AVAILABLE",
+      "metric_recomputation": "PASS",
+      "complete_scientific_rerun": "NOT TESTED",
+      "scientific_differences": {
+        "annual_yield_and_clipping": "within atol=2e-4; capacity invariance <1e-8"
+      }
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "generated_at": "2026-10-16T07:58:58+03:00",
+    "branches": {
+      "forecasting": {
+        "status": "PASS",
+        "hash_checks": [
+          {
+            "artifact": "forecasting_data/core_hourly_long.parquet",
+            "expected": "bb336cbf4bf339fbcf7813427a74f6c029af6d1def2a68928038add56778f15a",
+            "actual": "bb336cbf4bf339fbcf7813427a74f6c029af6d1def2a68928038add56778f15a",
+            "status": "PASS"
+          },
+          {
+            "artifact": "forecasting_experiment/daily_forecast_windows.parquet",
+            "expected": "9e396d63adce552f21cb9271127e5a55b7117d005d42181a5fe2b94c411900ad",
+            "actual": "9e396d63adce552f21cb9271127e5a55b7117d005d42181a5fe2b94c411900ad",
+            "status": "PASS"
+          },
+          {
+            "artifact": "forecasting_experiment/split_manifest.csv",
+            "expected": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+            "actual": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+            "status": "PASS"
+          },
+          {
+            "artifact": "forecasting_experiment/persistence_predictions.parquet",
+            "expected": "db8fc45ecb7200939e083b2135cd97afd7c18beb3ff3cdb91e0eaa8952b0b447",
+            "actual": "db8fc45ecb7200939e083b2135cd97afd7c18beb3ff3cdb91e0eaa8952b0b447",
+            "status": "PASS"
+          },
+          {
+            "artifact": "sarima/sarima_test_predictions.parquet",
+            "expected": "8f90ae1d2779cd52a1747b1b844f296264dd9179a73d8d985653e945cb285f8d",
+            "actual": "8f90ae1d2779cd52a1747b1b844f296264dd9179a73d8d985653e945cb285f8d",
+            "status": "PASS"
+          },
+          {
+            "artifact": "random_forest/rf_test_predictions.parquet",
+            "expected": "49488e5e7d774b13aecfe648b4ca74e356749d366aa5c7396d936b71b5a17395",
+            "actual": "49488e5e7d774b13aecfe648b4ca74e356749d366aa5c7396d936b71b5a17395",
+            "status": "PASS"
+          },
+          {
+            "artifact": "lstm_v1_1/lstm_test_predictions.parquet",
+            "expected": "256ab18e253f29ceed15b8f29866f1f040e1772742ce68e4eb805f04aa898e20",
+            "actual": "256ab18e253f29ceed15b8f29866f1f040e1772742ce68e4eb805f04aa898e20",
+            "status": "PASS"
+          },
+          {
+            "artifact": "final_forecasting_analysis/aligned_common_mask_predictions.parquet",
+            "expected": "b15c8cfaba7cfadec33b49d8d7a139f60ee0b932619d85502ff178a4d93cfeba",
+            "actual": "b15c8cfaba7cfadec33b49d8d7a139f60ee0b932619d85502ff178a4d93cfeba",
+            "status": "PASS"
+          }
+        ],
+        "shape_checks": {
+          "canonical_rows": {
+            "expected": 934800,
+            "actual": 934800,
+            "status": "PASS"
+          },
+          "window_rows": {
+            "expected": 929952,
+            "actual": 929952,
+            "status": "PASS"
+          },
+          "split_rows": {
+            "expected": 55,
+            "actual": 55,
+            "status": "PASS"
+          },
+          "aligned_rows": {
+            "expected": 36529,
+            "actual": 36529,
+            "status": "PASS"
+          },
+          "systems": {
+            "expected": 11,
+            "actual": 11,
+            "status": "PASS"
+          },
+          "physical_sites": {
+            "expected": 9,
+            "actual": 9,
+            "status": "PASS"
+          }
+        },
+        "aligned_schema": {
+          "required_columns_present": true,
+          "duplicate_keys": 0,
+          "status": "PASS"
+        },
+        "prediction_key_checks": [
+          {
+            "model": "persistence",
+            "rows": 95688,
+            "duplicates": 0,
+            "status": "PASS"
+          },
+          {
+            "model": "sarima",
+            "rows": 95688,
+            "duplicates": 0,
+            "status": "PASS"
+          },
+          {
+            "model": "random_forest",
+            "rows": 95688,
+            "duplicates": 0,
+            "status": "PASS"
+          },
+          {
+            "model": "lstm_v1_1",
+            "rows": 95688,
+            "duplicates": 0,
+            "status": "PASS"
+          }
+        ],
+        "protocol": {
+          "folds": 4,
+          "validation_days": 90,
+          "minimum_training_days": 730,
+          "test_days": 365,
+          "horizon_hours": 24,
+          "status": "PASS"
+        },
+        "branch": "forecasting",
+        "complete_scientific_rerun": "NOT TESTED"
+      },
+      "physical": {
+        "branch": "physical",
+        "status": "PASS",
+        "checks": {
+          "six_arrays": true,
+          "rows_323574": true,
+          "splits": true,
+          "frozen_parameters": true,
+          "mode_a_mode_b": true,
+          "mode_a_five_arrays": true,
+          "array_dc_normalization": true,
+          "metrics_recomputed": true,
+          "headline_range": true
+        },
+        "benchmark_verification": {
+          "status": "PASS",
+          "checks": {
+            "six_systems_only": true,
+            "three_splits": true,
+            "days_do_not_cross_splits": true,
+            "monthly_60_20_20_with_rounding": true,
+            "one_dc_scalar_per_system": true,
+            "dc_scalar_bounded": true,
+            "component_and_end_to_end_present": true,
+            "validation_and_test_present": true,
+            "manifest_row_count": true,
+            "test_metrics_independently_recomputed": true,
+            "five_minute_grid": true
+          },
+          "hash_checks": {
+            "benchmark_summary.md": true,
+            "calibrated_parameters.csv": true,
+            "component_and_end_to_end_metrics.csv": true,
+            "day_block_split.csv": true,
+            "etsidi_six_technology_5min.parquet": true,
+            "locked_module_desoto_parameters.csv": true,
+            "physical_model_predictions.parquet": true
+          },
+          "rows": 323574,
+          "timestamps": 53929,
+          "days": 290
+        },
+        "recomputed_test_ac": [
+          {
+            "system_id": "T1-S1",
+            "observations": 7094,
+            "nRMSE_percent": 7.341896329740677,
+            "reported_nRMSE_percent": 7.341896329740677,
+            "absolute_delta": 0.0
+          },
+          {
+            "system_id": "T1-S2",
+            "observations": 7094,
+            "nRMSE_percent": 7.76884527470766,
+            "reported_nRMSE_percent": 7.76884527470766,
+            "absolute_delta": 0.0
+          },
+          {
+            "system_id": "T1-S3",
+            "observations": 7094,
+            "nRMSE_percent": 8.198586642507832,
+            "reported_nRMSE_percent": 8.198586642507832,
+            "absolute_delta": 0.0
+          },
+          {
+            "system_id": "T1-S4",
+            "observations": 7094,
+            "nRMSE_percent": 5.409319167580358,
+            "reported_nRMSE_percent": 5.409319167580358,
+            "absolute_delta": 0.0
+          },
+          {
+            "system_id": "T1-S5",
+            "observations": 7094,
+            "nRMSE_percent": 7.103378914919603,
+            "reported_nRMSE_percent": 7.103378914919603,
+            "absolute_delta": 0.0
+          },
+          {
+            "system_id": "T1-S6",
+            "observations": 7094,
+            "nRMSE_percent": 7.333415474498391,
+            "reported_nRMSE_percent": 7.333415474498391,
+            "absolute_delta": 0.0
+          }
+        ],
+        "headline_ac_nRMSE_range_percent": [
+          5.409319167580358,
+          8.198586642507832
+        ],
+        "complete_scientific_rerun": "NOT TESTED"
+      },
+      "parametric": {
+        "branch": "parametric",
+        "status": "PASS",
+        "checks": {
+          "six_technologies": true,
+          "four_capacities": true,
+          "six_climates": true,
+          "exactly_144_scenarios": true,
+          "exactly_1261440_hourly_rows": true,
+          "8760_per_scenario": true,
+          "annual_yield_recomputed": true,
+          "clipping_recomputed": true,
+          "capacity_invariance": true,
+          "headline_yield_range": true
+        },
+        "specific_yield_range_kwh_per_kwp": [
+          1001.7067676457308,
+          2079.514617352517
+        ],
+        "variance_share_percent": {
+          "climate": 98.61149834207004,
+          "technology": 1.2723225943326055
+        },
+        "complete_scientific_rerun": "NOT TESTED"
+      }
+    }
+  },
+  "source_integrity": {
+    "provenance_manifest": "artifacts/approved_reference/PROVENANCE.json"
+  }
+}

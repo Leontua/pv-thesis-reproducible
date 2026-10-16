@@ -1,0 +1,18 @@
+{
+  "version": "d-plus-1-information-contract-v1.0",
+  "forecast_issue_time": "T",
+  "horizon": "T+1h through T+24h",
+  "allowed": {
+    "historical_pv": "PV observations with timestamp <= T",
+    "future_deterministic": ["hour_of_day", "day_of_year", "solar_zenith", "solar_elevation", "sunrise", "sunset"],
+    "archived_forecasts": "Only forecasts carrying an issue timestamp <= T"
+  },
+  "forbidden": {
+    "future_measured_pv": "Any measured PV observation with timestamp > T",
+    "future_measured_irradiance": "Measured irradiance with timestamp > T",
+    "future_measured_ambient_temperature": "Measured ambient temperature with timestamp > T",
+    "future_measured_module_temperature": "Measured module temperature with timestamp > T"
+  },
+  "weather_rule": "Measured weather availability is descriptive only. Future weather may enter a D+1 model only as an archived forecast that was available at issue time.",
+  "enforcement": "Feature builders must declare source_timestamp and availability_timestamp and reject availability_timestamp > T."
+}

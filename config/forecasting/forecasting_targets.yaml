@@ -1,0 +1,82 @@
+{
+  "version": "core-forecasting-canonical-v1.0",
+  "hour_coverage_threshold": 0.90,
+  "systems": {
+    "colorado_9068": {
+      "path": "Colorado_9068.zip",
+      "member_names": ["9068_ac_power_data.csv"],
+      "reader": {"sep": ","},
+      "timestamp": {"column": "measured_on"},
+      "column": "meter_ac_power_(kw)_meter_150150",
+      "target_raw_kind": "AC_POWER", "target_domain": "AC", "source_unit": "kW",
+      "native_resolution_minutes": 5
+    },
+    "dkasc_site_7": {
+      "path": "DKASC_site_7.zip", "member_names": ["79-Site_DKA-M6_A-Phase-SITE 7.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "timestamp"},
+      "column": "Active_Power", "target_raw_kind": "AC_POWER", "target_domain": "AC",
+      "source_unit": "kW", "native_resolution_minutes": 5
+    },
+    "dkasc_site_10": {
+      "path": "DKASC_site_10.zip", "member_names": ["85-Site_DKA-M7_A-Phase-SITE 10.csv"],
+      "reader": {"sep": ",", "quoting": "none"}, "timestamp": {"column": "timestamp", "format": "%Y-%m-%d %H:%M:%S"},
+      "column": "Active_Power", "target_raw_kind": "AC_POWER", "target_domain": "AC",
+      "source_unit": "kW", "native_resolution_minutes": 5
+    },
+    "dkasc_site_11": {
+      "path": "DKASC_site_11.zip", "member_names": ["106-Site_DKA-M5_C-Phase SITE 11.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "timestamp"},
+      "column": "Active_Power", "target_raw_kind": "AC_POWER", "target_domain": "AC",
+      "source_unit": "kW", "native_resolution_minutes": 5
+    },
+    "farm_2107": {
+      "path": "Farm_2107.zip",
+      "member_names": ["2107_meter_15m_data.csv", "2107_meter_15m_data_2024.csv", "2107_meter_15m_data_2025.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "measured_on"},
+      "column": "meter_revenue_grade_ac_output_meter_149578",
+      "target_raw_kind": "AC_POWER", "target_domain": "AC", "source_unit": "kW",
+      "native_resolution_minutes": 15
+    },
+    "sma_06_codemark_australia": {
+      "path": "SMA_parks.zip", "member_names": ["6_CodeMark_Australia.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "period_start_local"},
+      "column": "numeric_value", "filters": {"measurement_kind": "ENERGY", "aggregation_kind": "INTERVAL", "unit": "kWh"},
+      "target_raw_kind": "ENERGY_INTERVAL", "target_domain": "AC", "source_unit": "kWh",
+      "native_resolution_minutes": 60
+    },
+    "sma_20_solarpark_nottuln": {
+      "path": "SMA_parks.zip", "member_names": ["20_Solarpark_Nottuln.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "period_start_local"},
+      "column": "numeric_value", "filters": {"measurement_kind": "ENERGY", "aggregation_kind": "INTERVAL", "unit": "kWh"},
+      "target_raw_kind": "ENERGY_INTERVAL", "target_domain": "AC", "source_unit": "kWh",
+      "native_resolution_minutes": 60
+    },
+    "sma_25_city_of_las_vegas_mirabelli": {
+      "path": "SMA_parks.zip", "member_names": ["25_City_of_Las_Vegas_-_Mirabelli.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "period_start_local"},
+      "column": "numeric_value", "filters": {"measurement_kind": "POWER", "aggregation_kind": "MEAN", "unit": "kW"},
+      "target_raw_kind": "AC_POWER", "target_domain": "AC", "source_unit": "kW",
+      "native_resolution_minutes": 60
+    },
+    "sma_27_yason_a_e_lamia": {
+      "path": "SMA_parks.zip", "member_names": ["27_Yason_A.E._-_Lamia.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "period_start_local"},
+      "column": "numeric_value", "filters": {"measurement_kind": "ENERGY", "aggregation_kind": "INTERVAL", "unit": "kWh"},
+      "target_raw_kind": "ENERGY_INTERVAL", "target_domain": "AC", "source_unit": "kWh",
+      "native_resolution_minutes": 60
+    },
+    "trieste_pv_q2": {
+      "path": "Trieste.zip", "member_names": ["PV_Q2.csv"], "reader": {"sep": ","},
+      "timestamp": {"columns": ["date", "time"], "format": "%Y%m%d %H:%M:%S"},
+      "expression": {"kind": "sum_products", "scale": 0.001, "groups": [["inv1_volt", "inv1_str1_curr", "inv1_str2_curr", "inv1_str3_curr"], ["inv2_volt", "inv2_str1_curr", "inv2_str2_curr", "inv2_str3_curr"], ["inv3_volt", "inv3_str1_curr", "inv3_str2_curr"]]},
+      "target_raw_kind": "DC_POWER", "target_domain": "DC", "source_unit": "kW",
+      "native_resolution_minutes": 15
+    },
+    "yulara_105_9kw": {
+      "path": "Yulara_105_9.zip", "member_names": ["8-Site_CA-PV1-DB-CA-1A.csv"],
+      "reader": {"sep": ","}, "timestamp": {"column": "timestamp"},
+      "column": "Active_Power", "target_raw_kind": "AC_POWER", "target_domain": "AC",
+      "source_unit": "kW", "native_resolution_minutes": 5
+    }
+  }
+}

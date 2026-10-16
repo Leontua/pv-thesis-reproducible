@@ -1,0 +1,145 @@
+scenario_id,technology_id,technology,module_model,capacity_kwp,climate,location,surface_tilt_deg,surface_azimuth_deg,dc_ac_ratio,empirical_etsidi_scalar_used
+T1-S1__5000kWp__Aw,T1-S1,mc-Si,LG250S1C-G2,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S1__5000kWp__BSk,T1-S1,mc-Si,LG250S1C-G2,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S1__5000kWp__BWh,T1-S1,mc-Si,LG250S1C-G2,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S1__5000kWp__Cfa,T1-S1,mc-Si,LG250S1C-G2,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S1__5000kWp__Cfb,T1-S1,mc-Si,LG250S1C-G2,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S1__5000kWp__Csa,T1-S1,mc-Si,LG250S1C-G2,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S1__500kWp__Aw,T1-S1,mc-Si,LG250S1C-G2,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S1__500kWp__BSk,T1-S1,mc-Si,LG250S1C-G2,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S1__500kWp__BWh,T1-S1,mc-Si,LG250S1C-G2,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S1__500kWp__Cfa,T1-S1,mc-Si,LG250S1C-G2,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S1__500kWp__Cfb,T1-S1,mc-Si,LG250S1C-G2,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S1__500kWp__Csa,T1-S1,mc-Si,LG250S1C-G2,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S1__50kWp__Aw,T1-S1,mc-Si,LG250S1C-G2,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S1__50kWp__BSk,T1-S1,mc-Si,LG250S1C-G2,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S1__50kWp__BWh,T1-S1,mc-Si,LG250S1C-G2,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S1__50kWp__Cfa,T1-S1,mc-Si,LG250S1C-G2,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S1__50kWp__Cfb,T1-S1,mc-Si,LG250S1C-G2,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S1__50kWp__Csa,T1-S1,mc-Si,LG250S1C-G2,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S1__5kWp__Aw,T1-S1,mc-Si,LG250S1C-G2,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S1__5kWp__BSk,T1-S1,mc-Si,LG250S1C-G2,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S1__5kWp__BWh,T1-S1,mc-Si,LG250S1C-G2,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S1__5kWp__Cfa,T1-S1,mc-Si,LG250S1C-G2,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S1__5kWp__Cfb,T1-S1,mc-Si,LG250S1C-G2,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S1__5kWp__Csa,T1-S1,mc-Si,LG250S1C-G2,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S2__5000kWp__Aw,T1-S2,pc-Si,YL220P-29b,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S2__5000kWp__BSk,T1-S2,pc-Si,YL220P-29b,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S2__5000kWp__BWh,T1-S2,pc-Si,YL220P-29b,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S2__5000kWp__Cfa,T1-S2,pc-Si,YL220P-29b,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S2__5000kWp__Cfb,T1-S2,pc-Si,YL220P-29b,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S2__5000kWp__Csa,T1-S2,pc-Si,YL220P-29b,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S2__500kWp__Aw,T1-S2,pc-Si,YL220P-29b,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S2__500kWp__BSk,T1-S2,pc-Si,YL220P-29b,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S2__500kWp__BWh,T1-S2,pc-Si,YL220P-29b,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S2__500kWp__Cfa,T1-S2,pc-Si,YL220P-29b,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S2__500kWp__Cfb,T1-S2,pc-Si,YL220P-29b,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S2__500kWp__Csa,T1-S2,pc-Si,YL220P-29b,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S2__50kWp__Aw,T1-S2,pc-Si,YL220P-29b,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S2__50kWp__BSk,T1-S2,pc-Si,YL220P-29b,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S2__50kWp__BWh,T1-S2,pc-Si,YL220P-29b,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S2__50kWp__Cfa,T1-S2,pc-Si,YL220P-29b,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S2__50kWp__Cfb,T1-S2,pc-Si,YL220P-29b,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S2__50kWp__Csa,T1-S2,pc-Si,YL220P-29b,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S2__5kWp__Aw,T1-S2,pc-Si,YL220P-29b,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S2__5kWp__BSk,T1-S2,pc-Si,YL220P-29b,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S2__5kWp__BWh,T1-S2,pc-Si,YL220P-29b,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S2__5kWp__Cfa,T1-S2,pc-Si,YL220P-29b,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S2__5kWp__Cfb,T1-S2,pc-Si,YL220P-29b,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S2__5kWp__Csa,T1-S2,pc-Si,YL220P-29b,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S3__5000kWp__Aw,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S3__5000kWp__BSk,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S3__5000kWp__BWh,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S3__5000kWp__Cfa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S3__5000kWp__Cfb,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S3__5000kWp__Csa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S3__500kWp__Aw,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S3__500kWp__BSk,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S3__500kWp__BWh,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S3__500kWp__Cfa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S3__500kWp__Cfb,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S3__500kWp__Csa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S3__50kWp__Aw,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S3__50kWp__BSk,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S3__50kWp__BWh,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S3__50kWp__Cfa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S3__50kWp__Cfb,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S3__50kWp__Csa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S3__5kWp__Aw,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S3__5kWp__BSk,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S3__5kWp__BWh,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S3__5kWp__Cfa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S3__5kWp__Cfb,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S3__5kWp__Csa,T1-S3,a-Si/micro-Si tandem,NA-V115H1,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S4__5000kWp__Aw,T1-S4,CdTe/CdS,CX3-77,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S4__5000kWp__BSk,T1-S4,CdTe/CdS,CX3-77,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S4__5000kWp__BWh,T1-S4,CdTe/CdS,CX3-77,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S4__5000kWp__Cfa,T1-S4,CdTe/CdS,CX3-77,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S4__5000kWp__Cfb,T1-S4,CdTe/CdS,CX3-77,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S4__5000kWp__Csa,T1-S4,CdTe/CdS,CX3-77,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S4__500kWp__Aw,T1-S4,CdTe/CdS,CX3-77,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S4__500kWp__BSk,T1-S4,CdTe/CdS,CX3-77,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S4__500kWp__BWh,T1-S4,CdTe/CdS,CX3-77,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S4__500kWp__Cfa,T1-S4,CdTe/CdS,CX3-77,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S4__500kWp__Cfb,T1-S4,CdTe/CdS,CX3-77,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S4__500kWp__Csa,T1-S4,CdTe/CdS,CX3-77,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S4__50kWp__Aw,T1-S4,CdTe/CdS,CX3-77,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S4__50kWp__BSk,T1-S4,CdTe/CdS,CX3-77,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S4__50kWp__BWh,T1-S4,CdTe/CdS,CX3-77,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S4__50kWp__Cfa,T1-S4,CdTe/CdS,CX3-77,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S4__50kWp__Cfb,T1-S4,CdTe/CdS,CX3-77,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S4__50kWp__Csa,T1-S4,CdTe/CdS,CX3-77,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S4__5kWp__Aw,T1-S4,CdTe/CdS,CX3-77,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S4__5kWp__BSk,T1-S4,CdTe/CdS,CX3-77,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S4__5kWp__BWh,T1-S4,CdTe/CdS,CX3-77,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S4__5kWp__Cfa,T1-S4,CdTe/CdS,CX3-77,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S4__5kWp__Cfb,T1-S4,CdTe/CdS,CX3-77,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S4__5kWp__Csa,T1-S4,CdTe/CdS,CX3-77,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S5__5000kWp__Aw,T1-S5,CIS,WSG0036E075,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S5__5000kWp__BSk,T1-S5,CIS,WSG0036E075,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S5__5000kWp__BWh,T1-S5,CIS,WSG0036E075,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S5__5000kWp__Cfa,T1-S5,CIS,WSG0036E075,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S5__5000kWp__Cfb,T1-S5,CIS,WSG0036E075,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S5__5000kWp__Csa,T1-S5,CIS,WSG0036E075,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S5__500kWp__Aw,T1-S5,CIS,WSG0036E075,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S5__500kWp__BSk,T1-S5,CIS,WSG0036E075,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S5__500kWp__BWh,T1-S5,CIS,WSG0036E075,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S5__500kWp__Cfa,T1-S5,CIS,WSG0036E075,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S5__500kWp__Cfb,T1-S5,CIS,WSG0036E075,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S5__500kWp__Csa,T1-S5,CIS,WSG0036E075,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S5__50kWp__Aw,T1-S5,CIS,WSG0036E075,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S5__50kWp__BSk,T1-S5,CIS,WSG0036E075,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S5__50kWp__BWh,T1-S5,CIS,WSG0036E075,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S5__50kWp__Cfa,T1-S5,CIS,WSG0036E075,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S5__50kWp__Cfb,T1-S5,CIS,WSG0036E075,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S5__50kWp__Csa,T1-S5,CIS,WSG0036E075,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S5__5kWp__Aw,T1-S5,CIS,WSG0036E075,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S5__5kWp__BSk,T1-S5,CIS,WSG0036E075,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S5__5kWp__BWh,T1-S5,CIS,WSG0036E075,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S5__5kWp__Cfa,T1-S5,CIS,WSG0036E075,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S5__5kWp__Cfb,T1-S5,CIS,WSG0036E075,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S5__5kWp__Csa,T1-S5,CIS,WSG0036E075,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S6__5000kWp__Aw,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S6__5000kWp__BSk,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S6__5000kWp__BWh,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S6__5000kWp__Cfa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S6__5000kWp__Cfb,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S6__5000kWp__Csa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5000.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S6__500kWp__Aw,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S6__500kWp__BSk,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S6__500kWp__BWh,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S6__500kWp__Cfa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S6__500kWp__Cfb,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S6__500kWp__Csa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,500.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S6__50kWp__Aw,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S6__50kWp__BSk,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S6__50kWp__BWh,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S6__50kWp__Cfa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S6__50kWp__Cfb,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S6__50kWp__Csa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,50.0,Csa,"Athens, Greece",30.0,180.0,1.2,False
+T1-S6__5kWp__Aw,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,Aw,"Accra, Ghana",30.0,180.0,1.2,False
+T1-S6__5kWp__BSk,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,BSk,"Zaragoza, Spain",30.0,180.0,1.2,False
+T1-S6__5kWp__BWh,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,BWh,"Aswan, Egypt",30.0,180.0,1.2,False
+T1-S6__5kWp__Cfa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,Cfa,"Milan, Italy",30.0,180.0,1.2,False
+T1-S6__5kWp__Cfb,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,Cfb,"London, United Kingdom",30.0,180.0,1.2,False
+T1-S6__5kWp__Csa,T1-S6,mc-dc-Si,SPR-333NE-WHT-D,5.0,Csa,"Athens, Greece",30.0,180.0,1.2,False

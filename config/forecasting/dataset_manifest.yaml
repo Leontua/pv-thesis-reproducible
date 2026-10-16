@@ -1,0 +1,228 @@
+{
+  "manifest_version": "2026-10-01.master-pv-audit.v1.1",
+  "source_root": "../_drive_cache",
+  "gates": {
+    "forecasting_max_resolution_minutes": 60,
+    "forecasting_min_history_days": 730,
+    "forecasting_min_daylight_completeness": 0.90,
+    "forecasting_diagnostic_long_gap_hours": 720,
+    "forecasting_required_distinct_seasons": 4,
+    "usable_day_min_daylight_completeness": 0.90,
+    "forecasting_min_positive_observations": 100,
+    "physics_max_resolution_minutes": 60,
+    "physics_min_history_days": 7
+  },
+  "datasets": [
+    {
+      "dataset_id": "sma_sunny_portal",
+      "kind": "sma_archive",
+      "path": "SMA_parks.zip",
+      "drive_id": "1k9zan8Go3UVFyEcHBxZ1tXDvAeBLfBch",
+      "metadata_member": "metadata.json",
+      "system_overrides": {
+        "6": {
+          "city": "Mount Barker", "latitude": -35.0641302, "longitude": 138.8586385,
+          "timezone_iana": "Australia/Adelaide", "nominal_kwp": 10.0,
+          "target": {"columns": ["numeric_value"], "kind": "ENERGY", "unit": "kWh", "origin": "measured", "unit_verified": true},
+          "metadata_sources": {
+            "nominal_kwp": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=430e36e3-639b-44c9-9f3c-18aaa8905bb5",
+            "location": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=430e36e3-639b-44c9-9f3c-18aaa8905bb5",
+            "coordinates": "https://nominatim.openstreetmap.org/search?q=Mount+Barker%2C+South+Australia%2C+Australia&format=jsonv2"
+          }
+        },
+        "20": {
+          "city": "Nottuln", "latitude": 51.9296679, "longitude": 7.3532741,
+          "timezone_iana": "Europe/Berlin", "nominal_kwp": 1206.4, "module_technology": "CdTe thin-film",
+          "target": {"columns": ["numeric_value"], "kind": "ENERGY", "unit": "kWh", "origin": "measured", "unit_verified": true},
+          "metadata_sources": {
+            "nominal_kwp": "https://www.sunnyportal.com/Templates/PublicPage.aspx?page=e1ddda21-f240-44af-9af5-08c8aa4fc630",
+            "module_technology": "https://www.sunnyportal.com/Templates/PublicPage.aspx?page=e1ddda21-f240-44af-9af5-08c8aa4fc630",
+            "coordinates": "https://nominatim.openstreetmap.org/search?q=Nottuln%2C+Germany&format=jsonv2"
+          }
+        },
+        "25": {
+          "city": "Las Vegas", "latitude": 36.1732287, "longitude": -115.2270419,
+          "timezone_iana": "America/Los_Angeles", "nominal_kwp": 120.9,
+          "target": {"columns": ["numeric_value"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true},
+          "metadata_sources": {
+            "nominal_kwp": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=1e2a147e-8ef1-473a-a043-b2bc6ee18008",
+            "location": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=1e2a147e-8ef1-473a-a043-b2bc6ee18008",
+            "coordinates": "https://nominatim.openstreetmap.org/search?q=Mirabelli+Community+Center%2C+Las+Vegas%2C+Nevada&format=jsonv2"
+          }
+        },
+        "27": {
+          "city": "Kompotades, Lamia", "latitude": 38.8574673, "longitude": 22.3358338,
+          "timezone_iana": "Europe/Athens", "nominal_kwp": 504.0,
+          "target": {"columns": ["numeric_value"], "kind": "ENERGY", "unit": "kWh", "origin": "measured", "unit_verified": true},
+          "metadata_sources": {
+            "nominal_kwp": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=8d7eefad-bfab-40c5-b1c8-1d46d2bb4f24",
+            "location": "https://www.sunnyportal.com/Templates/PublicPageOverview.aspx?plant=8d7eefad-bfab-40c5-b1c8-1d46d2bb4f24",
+            "coordinates": "https://nominatim.openstreetmap.org/search?q=Kompotades%2C+Lamia%2C+Greece&format=jsonv2"
+          }
+        }
+      }
+    },
+    {
+      "dataset_id": "colorado_9068",
+      "kind": "single",
+      "drive_id": "1puu_c608Xh5uY8HWSwdxNWPwAk4ujoJv",
+      "system": {
+        "site_id": "colorado_sr_co", "system_id": "colorado_9068", "system_name": "System 9068 — Colorado",
+        "path": "Colorado_9068.zip", "country": "United States", "city": "Kersey, Colorado",
+        "latitude": 40.3864, "longitude": -104.5512, "timezone": "America/Denver",
+        "climate_zone": "BSk", "nominal_kwp": 4738.0, "module_technology": "CdTe", "tilt_deg": 0.0, "azimuth_deg": 180.0,
+        "metadata_sources": {"system_site_module_geometry": "Colorado_9068.zip::9068_system_metadata.json"},
+        "member_regex": "9068_ac_power_data\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "measured_on"},
+        "target": {"column_patterns": ["meter_ac_power_\\(kw\\)_meter", "inverter_[12]_ac_power_\\(kw\\)"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true},
+        "feature_overrides": {"irradiance": true, "ambient_temperature": true, "module_temperature": true}
+      }
+    },
+    {
+      "dataset_id": "farm_2107",
+      "kind": "single",
+      "drive_id": "1m8ptraoRy8WerRr9kOGk6m8QlLJ-_tJe",
+      "system": {
+        "site_id": "farm_solar_array", "system_id": "farm_2107", "system_name": "System 2107 — Farm Solar Array",
+        "path": "Farm_2107.zip", "country": "United States", "city": "Arbuckle, California",
+        "latitude": 38.996306, "longitude": -122.134111, "timezone": "America/Los_Angeles",
+        "nominal_kwp": 893.0, "module_technology": "mono-Si", "tilt_deg": 25.0, "azimuth_deg": 180.0,
+        "metadata_sources": {"system_site_module_geometry": "Farm_2107.zip::2107_system_metadata.json"},
+        "member_regex": "2107_meter_15m_data(?:_20[0-9]{2})?\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "measured_on"},
+        "target": {"column_patterns": ["meter_revenue_grade_ac_output"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true},
+        "feature_overrides": {"irradiance": true, "ambient_temperature": true, "module_temperature": true}
+      }
+    },
+    {
+      "dataset_id": "yulara_connellan",
+      "kind": "single",
+      "drive_id": "1sK_vh8SGnQu00oBjCbyN7Gjs-xEdT35J",
+      "system": {
+        "site_id": "yulara_connellan_airport", "system_id": "yulara_105_9kw", "system_name": "Yulara 105.9 kW — Connellan Airport",
+        "path": "Yulara_105_9.zip", "country": "Australia", "city": "Yulara", "latitude": -25.186, "longitude": 130.976,
+        "timezone": "Australia/Darwin", "climate_zone": "BWh", "nominal_kwp": 105.9, "module_technology": "mono-Si",
+        "member_regex": "8-Site_CA-PV1-DB-CA-1A\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "timestamp"},
+        "target": {"columns": ["Active_Power"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true}
+      }
+    },
+    {
+      "dataset_id": "phaethon_pv",
+      "kind": "single",
+      "drive_id": "1THJ1wi-Jitk8pUnCaVA9W0EKO7oj8tP4",
+      "system": {
+        "site_id": "phaethon_testbed", "system_id": "phaethon_pv", "system_name": "PHAETHON PV system test-bed",
+        "path": "PHAETHON_PV.zip", "country": "Cyprus", "timezone": "Asia/Nicosia", "climate_zone": "Csa",
+        "member_regex": "PCoE-Dataset PV system test-bed\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "time_stamp", "dayfirst": true},
+        "target": {"columns": ["Pac"], "kind": "AC_POWER", "unit": "source_native", "origin": "measured"}
+      }
+    },
+    {
+      "dataset_id": "trieste_pv",
+      "kind": "single",
+      "drive_id": "1oesfGFKQ3G7CvzWcMW3uopMWwRaveX85",
+      "system": {
+        "site_id": "trieste_pv", "system_id": "trieste_pv_q2", "system_name": "Trieste PV Q2",
+        "path": "Trieste.zip", "country": "Italy", "city": "Basovizza, Trieste",
+        "latitude": 45.64413722052132, "longitude": 13.850041741818321,
+        "timezone": "Europe/Rome", "climate_zone": "Cfa", "nominal_kwp": 15.9,
+        "module_technology": "mono-Si", "tilt_deg": 10.0, "azimuth_deg": 215.0,
+        "metadata_sources": {"nominal_kwp": "https://doi.org/10.5281/zenodo.7115550", "module_technology": "https://doi.org/10.5281/zenodo.7115550", "geometry": "https://doi.org/10.5281/zenodo.7115550", "coordinates": "https://doi.org/10.5281/zenodo.7115550"},
+        "member_regex": "PV_Q2\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"columns": ["date", "time"], "format": "%Y%m%d %H:%M:%S"},
+        "target": {"kind": "DC_POWER", "unit": "kW", "origin": "derived_from_measured_voltage_current", "unit_verified": true, "expression": {"kind": "sum_products", "scale": 0.001, "groups": [["inv1_volt", "inv1_str1_curr", "inv1_str2_curr", "inv1_str3_curr"], ["inv2_volt", "inv2_str1_curr", "inv2_str2_curr", "inv2_str3_curr"], ["inv3_volt", "inv3_str1_curr", "inv3_str2_curr"]]}}
+      }
+    },
+    {
+      "dataset_id": "cyprus_kios",
+      "kind": "single",
+      "drive_id": "1U7W1a0HF-KT2mzqRYLR-YJaLg1cjmX6l",
+      "system": {
+        "site_id": "cyprus_kios", "system_id": "cyprus_kios_pv", "system_name": "Cyprus KIOS PV",
+        "path": "Cyprus_KIOS.zip", "country": "Cyprus", "timezone": "Asia/Nicosia", "climate_zone": "Csa",
+        "member_regex": "20[0-9]{2}_[0-9]{2}\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "datetime", "timezone_aware_input": true, "timezone": "Asia/Nicosia"},
+        "target": {"columns": ["pv_power (W)"], "kind": "AC_POWER", "unit": "W", "origin": "measured"}
+      }
+    },
+    {
+      "dataset_id": "cyprus_residential",
+      "kind": "single",
+      "drive_id": "1iDxuX0qZyE9qeL5pRC0Z-_wiUwHTIuhh",
+      "system": {
+        "site_id": "cyprus_residential_prosumer", "system_id": "cyprus_residential_pv", "system_name": "Cyprus residential prosumer",
+        "path": "Cyprus_residential.zip", "country": "Cyprus", "timezone": "Asia/Nicosia", "climate_zone": "Csa",
+        "member_regex": "20[0-9]{2}-[0-9]{2}-[0-9]{2}_data\\.csv$", "reader": {"sep": ","},
+        "timestamp": {"column": "Time_actual"},
+        "target": {"columns": ["Ppv_actual"], "kind": "AC_POWER", "unit": "W", "origin": "measured"}
+      }
+    },
+    {
+      "dataset_id": "university_jaen",
+      "kind": "single",
+      "drive_id": "1u7MWDrF0Xv9RYWFYAk8ks7Il7f-8S5iH",
+      "system": {
+        "site_id": "university_jaen", "system_id": "ujaen_ruja", "system_name": "University of Jaén RUJA",
+        "path": "University_of_Jaen.zip", "country": "Spain", "city": "Jaén", "timezone": "Europe/Madrid", "climate_zone": "Csa",
+        "member_regex": "Data - RUJA/.+\\.csv$", "reader": {"sep": ";", "skiprows": 4, "encoding": "latin-1"},
+        "timestamp": {"column": "TimeStamp", "dayfirst": true, "format": "%d.%m.%Y %H:%M"},
+        "target": {"column_patterns": ["^Pac(?:\\.[0-9]+)?$"], "kind": "AC_POWER", "unit": "W", "origin": "measured"}
+      }
+    },
+    {
+      "dataset_id": "dkasc_site_7", "kind": "single", "drive_id": "1Xp3CKDpKEKCprt05PhpQb6ryGKTjvFKt",
+      "system": {"site_id": "dkasc_alice_springs", "system_id": "dkasc_site_7", "system_name": "DKASC Site 7 — DKA-M6 A-Phase", "path": "DKASC_site_7.zip", "country": "Australia", "city": "Alice Springs", "latitude": -23.762, "longitude": 133.874, "timezone": "Australia/Darwin", "climate_zone": "BWh", "nominal_kwp": 6.96, "module_technology": "CdTe prototype/non-standard", "tilt_deg": 20.0, "azimuth_deg": 0.0, "metadata_sources": {"nominal_kwp": "https://dkasolarcentre.com.au/source/alice-springs/dka-m6-a-phase", "module_technology": "https://dkasolarcentre.com.au/source/alice-springs/dka-m6-a-phase", "geometry": "https://dkasolarcentre.com.au/source/alice-springs/dka-m6-a-phase"}, "metadata_caveats": "Official DKA notes identify these CdTe modules as prototype/non-standard; do not treat as representative modern CdTe technology.", "member_regex": "79-Site_DKA-M6_A-Phase-SITE 7\\.csv$", "reader": {"sep": ","}, "timestamp": {"column": "timestamp"}, "target": {"columns": ["Active_Power"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true}}
+    },
+    {
+      "dataset_id": "dkasc_site_10", "kind": "single", "drive_id": "1c4C6Br4QBbwsWTqtQbCp4-wQAQh0rbgq",
+      "system": {"site_id": "dkasc_alice_springs", "system_id": "dkasc_site_10", "system_name": "DKASC Site 10 — DKA-M7 A-Phase", "path": "DKASC_site_10.zip", "country": "Australia", "city": "Alice Springs", "latitude": -23.762, "longitude": 133.874, "timezone": "Australia/Darwin", "climate_zone": "BWh", "nominal_kwp": 5.805, "module_technology": "mono-Si", "tilt_deg": 20.0, "azimuth_deg": 0.0, "metadata_sources": {"nominal_kwp": "https://dkasolarcentre.com.au/source/alice-springs/dka-m7-a-phase", "module_technology": "https://dkasolarcentre.com.au/source/alice-springs/dka-m7-a-phase", "geometry": "https://dkasolarcentre.com.au/source/alice-springs/dka-m7-a-phase"}, "member_regex": "85-Site_DKA-M7_A-Phase-SITE 10\\.csv$", "reader": {"sep": ",", "quoting": "none"}, "timestamp": {"column": "timestamp", "format": "%Y-%m-%d %H:%M:%S"}, "target": {"columns": ["Active_Power"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true}}
+    },
+    {
+      "dataset_id": "dkasc_site_11", "kind": "single", "drive_id": "10VwYDLDZ2DJNf8uTnTE2eJmEp6_Ps8TX",
+      "system": {"site_id": "dkasc_alice_springs", "system_id": "dkasc_site_11", "system_name": "DKASC Site 11 — DKA-M5 C-Phase", "path": "DKASC_site_11.zip", "country": "Australia", "city": "Alice Springs", "latitude": -23.762, "longitude": 133.874, "timezone": "Australia/Darwin", "climate_zone": "BWh", "nominal_kwp": 4.95, "module_technology": "poly-Si", "tilt_deg": 20.0, "azimuth_deg": 0.0, "metadata_sources": {"nominal_kwp": "https://dkasolarcentre.com.au/source/alice-springs/dka-m5-c-phase", "module_technology": "https://dkasolarcentre.com.au/source/alice-springs/dka-m5-c-phase", "geometry": "https://dkasolarcentre.com.au/source/alice-springs/dka-m5-c-phase"}, "member_regex": "106-Site_DKA-M5_C-Phase SITE 11\\.csv$", "reader": {"sep": ","}, "timestamp": {"column": "timestamp"}, "target": {"columns": ["Active_Power"], "kind": "AC_POWER", "unit": "kW", "origin": "measured", "unit_verified": true}}
+    },
+    {
+      "dataset_id": "pv_hydrogen_experiments", "kind": "single", "drive_id": "1nygBdw0w7Bp15T66asrJqome37RdXZRo",
+      "system": {"site_id": "pv_hydrogen_experiment", "system_id": "pv_array_430kw_experiment", "system_name": "430 kW PV array — hydrogen experiments", "path": "combined_solarPV_experiments.csv", "nominal_kwp": 430.0, "member_regex": "combined_solarPV_experiments\\.csv$", "reader": {"sep": ","}, "timestamp": {"column": "Experiment Timestamp"}, "target": {"columns": ["historical 430 kW solar PV array power (kW)"], "kind": "AC_POWER", "unit": "kW", "origin": "measured"}}
+    },
+    {
+      "dataset_id": "desert_sunlight_eia923", "kind": "single", "drive_id": "1ohESfCAmdLHiXgvLRLYPZqPiKOHKsqKr",
+      "system": {"site_id": "desert_sunlight", "system_id": "desert_sunlight_eia923", "system_name": "Desert Sunlight — EIA-923 annual source", "path": "Desert_Sunlight.zip", "country": "United States", "city": "Riverside County, California", "climate_zone": "BWh", "fixed_temporal": {"start_date": "2024-01-01T00:00:00", "end_date": "2024-12-31T23:59:59", "history_days": 365.999988, "history_years": 1.002, "native_resolution_minutes": 525600.0, "resolution_label": "annual", "n_observations": 1, "n_unique_timestamps": 1}, "audit_notes": "EIA-923 workbook is aggregate plant reporting, not a sub-hourly PV target series."}
+    },
+    {
+      "dataset_id": "etsidi_multitech",
+      "kind": "multi_system_wide",
+      "path": "PV_electrical_all.zip",
+      "drive_id": "11A-E5unjZLXr_jsM-NtPfqHjuW3Lc3Ef",
+      "companion_paths": ["weather_companion.zip"],
+      "companion_drive_ids": ["1PSmdJtPOzUB_8wWxBfSQ3YEubYqg5tT4"],
+      "member_regex": "vi_[0-9]{8}\\.csv$",
+      "reader": {"sep": ","},
+      "timestamp": {"column": "timestamp"},
+      "country": "Spain", "city": "Madrid", "timezone": "Europe/Madrid", "climate_zone": "Csa",
+      "site_id": "etsidi_multitech_testbed",
+      "systems": [
+        {"id": "T1_S1", "name": "ETSIDI T1-S1", "nominal_kwp": 1.250, "technology": "mc-Si", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S2", "name": "ETSIDI T1-S2", "nominal_kwp": 1.100, "technology": "pc-Si", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S3", "name": "ETSIDI T1-S3", "nominal_kwp": 1.150, "technology": "a-Si", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S4", "name": "ETSIDI T1-S4", "nominal_kwp": 0.775, "technology": "CdTe-Se/CdS", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S5", "name": "ETSIDI T1-S5", "nominal_kwp": 1.175, "technology": "CIS", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S6", "name": "ETSIDI T1-S6", "nominal_kwp": 1.332, "technology": "mc-dc-Si", "tilt": 30, "azimuth": 19},
+        {"id": "T1_S7", "name": "ETSIDI T1-S7", "nominal_kwp": 3.120, "technology": "mc-Si", "tilt": 30, "azimuth": 19},
+        {"id": "T2_S1", "name": "ETSIDI T2-S1", "nominal_kwp": 3.660, "technology": "mc-dc-Si", "tilt": 5, "azimuth": 19},
+        {"id": "T2_S2", "name": "ETSIDI T2-S2", "nominal_kwp": 1.260, "technology": "mc-dc-Si", "tilt": 10, "azimuth": 19},
+        {"id": "T2_S3", "name": "ETSIDI T2-S3", "nominal_kwp": 1.260, "technology": "mc-dc-Si", "tilt": 10, "azimuth": 19},
+        {"id": "T2_S4", "name": "ETSIDI T2-S4", "nominal_kwp": 1.200, "technology": "mc-dc-Si", "tilt": 10, "azimuth": 19},
+        {"id": "T2_S5", "name": "ETSIDI T2-S5", "nominal_kwp": 1.075, "technology": "mc-dc-Si", "tilt": 10, "azimuth": 19},
+        {"id": "T2_S6", "name": "ETSIDI T2-S6", "nominal_kwp": 1.050, "technology": "mc-dc-Si", "tilt": 10, "azimuth": 19},
+        {"id": "SOLAREDGE", "name": "ETSIDI SolarEdge", "nominal_kwp": 1.890, "technology": "mc-PERC-Si", "tilt": 30, "azimuth": 19},
+        {"id": "HUAWEI", "name": "ETSIDI Huawei", "nominal_kwp": 1.575, "technology": "mc-PERC-Si", "tilt": 30, "azimuth": 19},
+        {"id": "SMA", "name": "ETSIDI SMA", "nominal_kwp": 1.575, "technology": "mc-PERC-Si", "tilt": 30, "azimuth": 19},
+        {"id": "SOLIS", "name": "ETSIDI Solis", "nominal_kwp": 1.575, "technology": "mc-PERC-Si", "tilt": 30, "azimuth": 19},
+        {"id": "FRONIUS", "name": "ETSIDI Fronius", "nominal_kwp": 1.575, "technology": "mc-PERC-Si", "tilt": 30, "azimuth": 19}
+      ]
+    }
+  ]
+}

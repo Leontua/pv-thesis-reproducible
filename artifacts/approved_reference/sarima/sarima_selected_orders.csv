@@ -1,0 +1,12 @@
+system_id,candidate_id,folds_valid,mean_cv_nRMSE_percent,mean_cv_nMAE_percent,parameter_count,selection_rule
+colorado_9068,S3,4,18.934368278344937,15.175283695362317,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+dkasc_site_10,S3,4,9.26251490795169,5.6625177366808055,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+dkasc_site_11,S5,4,10.006035765124391,6.527368578679099,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+dkasc_site_7,S5,4,8.797629356140478,5.686383521181559,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+farm_2107,S3,4,12.238722821734306,8.313945324936983,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+sma_06_codemark_australia,S1,4,7.293487048165495,5.311401177835512,4,min mean CV nRMSE; tie nMAE; tie fewer parameters
+sma_20_solarpark_nottuln,S5,4,13.686456821321123,9.668066398290557,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+sma_25_city_of_las_vegas_mirabelli,S3,4,7.855178223588009,4.699071590489235,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+sma_27_yason_a_e_lamia,S3,4,12.173867272695123,9.139162447681276,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+trieste_pv_q2,S5,4,13.60716389409776,9.491519315525172,5,min mean CV nRMSE; tie nMAE; tie fewer parameters
+yulara_105_9kw,S5,4,13.124931281370134,9.17045638319313,5,min mean CV nRMSE; tie nMAE; tie fewer parameters

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "task": {
+    "name": "D+1_24h",
+    "target": "target_pu",
+    "issue_frequency": "daily",
+    "issue_rule": "local midnight at the start of the target day, after completion of d-1",
+    "horizon_hours": 24,
+    "time_basis": "local",
+    "random_shuffle": false
+  },
+  "evaluation": {
+    "primary_mask": "daylight_common",
+    "primary_mask_expression": "target_valid AND persistence_valid AND is_daylight",
+    "target_only_mask_expression": "target_valid AND is_daylight",
+    "daylight_definition": "canonical_is_daylight",
+    "exclude_dst_transition_days": true,
+    "exclude_target_days_with_non_24_local_hours": true,
+    "require_24_hour_persistence_source_day": true
+  },
+  "test": {"duration_days": 365, "position": "latest"},
+  "cross_validation": {
+    "type": "expanding_window",
+    "folds": 4,
+    "validation_days": 90,
+    "min_initial_training_days": 730
+  },
+  "baseline": {"name": "daily_persistence", "persistence_lag_days": 1},
+  "metrics": ["MAE_pu", "RMSE_pu", "nMAE_percent", "nRMSE_percent", "MBE_pu"],
+  "skill_score": "1 - RMSE_model / RMSE_persistence",
+  "canonical_input": "outputs/forecasting_data/core_hourly_long.parquet",
+  "canonical_input_sha256": "bb336cbf4bf339fbcf7813427a74f6c029af6d1def2a68928038add56778f15a"
+}

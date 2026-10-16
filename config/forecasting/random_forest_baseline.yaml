@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "model": "per-system direct multi-horizon RandomForestRegressor",
+  "frozen_split_manifest": "outputs/forecasting_experiment/split_manifest.csv",
+  "frozen_split_manifest_sha256": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+  "frozen_windows": "outputs/forecasting_experiment/daily_forecast_windows.parquet",
+  "frozen_windows_sha256": "9e396d63adce552f21cb9271127e5a55b7117d005d42181a5fe2b94c411900ad",
+  "canonical_input": "outputs/forecasting_data/core_hourly_long.parquet",
+  "canonical_input_sha256": "bb336cbf4bf339fbcf7813427a74f6c029af6d1def2a68928038add56778f15a",
+  "persistence_predictions": "outputs/forecasting_experiment/persistence_predictions.parquet",
+  "sarima_predictions": "outputs/sarima/sarima_test_predictions.parquet",
+  "selection_metric": "mean_cv_nRMSE_percent",
+  "minimum_forecast_coverage": 0.99,
+  "random_state": 42,
+  "criterion": "squared_error",
+  "bootstrap": true,
+  "n_jobs": -1,
+  "random_time_shuffle": false,
+  "training_mask": "target_valid AND is_daylight",
+  "postprocessing": {"lower_clip": 0.0, "upper_clip": null, "nighttime_zero": true},
+  "permutation_importance": {"n_repeats": 3, "max_rows_per_system": 2000, "random_state": 42},
+  "candidates": [
+    {"id": "R1", "n_estimators": 300, "max_depth": null, "min_samples_leaf": 1, "max_features": 1.0},
+    {"id": "R2", "n_estimators": 400, "max_depth": 18, "min_samples_leaf": 2, "max_features": 0.7},
+    {"id": "R3", "n_estimators": 400, "max_depth": 12, "min_samples_leaf": 4, "max_features": 1.0},
+    {"id": "R4", "n_estimators": 500, "max_depth": null, "min_samples_leaf": 4, "max_features": 0.7}
+  ]
+}

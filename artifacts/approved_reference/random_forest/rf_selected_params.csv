@@ -1,0 +1,12 @@
+system_id,candidate_id,folds_valid,mean_cv_nRMSE_percent,mean_cv_nMAE_percent,complexity_leaf_key,complexity_depth_key,complexity_trees_key,selection_rule,n_estimators,max_depth,min_samples_leaf,max_features
+colorado_9068,R3,4,18.724156977401737,15.141043985908011,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+dkasc_site_10,R3,4,9.650669329490025,6.369884562674142,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+dkasc_site_11,R3,4,10.120111944905982,6.920170327590112,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+dkasc_site_7,R3,4,8.639605261908548,5.969744056218313,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+farm_2107,R3,4,11.987592397124367,8.21865154710449,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+sma_06_codemark_australia,R2,4,6.464478598803167,4.606741530848397,-2,18.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,18.0,2,0.7
+sma_20_solarpark_nottuln,R3,4,12.61183356777651,8.93602272578288,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+sma_25_city_of_las_vegas_mirabelli,R3,4,7.698065241350691,4.579199745308355,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+sma_27_yason_a_e_lamia,R3,4,11.984524702708448,8.728057656629389,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+trieste_pv_q2,R3,4,13.127846574335392,9.151085557198869,-4,12.0,400,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",400,12.0,4,1.0
+yulara_105_9kw,R4,4,12.208694906570527,7.980609668932875,-4,inf,500,"min mean CV nRMSE; tie nMAE; tie larger leaf, smaller depth, fewer trees",500,,4,0.7

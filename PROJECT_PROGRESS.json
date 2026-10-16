@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "phase": "2B",
+  "created_at": "2026-10-16T03:23:14+03:00",
+  "updated_at": "2026-10-16T07:59:44+03:00",
+  "workspace": ".",
+  "stages": {
+    "01_source_verification": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:23:14+03:00",
+      "completed_at": "2026-10-16T03:23:14+03:00",
+      "commands": [],
+      "outputs": [
+        "artifacts\\approved_reference\\PROVENANCE.json"
+      ],
+      "artifact_hashes": {
+        "artifacts\\approved_reference\\PROVENANCE.json": "bdf9e7b2245cfb802b3e0ac2be926f5a1e312f1dfda2cbc3723e7ec814bd823f"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "85 εισαγόμενα αρχεία επαληθεύτηκαν έναντι Phase 2A και μετά την αντιγραφή."
+    },
+    "02_package": {
+      "status": "PASS",
+      "started_at": "2026-10-16T04:09:32+03:00",
+      "completed_at": "2026-10-16T04:09:32+03:00",
+      "commands": [],
+      "outputs": [
+        "pyproject.toml",
+        "requirements.lock",
+        "requirements-dev.lock",
+        "src\\pv_thesis\\cli.py"
+      ],
+      "artifact_hashes": {
+        "pyproject.toml": "70e51ed7a21295fef6859d233a9396a6a34c0091f7e858c0b1271dac3e202232",
+        "requirements.lock": "7cb6b8a2e22d938d338e1ba2fc6cabd49e28ddc6f966364f7e8a4cf51a991d53",
+        "requirements-dev.lock": "215952c1ed41107402837de815313e58fffe12fb5c999c7d8cc21b1fd005fd95",
+        "src\\pv_thesis\\cli.py": "9109248b7d1a9dc3ea3e5ad9b232e5f1f148c7d87dec1c4998f56c2dd7445e8f"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Installable package, pinned dependencies και CLI."
+    },
+    "03_environment": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:23:22+03:00",
+      "completed_at": "2026-10-16T03:29:19+03:00",
+      "commands": [
+        "${USER_HOME}\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -m venv .venv && .venv\\Scripts\\python.exe -m pip install --requirement requirements-dev.lock && .venv\\Scripts\\python.exe -m pip install --editable . --no-deps"
+      ],
+      "outputs": [
+        "logs\\03_environment.log",
+        ".venv\\Scripts\\python.exe"
+      ],
+      "artifact_hashes": {
+        "logs\\03_environment.log": "fffaed5d6f48cff7fccf5e0ac83b1e1a2745041b16d3502cd4567e11b9ce83c5",
+        ".venv\\Scripts\\python.exe": "82264b3fe4248d1ff3564a0296cbb4a266ef968799bd85902ab5eaaf3e17eb62"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Καθαρό pinned Python 3.12.14 περιβάλλον."
+    },
+    "04_cli": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:29:19+03:00",
+      "completed_at": "2026-10-16T03:29:19+03:00",
+      "commands": [],
+      "outputs": [
+        "logs\\doctor.json"
+      ],
+      "artifact_hashes": {
+        "logs\\doctor.json": "e08c4511822659f1c9b2c526b2440fcc1637e07e6cebb73d407e72870400b719"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Doctor και CLI entry point PASS."
+    },
+    "05_frozen": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:29:19+03:00",
+      "completed_at": "2026-10-16T03:29:19+03:00",
+      "commands": [],
+      "outputs": [
+        "outputs\\generated\\frozen-resumable\\run_manifest.json",
+        "logs\\05_frozen.log"
+      ],
+      "artifact_hashes": {
+        "outputs\\generated\\frozen-resumable\\run_manifest.json": "6c81c6f651329555e305615eb386127416e00472f4556d2d15cf52bda7532a06",
+        "logs\\05_frozen.log": "77639f1231968421d84a51d7dfa0b7232e262572d9cb9beac72af3e096f85755"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Frozen scientific reproduction PASS."
+    },
+    "06_tests": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:29:19+03:00",
+      "completed_at": "2026-10-16T03:42:44+03:00",
+      "commands": [],
+      "outputs": [
+        "logs\\06_tests.log"
+      ],
+      "artifact_hashes": {
+        "logs\\06_tests.log": "4f9e25e986370f01d616868fa271b2233fe5849e251800310b6608d433a34462"
+      },
+      "tests_passed": 20,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "20/20 unit, integration και scientific regression tests PASS."
+    },
+    "07_smoke": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:42:44+03:00",
+      "completed_at": "2026-10-16T03:42:44+03:00",
+      "commands": [],
+      "outputs": [
+        "outputs\\generated\\smoke-resumable\\run_manifest.json",
+        "logs\\07_smoke.log"
+      ],
+      "artifact_hashes": {
+        "outputs\\generated\\smoke-resumable\\run_manifest.json": "9efbd21df6516e11d9ff49f8f625beacc0d9d1a7165e92c5138f51a7d8243e1b",
+        "logs\\07_smoke.log": "df1e3cce4da49c96bf9bc12c1dbec8438648f15db4bf04f0cb6b1c93d11901a8"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Πραγματική CPU εκτέλεση Persistence, SARIMA, RF και LSTM v1.1 PASS."
+    },
+    "08_canonical": {
+      "status": "NOT TESTED",
+      "started_at": "2026-10-16T03:49:35+03:00",
+      "completed_at": "2026-10-16T07:59:44+03:00",
+      "commands": [
+        ".venv\\Scripts\\pv-thesis.exe forecasting reproduce --mode canonical --confirm-full-training --output outputs\\generated\\canonical-resumable"
+      ],
+      "outputs": [
+        "outputs\\generated\\canonical-resumable\\canonical_execution.log",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S2__fold4.json",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S3__fold3.json",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S4__fold4.json"
+      ],
+      "artifact_hashes": {
+        "outputs\\generated\\canonical-resumable\\canonical_execution.log": "7aa7a61de599b0eef26c03c3c98a74c3a79f4925ebb9448dad412a065d8d4106",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S2__fold4.json": "23ff67525eabec1d024dee8fe3d96bb81904b7aafd970645e991e48ba87d6878",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S3__fold3.json": "083cadb331432bc756b9b22d56265b03247a7585dae484ed202c5640ff5f568c",
+        "outputs\\generated\\canonical-resumable\\workspace\\pv-thesis\\outputs\\sarima\\_checkpoints\\colorado_9068__S4__fold4.json": "ab0979572007e82b8aff556bc14a9fda97d51813ae3cae86ba756decbcaf4994"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Canonical SARIMA ενεργό χωρίς διπλό process. 16 checkpoints ολοκληρωμένα: Colorado S1–S4, folds 1–4. Τελευταίο checkpoint 06:51:49· συνεχίζει στο S5. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED."
+    },
+    "09_raw": {
+      "status": "NOT TESTED",
+      "started_at": "2026-10-16T03:49:35+03:00",
+      "completed_at": "2026-10-16T07:59:44+03:00",
+      "commands": [
+        ".venv\\Scripts\\python.exe scripts\\raw_preflight.py"
+      ],
+      "outputs": [
+        "logs\\09_raw_preflight.log",
+        "outputs\\generated\\raw-resumable\\raw_preflight.json",
+        "outputs\\generated\\raw-resumable\\raw_canonical_semantic_diff.json"
+      ],
+      "artifact_hashes": {
+        "logs\\09_raw_preflight.log": "ada14ff9955663bf095e0a4feb3bd05bdaba926794f17d8406fad58932f40d69",
+        "outputs\\generated\\raw-resumable\\raw_preflight.json": "ea32d84ecd1aa697e628b5b0ce7ac9401d2188e102898489500523f67e439fb1",
+        "outputs\\generated\\raw-resumable\\raw_canonical_semantic_diff.json": "ab396ff9170246746933876b4324c2160821fbd64d82b5fd19f5dda01beda9a5"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Raw audit PASS: 62 systems, 11 forecasting eligible. Raw-derived canonical 934800x22 είναι σημασιολογικά ακριβώς ίδιο σε keys, dtypes και όλες τις τιμές· διαφορετικό μόνο το binary Parquet serialization SHA-256. Η πλήρης model training εκκρεμεί μετά το canonical run για ελεγχόμενη χρήση πόρων. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED. Η πλήρης εκτέλεση σταμάτησε/δεν συνεχίστηκε μετά τη νέα πολιτική ενοποίησης. FULL EXPERIMENTAL RERUN: NOT TESTED."
+    },
+    "10_reports": {
+      "status": "PASS",
+      "started_at": "2026-10-16T04:08:23+03:00",
+      "completed_at": "2026-10-16T04:08:23+03:00",
+      "commands": [],
+      "outputs": [
+        "reports\\FORECASTING_TEST_REPORT.json",
+        "reports\\FORECASTING_RUN_MANIFEST.json",
+        "reports\\PHASE_2B_FINAL_VERIFICATION.json",
+        "reports\\PHASE_2B_FINAL_SUMMARY_EL.md"
+      ],
+      "artifact_hashes": {
+        "reports\\FORECASTING_TEST_REPORT.json": "d9ada3d51da617e501f7278784838381fdf29de13a634d912f12979a5ae77744",
+        "reports\\FORECASTING_RUN_MANIFEST.json": "f955a64a7659f979468697a72eec6add3808103fbce15a3fa899d1484825d025",
+        "reports\\PHASE_2B_FINAL_VERIFICATION.json": "2c9575ad97fa5d2bc0f39c23ebc99e716ba2fe01800fe8be0b6dc12b0360fa79",
+        "reports\\PHASE_2B_FINAL_SUMMARY_EL.md": "30739dfef695f9628295bb65c66e7a2986054e1db7e1dce2cc180542691423ad"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Οι υποχρεωτικές αναφορές παράχθηκαν με ειλικρινές PARTIAL status και θα αναγεννηθούν μετά τα long runs."
+    },
+    "11_documentation": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:47:13+03:00",
+      "completed_at": "2026-10-16T03:47:13+03:00",
+      "commands": [],
+      "outputs": [
+        "README.md",
+        "docs\\FORECASTING_ENVIRONMENT_EL.md",
+        "docs\\FORECASTING_CLEAN_INSTALL_EL.md",
+        "docs\\FORECASTING_FROZEN_REPRODUCTION_EL.md",
+        "docs\\FORECASTING_CANONICAL_REPRODUCTION_EL.md",
+        "docs\\FORECASTING_RAW_REPRODUCTION_EL.md",
+        "docs\\FORECASTING_SCIENTIFIC_DIFF_EL.md",
+        "docs\\FORECASTING_TRACEABILITY_EL.md",
+        "docs\\FORECASTING_DATA_ACCESS_EL.md",
+        "docs\\TROUBLESHOOTING_EL.md"
+      ],
+      "artifact_hashes": {
+        "README.md": "c2f9281b746d2b4b3fab9099240dccebd4346ba788a3c6654b8be04f6b9ef4fe",
+        "docs\\FORECASTING_ENVIRONMENT_EL.md": "bac346a010f97b186c3f28a5eadebcc3079faace555080a22280a695511de95d",
+        "docs\\FORECASTING_CLEAN_INSTALL_EL.md": "38004c4e8a646eedb9ac1fed6ccae881c22188380d052780bc73e18a22cc836b",
+        "docs\\FORECASTING_FROZEN_REPRODUCTION_EL.md": "a09240ea360379421017007b30d6526d93d3ab58da7e525a38dd579812290ca0",
+        "docs\\FORECASTING_CANONICAL_REPRODUCTION_EL.md": "4b71f4c3bc8b0db8f3c6ac6b285d35468246237bfee664f4860a07ab20020c9e",
+        "docs\\FORECASTING_RAW_REPRODUCTION_EL.md": "fd4ec0d87a164ca7d0540e8af00ea74756af6394292051acf1e722412ce1d351",
+        "docs\\FORECASTING_SCIENTIFIC_DIFF_EL.md": "22620862919f3bd83995e9924073418b5acb561157c19a2b21b188e2142b0593",
+        "docs\\FORECASTING_TRACEABILITY_EL.md": "3ce43c3bdd626810eb8dc0c049cda8836dfbebf4c744b39a881e86507187b3fd",
+        "docs\\FORECASTING_DATA_ACCESS_EL.md": "788e9335c9bbbc58f2b9cebe4a1e840eba372fc418d9f2103bb593d090450e23",
+        "docs\\TROUBLESHOOTING_EL.md": "c4f538e2f0d468aea4bde2c5333555a53a3077b551c88141a0e52a97dc0c2887"
+      },
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Ελληνικό README 17 ενοτήτων και απαιτούμενα τεχνικά έγγραφα."
+    },
+    "12_clean_install": {
+      "status": "PASS",
+      "started_at": "2026-10-16T03:47:13+03:00",
+      "completed_at": "2026-10-16T03:47:13+03:00",
+      "commands": [],
+      "outputs": [
+        ".clean-venv\\Scripts\\python.exe"
+      ],
+      "artifact_hashes": {
+        ".clean-venv\\Scripts\\python.exe": "82264b3fe4248d1ff3564a0296cbb4a266ef968799bd85902ab5eaaf3e17eb62"
+      },
+      "tests_passed": 20,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Νέο .clean-venv: install, doctor, verify και 20/20 tests PASS."
+    },
+    "13_final_validation": {
+      "status": "PASS",
+      "started_at": "2026-10-16T07:56:10+03:00",
+      "completed_at": "2026-10-16T07:59:44+03:00",
+      "commands": [],
+      "outputs": [
+        "README.md",
+        "artifacts/approved_reference/PROVENANCE.json",
+        "artifacts/approved_reference/CONSOLIDATED_BRANCH_IMPORT.json",
+        "outputs/generated/consolidated-frozen/consolidated_frozen_manifest.json",
+        "reports/FINAL_SOFTWARE_VERIFICATION.json",
+        "reports/FINAL_SOFTWARE_REPORT_EL.md",
+        "docs/SCIENTIFIC_RESULTS_MAPPING_EL.md",
+        "docs/DATA_ACCESS_EL.md",
+        "docs/REPRODUCIBILITY_EL.md",
+        "logs/consolidated_verify_all.log",
+        "logs/consolidated_reproduce_all.log",
+        "logs/consolidated_tests.log",
+        "logs/final_clean_install.log"
+      ],
+      "artifact_hashes": {
+        "README.md": "5fdbb369fa8409f817e8130e15d38208d0cf5a8a213504530489f9a8d9baa03a",
+        "artifacts/approved_reference/PROVENANCE.json": "d606cd13639cb6add5d0e93d1318a1db1a0f48c8a264613a826abb6198a29d88",
+        "artifacts/approved_reference/CONSOLIDATED_BRANCH_IMPORT.json": "4079e9cae704c8976c7b19d8ca75e7389615dbd37b5a5d97dff6bfe615b65a58",
+        "outputs/generated/consolidated-frozen/consolidated_frozen_manifest.json": "5ffd92fa98913a1ec996e1b426692d8333ec4765195fd40b40331b13f4f81f25",
+        "reports/FINAL_SOFTWARE_VERIFICATION.json": "9a39e2176c27d532af943ca21deab3d93910454422b94dd04e3a9393355f0102",
+        "reports/FINAL_SOFTWARE_REPORT_EL.md": "87478c36e172287cf726782512dddab61f40e2e2b4c2c2e07aac297c9109b19b",
+        "docs/SCIENTIFIC_RESULTS_MAPPING_EL.md": "1b43cdc5a50b27e3aa9bfdcf11d32c3c6f3658213dd775be3b63216d29d67d79",
+        "docs/DATA_ACCESS_EL.md": "ef87037448f39c1c3286002f03b89f9d78cfcc56f0391e78b7372a3beb46329d",
+        "docs/REPRODUCIBILITY_EL.md": "649697afeb9e0ae96f60776f7c0fb443e095d4d04b81069b0c8a5681430a3e32",
+        "logs/consolidated_verify_all.log": "5610801b765ead6f62731c15128939c5bb4cd2dacb98eb384d3564fb7d4e57f1",
+        "logs/consolidated_reproduce_all.log": "54cc988d9c89253f70a6d4231da3ae2feae7783c83da851684ea1d743a338bdd",
+        "logs/consolidated_tests.log": "9c4770fb79f681a9bf649c3c5a3cf4c9c0e56b1e92e24f55e9115397459be703",
+        "logs/final_clean_install.log": "b9b067441ad24c47544115634dca13e7f297bd3542d2c64d90c13a3ea747a6cc"
+      },
+      "tests_passed": 23,
+      "tests_failed": 0,
+      "blockers": [],
+      "notes_el": "Ενοποιημένο frozen workflow και για τους τρεις κλάδους, clean install και 23/23 tests PASS. Full experimental reruns NOT TESTED."
+    }
+  },
+  "consolidation": {
+    "policy_effective_at": "2026-10-16T07:59:44+03:00",
+    "status": "PASS",
+    "training_performed_after_policy_change": false,
+    "stopped_training_evidence": {
+      "canonical_status": "STOPPED_BY_REVISED_POLICY",
+      "preserved_sarima_checkpoints": 19,
+      "latest_checkpoint": "colorado_9068__S5__fold3.json"
+    },
+    "branches": {
+      "forecasting": {
+        "source": "AVAILABLE",
+        "frozen_outputs": "AVAILABLE",
+        "metric_recomputation": "PASS",
+        "full_rerun": "NOT TESTED"
+      },
+      "physical": {
+        "source": "AVAILABLE",
+        "frozen_outputs": "AVAILABLE",
+        "metric_recomputation": "PASS",
+        "full_rerun": "NOT TESTED"
+      },
+      "parametric": {
+        "source": "AVAILABLE",
+        "frozen_outputs": "AVAILABLE",
+        "metric_recomputation": "PASS",
+        "full_rerun": "NOT TESTED"
+      }
+    },
+    "tests": {
+      "passed": 23,
+      "failed": 0
+    },
+    "clean_environment": "PASS",
+    "git_repository_initialized": true,
+    "github_published": false,
+    "deliverables": [
+      {
+        "path": "README.md",
+        "sha256": "5fdbb369fa8409f817e8130e15d38208d0cf5a8a213504530489f9a8d9baa03a",
+        "size_bytes": 6683
+      },
+      {
+        "path": "artifacts/approved_reference/PROVENANCE.json",
+        "sha256": "d606cd13639cb6add5d0e93d1318a1db1a0f48c8a264613a826abb6198a29d88",
+        "size_bytes": 106172
+      },
+      {
+        "path": "artifacts/approved_reference/CONSOLIDATED_BRANCH_IMPORT.json",
+        "sha256": "4079e9cae704c8976c7b19d8ca75e7389615dbd37b5a5d97dff6bfe615b65a58",
+        "size_bytes": 27436
+      },
+      {
+        "path": "outputs/generated/consolidated-frozen/consolidated_frozen_manifest.json",
+        "sha256": "5ffd92fa98913a1ec996e1b426692d8333ec4765195fd40b40331b13f4f81f25",
+        "size_bytes": 5175
+      },
+      {
+        "path": "reports/FINAL_SOFTWARE_VERIFICATION.json",
+        "sha256": "9a39e2176c27d532af943ca21deab3d93910454422b94dd04e3a9393355f0102",
+        "size_bytes": 10146
+      },
+      {
+        "path": "reports/FINAL_SOFTWARE_REPORT_EL.md",
+        "sha256": "87478c36e172287cf726782512dddab61f40e2e2b4c2c2e07aac297c9109b19b",
+        "size_bytes": 1834
+      },
+      {
+        "path": "docs/SCIENTIFIC_RESULTS_MAPPING_EL.md",
+        "sha256": "1b43cdc5a50b27e3aa9bfdcf11d32c3c6f3658213dd775be3b63216d29d67d79",
+        "size_bytes": 1055
+      },
+      {
+        "path": "docs/DATA_ACCESS_EL.md",
+        "sha256": "ef87037448f39c1c3286002f03b89f9d78cfcc56f0391e78b7372a3beb46329d",
+        "size_bytes": 1115
+      },
+      {
+        "path": "docs/REPRODUCIBILITY_EL.md",
+        "sha256": "649697afeb9e0ae96f60776f7c0fb443e095d4d04b81069b0c8a5681430a3e32",
+        "size_bytes": 726
+      },
+      {
+        "path": "logs/consolidated_verify_all.log",
+        "sha256": "5610801b765ead6f62731c15128939c5bb4cd2dacb98eb384d3564fb7d4e57f1",
+        "size_bytes": 9046
+      },
+      {
+        "path": "logs/consolidated_reproduce_all.log",
+        "sha256": "54cc988d9c89253f70a6d4231da3ae2feae7783c83da851684ea1d743a338bdd",
+        "size_bytes": 6171
+      },
+      {
+        "path": "logs/consolidated_tests.log",
+        "sha256": "9c4770fb79f681a9bf649c3c5a3cf4c9c0e56b1e92e24f55e9115397459be703",
+        "size_bytes": 102
+      },
+      {
+        "path": "logs/final_clean_install.log",
+        "sha256": "b9b067441ad24c47544115634dca13e7f297bd3542d2c64d90c13a3ea747a6cc",
+        "size_bytes": 20487
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-10-16T04:09:13+03:00",
+  "overall_status": "PARTIAL",
+  "criteria": {
+    "A01": {
+      "status": "PASS",
+      "evidence_el": "Εγκαταστάσιμο pyproject και editable install."
+    },
+    "A02": {
+      "status": "PASS",
+      "evidence_el": "Απομονωμένο .venv."
+    },
+    "A03": {
+      "status": "PASS",
+      "evidence_el": "Pinned requirements.lock και requirements-dev.lock."
+    },
+    "A04": {
+      "status": "PASS",
+      "evidence_el": "CLI entry point και help."
+    },
+    "A05": {
+      "status": "PASS",
+      "evidence_el": "Pathlib και PV_THESIS_HOME/PV_THESIS_DATA_DIR."
+    },
+    "A06": {
+      "status": "PASS",
+      "evidence_el": "Αυθεντικός πηγαίος κώδικας με provenance hashes."
+    },
+    "A07": {
+      "status": "PASS",
+      "evidence_el": "Επαναϋπολογισμός από εγκεκριμένες προβλέψεις."
+    },
+    "A08": {
+      "status": "PASS",
+      "evidence_el": "20 επιστημονικοί/λογισμικοί έλεγχοι."
+    },
+    "A09": {
+      "status": "PASS",
+      "evidence_el": "Έλεγχοι information-time και leakage."
+    },
+    "A10": {
+      "status": "PASS",
+      "evidence_el": "Πραγματικό smoke prediction."
+    },
+    "A11": {
+      "status": "PASS",
+      "evidence_el": "Πραγματικό smoke fit/prediction."
+    },
+    "A12": {
+      "status": "PASS",
+      "evidence_el": "Πραγματικό smoke fit/prediction."
+    },
+    "A13": {
+      "status": "PASS",
+      "evidence_el": "Αυθεντικό LSTM v1.1 smoke training."
+    },
+    "A14": {
+      "status": "NOT TESTED",
+      "evidence_el": "Πλήρης canonical εκτέλεση· RUNNING στο progress όταν είναι ενεργή."
+    },
+    "A15": {
+      "status": "NOT TESTED",
+      "evidence_el": "Πλήρης raw εκτέλεση· RUNNING στο progress όταν είναι ενεργή."
+    },
+    "A16": {
+      "status": "PASS",
+      "evidence_el": "Σύγκριση νέων smoke προβλέψεων με frozen."
+    },
+    "A17": {
+      "status": "PASS",
+      "evidence_el": "Ελληνικό README."
+    },
+    "A18": {
+      "status": "PASS",
+      "evidence_el": "Clean-install workflow."
+    },
+    "A19": {
+      "status": "PASS",
+      "evidence_el": "Έλεγχος provenance/ακεραιότητας."
+    },
+    "A20": {
+      "status": "PASS",
+      "evidence_el": "Παραγωγή τελικών reports· η κατάσταση των πειραμάτων δηλώνεται ανά mode."
+    }
+  },
+  "scientific_contract": {
+    "status": "PASS",
+    "observations": 36529,
+    "systems": 11,
+    "physical_sites": 9,
+    "stable_key_duplicates": 0,
+    "headline_regression": [
+      {
+        "model": "rf",
+        "expected_nRMSE_percent": 11.87180843,
+        "computed_nRMSE_percent": 11.871808425389979,
+        "absolute_delta": 4.610020809536763e-09,
+        "status": "PASS"
+      },
+      {
+        "model": "sarima",
+        "expected_nRMSE_percent": 12.35076222,
+        "computed_nRMSE_percent": 12.350762220556271,
+        "absolute_delta": 5.562714733287066e-10,
+        "status": "PASS"
+      },
+      {
+        "model": "lstm",
+        "expected_nRMSE_percent": 13.2290209,
+        "computed_nRMSE_percent": 13.22902090354486,
+        "absolute_delta": 3.5448604052135124e-09,
+        "status": "PASS"
+      },
+      {
+        "model": "persistence",
+        "expected_nRMSE_percent": 14.37215958,
+        "computed_nRMSE_percent": 14.372159579970635,
+        "absolute_delta": 2.936495491212554e-11,
+        "status": "PASS"
+      }
+    ],
+    "scientific_ranking": {
+      "computed": [
+        "rf",
+        "sarima",
+        "lstm",
+        "persistence"
+      ],
+      "expected": [
+        "rf",
+        "sarima",
+        "lstm",
+        "persistence"
+      ],
+      "status": "PASS"
+    },
+    "bootstrap": {
+      "rows": 30,
+      "frozen_rows": 30,
+      "maximum_absolute_differences": {
+        "delta_nRMSE_pp_a_minus_b": 4.440892098500626e-16,
+        "ci95_low": 4.440892098500626e-16,
+        "ci95_high": 4.440892098500626e-16,
+        "two_sided_pvalue": 2.7755575615628914e-17
+      },
+      "status": "PASS"
+    }
+  },
+  "reports": {
+    "test": "reports\\FORECASTING_TEST_REPORT.json",
+    "runs": "reports\\FORECASTING_RUN_MANIFEST.json"
+  }
+}

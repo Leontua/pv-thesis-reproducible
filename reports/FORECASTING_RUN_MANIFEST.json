@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-16T04:09:13+03:00",
+  "modes": {
+    "frozen": {
+      "status": "PASS",
+      "manifest": "outputs\\generated\\frozen-resumable\\run_manifest.json",
+      "manifest_sha256": "6c81c6f651329555e305615eb386127416e00472f4556d2d15cf52bda7532a06",
+      "new_training_performed": false
+    },
+    "smoke": {
+      "status": "PASS",
+      "manifest": "outputs\\generated\\smoke-resumable\\run_manifest.json",
+      "manifest_sha256": "9efbd21df6516e11d9ff49f8f625beacc0d9d1a7165e92c5138f51a7d8243e1b",
+      "new_training_performed": true
+    },
+    "canonical": {
+      "status": "RUNNING",
+      "manifest": "outputs\\generated\\canonical-resumable\\run_manifest.json",
+      "manifest_sha256": "33640a3efcb635553c75be25ff91500b3edb6f6bb26809fd999c8d003fa5a0e2",
+      "new_training_performed": true
+    },
+    "raw": {
+      "status": "RUNNING",
+      "manifest": "outputs\\generated\\raw-resumable\\run_manifest.json",
+      "manifest_sha256": null,
+      "new_training_performed": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-10-16T04:09:13+03:00",
+  "status": "PASS",
+  "passed": 20,
+  "failed": 0,
+  "command": ".venv\\Scripts\\python.exe -m pytest",
+  "evidence": "logs\\06_tests.log",
+  "evidence_sha256": "3ce82ab1ba2010a1da9915b7e6781ae7ea553bd4fa814e91e66f188e7488bd9d"
+}

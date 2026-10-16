@@ -1,0 +1,31 @@
+{
+  "version": "1.1",
+  "model": "per-system direct 168-hour sequence to 24-hour LSTM",
+  "frozen_split_manifest": "outputs/forecasting_experiment/split_manifest.csv",
+  "frozen_split_manifest_sha256": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+  "frozen_windows": "outputs/forecasting_experiment/daily_forecast_windows.parquet",
+  "frozen_windows_sha256": "9e396d63adce552f21cb9271127e5a55b7117d005d42181a5fe2b94c411900ad",
+  "canonical_input": "outputs/forecasting_data/core_hourly_long.parquet",
+  "canonical_input_sha256": "bb336cbf4bf339fbcf7813427a74f6c029af6d1def2a68928038add56778f15a",
+  "sarima_predictions": "outputs/sarima/sarima_test_predictions.parquet",
+  "rf_predictions": "outputs/random_forest/rf_test_predictions.parquet",
+  "random_state": 42,
+  "n_jobs": 4,
+  "sequence_hours": 168,
+  "horizon_hours": 24,
+  "minimum_forecast_coverage": 0.99,
+  "training": {
+    "batch_size": 64,
+    "max_epochs": 100,
+    "patience": 10,
+    "inner_validation_days": 60,
+    "minimum_delta": 0.0000001,
+    "weight_decay": 0.00001,
+    "gradient_clip_norm": 1.0
+  },
+  "candidates": [
+    {"id":"L1","hidden_size":32,"num_layers":1,"dropout":0.0,"learning_rate":0.001},
+    {"id":"L2","hidden_size":64,"num_layers":1,"dropout":0.1,"learning_rate":0.001},
+    {"id":"L3","hidden_size":64,"num_layers":2,"dropout":0.2,"learning_rate":0.0005}
+  ]
+}

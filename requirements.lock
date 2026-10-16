@@ -1,0 +1,14 @@
+# Επιστημονικό περιβάλλον που ανακτήθηκε από το αυθεντικό workspace.
+# Python 3.12.14, Windows 11 x86_64, CPU execution.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.5.2
+statsmodels==0.15.0
+torch==2.5.1
+pyarrow==25.0.1
+matplotlib==3.11.2
+PyYAML==6.0.3
+pvlib==0.13.1
+joblib==1.4.2
+tzdata==2026.5

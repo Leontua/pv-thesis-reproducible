@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pv-thesis-forecasting"
+version = "0.1.0"
+description = "Clean-room package για την αναπαραγωγή της πρόβλεψης Φ/Β παραγωγής της διπλωματικής"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = [
+  "numpy==2.5.3",
+  "pandas==3.0.6",
+  "scipy==1.18.1",
+  "scikit-learn==1.5.2",
+  "statsmodels==0.15.0",
+  "torch==2.5.1",
+  "pyarrow==25.0.1",
+  "matplotlib==3.11.2",
+  "PyYAML==6.0.3",
+  "pvlib==0.13.1",
+  "joblib==1.4.2",
+  "tzdata==2026.5",
+]
+
+[project.scripts]
+pv-thesis = "pv_thesis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [
+  "pv_thesis*",
+  "data_audit*",
+  "forecasting_data*",
+  "forecasting_experiment*",
+  "models*",
+  "analysis*",
+  "physical_benchmark*",
+  "parametric_pv*",
+]
+namespaces = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+  "scientific_regression: έλεγχοι παγωμένων επιστημονικών αποτελεσμάτων",
+  "integration: έλεγχοι ολοκλήρωσης CLI και artifacts",
+  "smoke_training: πραγματική αλλά περιορισμένη εκπαίδευση μοντέλου",
+]

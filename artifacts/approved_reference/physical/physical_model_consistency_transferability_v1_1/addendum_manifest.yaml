@@ -1,0 +1,42 @@
+addendum_id: physical-model-consistency-transferability-addendum-v1.1
+version: '1.1'
+status: FROZEN
+post_processing_only: true
+new_fitting_performed: false
+v1_benchmark_modified: false
+source_benchmark_id: etsidi-six-technology-physical-model-benchmark-v1.0
+source_sha256:
+  etsidi_six_technology_5min.parquet: 53fe111f9bfdfceb31db290c6a023722899358797b47d7f79438b6ef6251fa20
+  locked_module_desoto_parameters.csv: 5b3decdae1572afcd369285847425df3109ea8d05412665fd8b9dba9adad6bc9
+  calibrated_parameters.csv: 27bac7c17d0572b2a5c63999a5352ca603c0e9ebd095f9cf74d52d3ad95cb028
+  day_block_split.csv: 65a58e31895ce6bcdf4be518df13ae558f336b091b9da7c5872da34fb7cfdc53
+  component_and_end_to_end_metrics.csv: 4aee5038a15f3bc6fd4f993319649340e068cf5b412826821403c3bc55f999c7
+systems:
+- T1-S1
+- T1-S2
+- T1-S3
+- T1-S4
+- T1-S5
+- T1-S6
+rows: 323574
+mode_a_available_systems:
+- T1-S1
+- T1-S2
+- T1-S3
+- T1-S5
+- T1-S6
+artifact_sha256:
+  array_normalized_ac_mode_metrics.csv: 05c5a4ef535dac753d93f98608e0ad5e76185a098d0317bbbabcd90973ea3294
+  consistency_transferability_summary.md: 27785d1374a4450461213c91684ccf2c4b57353ff5a80fa71dd17dcba3a887be
+  dc_factor_stability_by_irradiance.csv: 3066bd8cca484f9f6a7b0358f488342fc70a164322f062484f175cb14749e16f
+  dc_factor_stability_by_month.csv: ebfd355bf0e9969fa9d5ea784cf3c356c670bc115e2514a8f6ab72106eaa716b
+  dc_factor_stability_by_split.csv: 46044ebe663945730494e4aed92ae4ee2e4883797170a71bf29b7484d4e644ba
+  dc_factor_stability_summary.csv: 04ee6453e750b82d28f698e014adcaa4c4f4165abb2dde9151693ea0993dd77a
+  mode_a_predictions.parquet: e7b26db699d288e445e44b09df45eb9e0488bd68649001b8815804b2db78222b
+  transferability_flags.csv: c7f3f0f4d5cd04eb97faeb6ec4427dc17ed2d08a3def33f519a329205a98652d
+  voltage_current_error_decomposition.csv: 083b5312a8985d769c62fff223364324aacbac454881aa1e0f16f4234f2c9849
+figure_sha256:
+  01_mode_a_vs_b_test_nrmse.png: 14e3164aea938b1106a0a6eafb498d9d6447288f21ec3e25fc952b582242a91d
+  02_voltage_current_error_decomposition.png: 2eae0e91f840bafdb9a4b0298238d50554ea1256c215ef193d123fbd7f7db9e4
+  03_dc_factor_split_stability.png: 24823c6c099da4462369b8d0c9c6339a6b716784c56182602037f2af6ef0e21c
+  04_transferability_matrix.png: a0332a3470ac847bc636b380119eb198007455c084583cd3d5efccfde260d497

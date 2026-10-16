@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "model": "pure_univariate_SARIMA",
+  "library": "statsmodels.tsa.statespace.sarimax.SARIMAX",
+  "seasonal_period": 24,
+  "frozen_split_manifest": "outputs/forecasting_experiment/split_manifest.csv",
+  "frozen_split_manifest_sha256": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+  "frozen_windows": "outputs/forecasting_experiment/daily_forecast_windows.parquet",
+  "frozen_persistence_predictions": "outputs/forecasting_experiment/persistence_predictions.parquet",
+  "selection_metric": "mean_cv_nRMSE_percent",
+  "tie_break": ["mean_cv_nMAE_percent", "parameter_count"],
+  "minimum_forecast_coverage": 0.99,
+  "fit": {"method": "lbfgs", "maxiter": 200, "disp": false, "enforce_stationarity": true, "enforce_invertibility": true, "simple_differencing": false},
+  "rolling": {"refit_each_day": false, "state_update": "append(refit=False)", "horizon_hours": 24},
+  "postprocessing": {"lower_clip": 0.0, "upper_clip": null, "nighttime_zero": true},
+  "candidates": [
+    {"id": "S1", "order": [1,0,0], "seasonal_order": [1,0,0,24], "trend": "c", "parameter_count": 4},
+    {"id": "S2", "order": [1,0,1], "seasonal_order": [1,0,1,24], "trend": "c", "parameter_count": 6},
+    {"id": "S3", "order": [1,0,1], "seasonal_order": [1,1,1,24], "trend": "n", "parameter_count": 5},
+    {"id": "S4", "order": [1,1,1], "seasonal_order": [1,0,1,24], "trend": "n", "parameter_count": 5},
+    {"id": "S5", "order": [1,1,1], "seasonal_order": [1,1,1,24], "trend": "n", "parameter_count": 5}
+  ],
+  "representative_systems": ["colorado_9068", "sma_20_solarpark_nottuln", "dkasc_site_7"]
+}

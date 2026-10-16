@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checks": {
+    "exactly_144_scenarios": true,
+    "six_technologies": true,
+    "four_capacities": true,
+    "six_climates": true,
+    "full_factorial_unique": true,
+    "hourly_8760_per_scenario": true,
+    "fixed_tilt_30": true,
+    "equator_facing": true,
+    "fixed_dc_ac_1_20": true,
+    "no_etsidi_empirical_scalar_flag": true,
+    "no_calibrated_parameter_input": true,
+    "common_standard_loss_14pct": true,
+    "pvgis_sarah3_all_climates": true,
+    "pvgis_raw_hashes_match": true,
+    "annual_specific_yield_recomputed": true,
+    "annual_clipping_recomputed": true,
+    "capacity_scale_invariance": true,
+    "interaction_outputs_complete": true,
+    "config_prohibits_empirical_scalars": true
+  },
+  "hash_checks": {
+    "figures/parametric_pv_study_v1_0/01_specific_yield_heatmap.png": true,
+    "figures/parametric_pv_study_v1_0/02_thermal_loss_heatmap.png": true,
+    "figures/parametric_pv_study_v1_0/03_clipping_heatmap.png": true,
+    "figures/parametric_pv_study_v1_0/04_specific_yield_interaction.png": true,
+    "figures/parametric_pv_study_v1_0/05_capacity_scale_invariance.png": true,
+    "outputs/parametric_pv_study_v1_0/annual_scenario_metrics.csv": true,
+    "outputs/parametric_pv_study_v1_0/annual_scenario_metrics.parquet": true,
+    "outputs/parametric_pv_study_v1_0/capacity_scale_invariance.csv": true,
+    "outputs/parametric_pv_study_v1_0/factorial_effects.csv": true,
+    "outputs/parametric_pv_study_v1_0/hourly_scenario_outputs.parquet": true,
+    "outputs/parametric_pv_study_v1_0/interaction_variance_decomposition.csv": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_poa_weather.parquet": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_provenance.csv": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Aw.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/BSk.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/BWh.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfa.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfb.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_raw/Csa.json": true,
+    "outputs/parametric_pv_study_v1_0/pvgis_tmy_selected_months.csv": true,
+    "outputs/parametric_pv_study_v1_0/scenario_registry.csv": true,
+    "outputs/parametric_pv_study_v1_0/study_summary.md": true,
+    "outputs/parametric_pv_study_v1_0/technology_climate_summary.csv": true,
+    "outputs/parametric_pv_study_v1_0/technology_parameter_archetypes.csv": true
+  },
+  "scenario_count": 144,
+  "hourly_row_count": 1261440,
+  "specific_yield_range_kwh_per_kwp": [
+    1001.7067676457308,
+    2079.514617352517
+  ],
+  "thermal_loss_range_pct": [
+    0.1882417096854915,
+    12.311073995349584
+  ],
+  "clipping_loss_range_pct": [
+    0.0,
+    0.0903121402074903
+  ]
+}

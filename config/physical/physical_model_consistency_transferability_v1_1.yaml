@@ -1,0 +1,27 @@
+version: "1.1"
+addendum_id: "physical-model-consistency-transferability-addendum-v1.1"
+source_benchmark_id: "etsidi-six-technology-physical-model-benchmark-v1.0"
+source_dir: "outputs/etsidi_physical_benchmark_v1_0"
+source_config: "config/etsidi_physical_benchmark_v1_0.yaml"
+output_dir: "outputs/physical_model_consistency_transferability_v1_1"
+figure_dir: "figures/physical_model_consistency_transferability_v1_1"
+no_new_fitting: true
+mode_a:
+  description: "Measured module temperature passed through frozen De Soto, DC retention and PVWatts parameters"
+  common_mask_comparison: true
+diagnostic_stability:
+  minimum_raw_dc_w: 50.0
+  stable_relative_range_threshold: 0.10
+  caution_relative_range_threshold: 0.20
+  irradiance_bins_wm2: [20, 200, 400, 600, 800, 1000, 1400]
+transferability:
+  array_inverter_ratio_nominal_band: [0.80, 1.20]
+  mode_disagreement_nrmse_pp_threshold: 2.0
+  direct_transfer_outside_observed_system: false
+  cross_technology_transfer: false
+frozen_source_sha256:
+  etsidi_six_technology_5min.parquet: "53fe111f9bfdfceb31db290c6a023722899358797b47d7f79438b6ef6251fa20"
+  locked_module_desoto_parameters.csv: "5b3decdae1572afcd369285847425df3109ea8d05412665fd8b9dba9adad6bc9"
+  calibrated_parameters.csv: "27bac7c17d0572b2a5c63999a5352ca603c0e9ebd095f9cf74d52d3ad95cb028"
+  day_block_split.csv: "65a58e31895ce6bcdf4be518df13ae558f336b091b9da7c5872da34fb7cfdc53"
+  component_and_end_to_end_metrics.csv: "4aee5038a15f3bc6fd4f993319649340e068cf5b412826821403c3bc55f999c7"

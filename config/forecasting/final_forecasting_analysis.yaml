@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "status": "FROZEN_POST_PROCESSING_ONLY",
+  "random_seed": 20261006,
+  "bootstrap_replicates": 10000,
+  "moving_block_days": 7,
+  "confidence_level": 0.95,
+  "common_mask_rows": 36529,
+  "prediction_sources": {
+    "persistence": {
+      "path": "outputs/forecasting_experiment/persistence_predictions.parquet",
+      "sha256": "db8fc45ecb7200939e083b2135cd97afd7c18beb3ff3cdb91e0eaa8952b0b447",
+      "column": "persistence_pu"
+    },
+    "sarima": {
+      "path": "outputs/sarima/sarima_test_predictions.parquet",
+      "sha256": "8f90ae1d2779cd52a1747b1b844f296264dd9179a73d8d985653e945cb285f8d",
+      "column": "sarima_pu"
+    },
+    "rf": {
+      "path": "outputs/random_forest/rf_test_predictions.parquet",
+      "sha256": "49488e5e7d774b13aecfe648b4ca74e356749d366aa5c7396d936b71b5a17395",
+      "column": "rf_pu"
+    },
+    "lstm": {
+      "path": "outputs/lstm_v1_1/lstm_test_predictions.parquet",
+      "sha256": "256ab18e253f29ceed15b8f29866f1f040e1772742ce68e4eb805f04aa898e20",
+      "column": "lstm_pu"
+    }
+  },
+  "comparisons": [
+    {"id": "sarima_minus_persistence", "model_a": "sarima", "model_b": "persistence"},
+    {"id": "rf_minus_sarima", "model_a": "rf", "model_b": "sarima"},
+    {"id": "lstm_minus_rf", "model_a": "lstm", "model_b": "rf"}
+  ],
+  "season_definition": {
+    "DJF": [12, 1, 2],
+    "MAM": [3, 4, 5],
+    "JJA": [6, 7, 8],
+    "SON": [9, 10, 11]
+  }
+}
