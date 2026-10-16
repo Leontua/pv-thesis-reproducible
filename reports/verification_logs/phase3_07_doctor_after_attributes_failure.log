@@ -1,0 +1,350 @@
+CLEAN_CLONE=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r3
+HEAD=1ef1f4b204655c9ef2f504d177cd143e2f551eb3
+COMMAND=.\.venv\Scripts\pv-thesis.exe doctor
+
+{
+  "status": "FAIL",
+  "python": {
+    "required": "3.12.x",
+    "actual": "3.12.14",
+    "executable": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\.venv\\Scripts\\python.exe",
+    "status": "PASS"
+  },
+  "operating_system": {
+    "tested_family": "Windows 11 x86_64",
+    "actual": "Windows-11-10.0.26200-SP0",
+    "status": "PASS"
+  },
+  "execution_device": {
+    "required": "CPU",
+    "cuda_required": false,
+    "status": "PASS",
+    "torch": {
+      "runtime_version": "2.5.1+cpu",
+      "cuda_available": false
+    }
+  },
+  "dependencies": [
+    {
+      "package": "numpy",
+      "expected": "2.5.3",
+      "actual": "2.5.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pandas",
+      "expected": "3.0.6",
+      "actual": "3.0.6",
+      "status": "PASS"
+    },
+    {
+      "package": "scipy",
+      "expected": "1.18.1",
+      "actual": "1.18.1",
+      "status": "PASS"
+    },
+    {
+      "package": "scikit-learn",
+      "expected": "1.5.2",
+      "actual": "1.5.2",
+      "status": "PASS"
+    },
+    {
+      "package": "statsmodels",
+      "expected": "0.15.0",
+      "actual": "0.15.0",
+      "status": "PASS"
+    },
+    {
+      "package": "torch",
+      "expected": "2.5.1",
+      "actual": "2.5.1",
+      "status": "PASS"
+    },
+    {
+      "package": "pyarrow",
+      "expected": "25.0.1",
+      "actual": "25.0.1",
+      "status": "PASS"
+    },
+    {
+      "package": "matplotlib",
+      "expected": "3.11.2",
+      "actual": "3.11.2",
+      "status": "PASS"
+    },
+    {
+      "package": "PyYAML",
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pvlib",
+      "expected": "0.13.1",
+      "actual": "0.13.1",
+      "status": "PASS"
+    },
+    {
+      "package": "joblib",
+      "expected": "1.4.2",
+      "actual": "1.4.2",
+      "status": "PASS"
+    }
+  ],
+  "provenance_files_checked": 156,
+  "provenance_failures": [
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\sarima\\sarima_selected_orders.csv",
+      "expected_sha256": "189a05b8fd217eba444a80e949dd7baf5d8a89b17115979026f5223d3d6c62a5",
+      "actual_sha256": "59e6d9dd0e37e2f29b671c4aeffa6bc252dab5fb0b06913b2ce38f0c4dd415ca",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\random_forest\\rf_selected_params.csv",
+      "expected_sha256": "376c264c889645ae92d43a0e4346967501e3897f7de7b6bde032ee5ede3cc49e",
+      "actual_sha256": "ad6c482c1d0ceb09e376011371cadc5c9e09c31993361f1b03569a6f24fe7b8d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\lstm_v1_1\\lstm_selected_params.csv",
+      "expected_sha256": "7b4c7af66ae470351c973b2b2bcf971ea952f96045101070e3c6e7dacbebf361",
+      "actual_sha256": "d80f0c2b1677e4db2b928634bc9b28244a6ad6b6ed39be9eb8786508855f1519",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\lstm_v1_1\\lstm_run_manifest.yaml",
+      "expected_sha256": "f095afe4b18431cee7640e3cc95e8b33dd3eccc9623cf0427af09f6126a2d68b",
+      "actual_sha256": "15287fd4faa2ebdc7005703c470f83c4834251397661230423f07c90e49fb207",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\final_forecasting_analysis\\metrics_by_site.csv",
+      "expected_sha256": "e8f8db21d16512dcca97203292401b4e4c327fae2020d5f04a4845a5aa5a302c",
+      "actual_sha256": "7d005a14175461999f8d871d4398613308150deeda49412f3356a500fa078063",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\final_forecasting_analysis\\metrics_site_macro.csv",
+      "expected_sha256": "374e90ea7e07fbc417442912b13dac4e66b46913681a54f1d349f6a3296eed37",
+      "actual_sha256": "3aeb77a694cddea81969ad7399043968a00e48e51f70fa6b13d899208a34d249",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\final_forecasting_analysis\\paired_bootstrap_summary.csv",
+      "expected_sha256": "e120f3a9293a496af9d15706aac610863b0982e5447eb7f40430c817ee1b5915",
+      "actual_sha256": "377b08abaa52e5f3c11896ecea46c0844294f4d11394008a00d65f238b84ae85",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\benchmark_manifest.yaml",
+      "expected_sha256": "d88029d3254e50f047757ed236c4089ac3b5650d3eb57966ffd0fc40eddb56e0",
+      "actual_sha256": "ab721fb731fb703f6ae9df72d6fd3f24d4a9b6ab4cf14005e90ff316fcaeb120",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\benchmark_summary.md",
+      "expected_sha256": "de388eb287118e97de988829ca03be409a1c954fd38eac2c74b95df2d3ab3ba7",
+      "actual_sha256": "3a73b385af6c3affb00e90b6c1d417ed11ac204ab3167495b57f42dfee476de8",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\calibrated_parameters.csv",
+      "expected_sha256": "27bac7c17d0572b2a5c63999a5352ca603c0e9ebd095f9cf74d52d3ad95cb028",
+      "actual_sha256": "81db4c69e670496ddac8aa012578d889b20cefd6db3499a306060e32228fbddb",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\component_and_end_to_end_metrics.csv",
+      "expected_sha256": "4aee5038a15f3bc6fd4f993319649340e068cf5b412826821403c3bc55f999c7",
+      "actual_sha256": "4087f1b534ec3a528fb9f167ae67102fc0a99aa0639d8a2a7278043892febac2",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\day_block_split.csv",
+      "expected_sha256": "65a58e31895ce6bcdf4be518df13ae558f336b091b9da7c5872da34fb7cfdc53",
+      "actual_sha256": "23661980646309ae3d8f5f73c5af0808765050c5bccd55beb8f79900d76b5449",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\etsidi_physical_benchmark_v1_0\\locked_module_desoto_parameters.csv",
+      "expected_sha256": "5b3decdae1572afcd369285847425df3109ea8d05412665fd8b9dba9adad6bc9",
+      "actual_sha256": "efdec14f6e8040db002eb47f9ea0f9179a432a8a8f6dfc34dde1c31c4841bc6e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\addendum_manifest.yaml",
+      "expected_sha256": "7091b1bc11365532666cfdb02e55f98514f0993dbb35a8055ead79282c079372",
+      "actual_sha256": "b0618891d9ac1956662e9b98ebfe5fb841fee3b8cdc81b544e9c3091c300b476",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\array_normalized_ac_mode_metrics.csv",
+      "expected_sha256": "05c5a4ef535dac753d93f98608e0ad5e76185a098d0317bbbabcd90973ea3294",
+      "actual_sha256": "d963abc4b874d63919eda724c179003bcb5f1fa2bfde162835bcb1382e75a038",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\consistency_transferability_summary.md",
+      "expected_sha256": "27785d1374a4450461213c91684ccf2c4b57353ff5a80fa71dd17dcba3a887be",
+      "actual_sha256": "8836e38aded8dcbc993ac4f63db0bea843a327c96999dbf2dee9630817329f40",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_irradiance.csv",
+      "expected_sha256": "3066bd8cca484f9f6a7b0358f488342fc70a164322f062484f175cb14749e16f",
+      "actual_sha256": "d4b569a532fe9178fd345b5ebeba437e88abc9ddc5a7b6cf63acc0f00a1410e3",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_month.csv",
+      "expected_sha256": "ebfd355bf0e9969fa9d5ea784cf3c356c670bc115e2514a8f6ab72106eaa716b",
+      "actual_sha256": "78d8c0ae96867881ccd0c66338d1e96c21e4cd56c8ec0c67c5597cbd363f009a",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_by_split.csv",
+      "expected_sha256": "46044ebe663945730494e4aed92ae4ee2e4883797170a71bf29b7484d4e644ba",
+      "actual_sha256": "8443823731112201d93810ef0608c30b31703ee5b40a757568242107b396c7fa",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\dc_factor_stability_summary.csv",
+      "expected_sha256": "04ee6453e750b82d28f698e014adcaa4c4f4165abb2dde9151693ea0993dd77a",
+      "actual_sha256": "f8ae9f42900c2f5735e9447d0bb1bea01cab46f61859ced60e0547f04184f980",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\transferability_flags.csv",
+      "expected_sha256": "c7f3f0f4d5cd04eb97faeb6ec4427dc17ed2d08a3def33f519a329205a98652d",
+      "actual_sha256": "611f599f24dffd97bc6545ef96cdea7dc7b5c6ff6ee6754ce726ba9a67f24e3e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\physical\\physical_model_consistency_transferability_v1_1\\voltage_current_error_decomposition.csv",
+      "expected_sha256": "083b5312a8985d769c62fff223364324aacbac454881aa1e0f16f4234f2c9849",
+      "actual_sha256": "05712a84c255eb6b529322db178838dafc0a8a5c81c6e519e229a95d017b4890",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\annual_scenario_metrics.csv",
+      "expected_sha256": "3ce2ceca94f518cf80e87a794727a3c57239837bc53dbd61025b629e4b44029a",
+      "actual_sha256": "b8fac162e51d783ebf5b492583261b121b03d796e79b6abc8a879c036a940e5d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\artifact_sha256.csv",
+      "expected_sha256": "5a6c54fa295d21f0d837a1d7494d51137fb8924b5fb5f1f1185b97d95526b37f",
+      "actual_sha256": "922126e76b71e68c733577cee9498abe4364f6431e9843fa60c5b3fa322e7c53",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\capacity_scale_invariance.csv",
+      "expected_sha256": "8afdfa3da0a286ccfe74512ea987fb305afe40f046d0814cdcc5ff753811ca18",
+      "actual_sha256": "7d43c38843a901d368c370ceea9824dc1bd8652b69d328cd12b74214dbb5294c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\factorial_effects.csv",
+      "expected_sha256": "d585903e0f94acaa8cbdd4298657718124932b023b85529b2fae430006f7fadf",
+      "actual_sha256": "737cc81facf665ad2a144d697e8c5021e209919d52980dac3405f03bcdbed9f5",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\interaction_variance_decomposition.csv",
+      "expected_sha256": "894ead5081e10f745da37944be264bd57b46c47564c9a0ce0fac6f87b8303b88",
+      "actual_sha256": "871e7024f796c6ecd8d6417126297cb417bb5999b4702610ec13195ae18387ce",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_provenance.csv",
+      "expected_sha256": "5f5a6c6b63c0e616f6ecf6d931320474fc09eb71eada0a49d08487ae78212058",
+      "actual_sha256": "46b8c770fe4caed71299c35bd2650a8e14682471e3edab7354cc2526928307c4",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Aw.json",
+      "expected_sha256": "0079deeda65beac52f77aa085062bc31045c5195d01f832602da38d929b7fe21",
+      "actual_sha256": "7a070437d38c404a5b6a9f9f2f26ecfafb167fde29e86a778c54e5855ebe0fcb",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\BSk.json",
+      "expected_sha256": "f2d25e86ddf5702ceeeed8bbced86bce18a8123a2d9c32c6dd70c9c782fbf571",
+      "actual_sha256": "6513b732b8bc15a66f5da0eb22b9b5ff10f8c99d4feec0eeca529f4f248bc0dd",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\BWh.json",
+      "expected_sha256": "e82faa8ba2d95cf7e3d3b0824298adc90f5257d98e54ae9a638c18954a4e529d",
+      "actual_sha256": "e8ab5477dc3c029e9616ab5a10c36a0bb735133f654bdf4eae11ae7275c5e61a",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Cfa.json",
+      "expected_sha256": "16ac9c728121b1ecf2fb78c11c73da6ab6f5f194dca419833d10713d007eb554",
+      "actual_sha256": "062960d02409ffab1f9fe13fb1dea442b14be360f476bf92b965ced9ae6fe27c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Cfb.json",
+      "expected_sha256": "1a70d1a74f4f948a8e95aa9f5afed2702a2fb950603e9009b7aa13b587982b29",
+      "actual_sha256": "c45b32fcf249e687e196e7e8dde797a2a37dfcaa95e32d1ab99d91ef8e38c813",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_raw\\Csa.json",
+      "expected_sha256": "2fc7e84ccceffaf5bdbc0b4014eff28c01f352486ef305286158adf6dcdd3710",
+      "actual_sha256": "4ad702f79070d31832b4f64f6b79486815b981663b93d16261c38442a33093e7",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\pvgis_tmy_selected_months.csv",
+      "expected_sha256": "745ad5a1ed32fe8dfa3634d937cffe2ac2107993658ea3905f44bb5e2057321f",
+      "actual_sha256": "fb3223911c9705b30b1ad4055209a6d790d06a4895b7c5ed9826ae0aff3aa7c7",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\scenario_registry.csv",
+      "expected_sha256": "7faf72f1f49519c3faa4dfc17f4a8bd3e268c709bedaeb11f68d38fb0c361d8c",
+      "actual_sha256": "744b3086bc0cb06511131321a6990f5c9e359fd06179e39bdddbc99721547f9d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\study_manifest.yaml",
+      "expected_sha256": "44b7f7ce835ac890ecc02aee95d4d59e20b7512d012a98ba4eeb6089ac4fda7b",
+      "actual_sha256": "75e187f2d7349e33f49a0d0a95d320cb8117d66ad588c61a41ad4180037b9a5e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\study_summary.md",
+      "expected_sha256": "9c897b41259e53e94c7607bdabcf619a8868ce0719b965606300ef9654addfd1",
+      "actual_sha256": "67cc05a26718268614e862545848e91aaeaf429231328ed1180a952f5a777bbd",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\technology_climate_summary.csv",
+      "expected_sha256": "29b9883b2906510dd213857f7856d7586d3c73f7520bcb70b6f0b9815a8cdb77",
+      "actual_sha256": "29ea369a2630ad771b13f58f9a08cb564ba4be6cff592fc8f065b9b64300758b",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\technology_parameter_archetypes.csv",
+      "expected_sha256": "5f9f4aead2a92c024d1b86385d790f7cdd7aedcfd6b2719ff66b556ee7414ee4",
+      "actual_sha256": "34998e7922785c530a9bcc3c6511d405750d01a437b120653771fda6691265f4",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r3\\artifacts\\approved_reference\\parametric\\parametric_pv_study_v1_0\\verification_report.json",
+      "expected_sha256": "cdc3a3e1cce33896c8add9eecc2fc9425e3f31423b4e82888fa646c3de89663f",
+      "actual_sha256": "9c78896dc23f99226c0409da25e9d723b2ee0e1c4366ef39ef91a0e71c97409b",
+      "status": "FAIL"
+    }
+  ],
+  "private_data": {
+    "environment_variable": "PV_THESIS_DATA_DIR",
+    "configured": false,
+    "status": "BLOCKED"
+  }
+}
+EXIT_CODE=1

@@ -1,0 +1,10 @@
+SOURCE=C:\Διπλωματικη\proccess\pv-thesis-reproducible
+TARGET=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r4
+HEAD=f35baa8eec383c90ef49b9f5c91432c1605d9cb2
+COMMAND=git clone --no-local <source> <target>
+Cloning into 'C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r4'...
+
+CLONE_HEAD=f35baa8eec383c90ef49b9f5c91432c1605d9cb2
+CLONE_STATUS=
+CLONE_FILES=220
+ATTR=artifacts/approved_reference/sarima/sarima_selected_orders.csv: text: unset

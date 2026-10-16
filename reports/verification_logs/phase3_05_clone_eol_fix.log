@@ -1,0 +1,10 @@
+SOURCE=C:\Διπλωματικη\proccess\pv-thesis-reproducible
+TARGET=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r3
+HEAD=1ef1f4b204655c9ef2f504d177cd143e2f551eb3
+COMMAND=git clone --no-local <source> <target>
+Cloning into 'C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r3'...
+
+CLONE_HEAD=1ef1f4b204655c9ef2f504d177cd143e2f551eb3
+CLONE_STATUS=
+CLONE_FILES=220
+ATTR=src/data_audit/__init__.py: text: unset

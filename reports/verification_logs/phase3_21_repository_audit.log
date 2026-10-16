@@ -1,0 +1,127 @@
+COMMAND SET: independent repository release audit
+TIMESTAMP=2026-10-16T12:42:49.4757359+03:00
+HEAD=52f0b45b4b0e5c5ebb831c21fcc5b090bc1c5111
+--- COMMITS ---
+52f0b45 (HEAD -> main) Keep unified verifier output machine-readable
+f35baa8 Store provenance-tracked files without EOL normalization
+1ef1f4b Preserve provenance bytes across Git checkouts
+443f891 Document explicit Python 3.12 clean-install bootstrap
+7ff1210 Initial reproducible thesis software snapshot
+--- STATUS ---
+## main
+?? reports/verification_logs/
+--- REMOTES ---
+(none)
+--- GIT FSCK ---
+(no findings)
+FSCK_EXIT_CODE=0
+--- TRACKED FILES ---
+TRACKED_COUNT=220
+TRACKED_BYTES=155517866
+LARGEST_25
+25,074 MiB`tartifacts/approved_reference/forecasting_data/core_hourly_long.parquet
+20,891 MiB`tartifacts/approved_reference/forecasting_experiment/daily_forecast_windows.parquet
+20,302 MiB`tartifacts/approved_reference/physical/etsidi_physical_benchmark_v1_0/etsidi_six_technology_5min.parquet
+18,606 MiB`tartifacts/approved_reference/physical/physical_model_consistency_transferability_v1_1/mode_a_predictions.parquet
+17,188 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/hourly_scenario_outputs.parquet
+14,556 MiB`tartifacts/approved_reference/physical/etsidi_physical_benchmark_v1_0/physical_model_predictions.parquet
+3,093 MiB`tartifacts/approved_reference/final_forecasting_analysis/aligned_common_mask_predictions.parquet
+2,854 MiB`tartifacts/approved_reference/sarima/sarima_test_predictions.parquet
+2,542 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_poa_weather.parquet
+2,386 MiB`tartifacts/approved_reference/forecasting_experiment/persistence_predictions.parquet
+2,285 MiB`tartifacts/approved_reference/lstm_v1_1/lstm_test_predictions.parquet
+2,266 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/Csa.json
+2,265 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfa.json
+2,264 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/Cfb.json
+2,264 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/BWh.json
+2,263 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/BSk.json
+2,262 MiB`tartifacts/approved_reference/parametric/parametric_pv_study_v1_0/pvgis_tmy_raw/Aw.json
+2,152 MiB`tartifacts/approved_reference/random_forest/rf_test_predictions.parquet
+0,417 MiB`tartifacts/approved_reference/physical/figures/etsidi_physical_benchmark_v1_0/03_dc_ac_test_parity.png
+0,289 MiB`tartifacts/approved_reference/physical/figures/etsidi_physical_benchmark_v1_0/02_faiman_test_parity.png
+0,277 MiB`tartifacts/approved_reference/physical/figures/etsidi_physical_benchmark_v1_0/05_representative_test_days.png
+0,129 MiB`tartifacts/approved_reference/parametric/figures/parametric_pv_study_v1_0/01_specific_yield_heatmap.png
+0,122 MiB`tartifacts/approved_reference/parametric/figures/parametric_pv_study_v1_0/02_thermal_loss_heatmap.png
+0,118 MiB`tartifacts/approved_reference/parametric/figures/parametric_pv_study_v1_0/04_specific_yield_interaction.png
+0,101 MiB`tartifacts/approved_reference/PROVENANCE.json
+FILES_OVER_50_MIB=0
+FILES_OVER_100_MIB=0
+--- GIT OBJECTS ---
+count: 353
+size: 118.98 MiB
+in-pack: 0
+packs: 0
+size-pack: 0 bytes
+prune-packable: 0
+garbage: 0
+size-garbage: 0 bytes
+--- GIT LFS ---
+git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384)
+--- LICENSE FILES ---
+(none)
+--- IGNORED TOP-LEVEL/RUN ARTIFACTS ---
+!! .clean-venv/
+!! .pytest_cache/
+!! .venv/
+!! logs/03_environment.log
+!! logs/05_frozen.log
+!! logs/06_tests.log
+!! logs/07_smoke.log
+!! logs/08_canonical.log
+!! logs/09_raw_preflight.log
+!! logs/10_reports.log
+!! logs/consolidated_install.log
+!! logs/consolidated_reproduce_all.log
+!! logs/consolidated_tests.log
+!! logs/consolidated_verify_all.log
+!! logs/doctor.json
+!! logs/final_clean_install.log
+!! logs/final_doctor.log
+!! logs/final_refresh_install.log
+!! logs/final_report.log
+!! logs/final_software_report.log
+!! outputs/generated/canonical-resumable/
+!! outputs/generated/consolidated-frozen/
+!! outputs/generated/frozen-resumable/
+!! outputs/generated/raw-resumable/
+!! outputs/generated/smoke-resumable/
+!! scripts/__pycache__/
+!! src/analysis/final_forecasting/__pycache__/
+!! src/data_audit/__pycache__/
+!! src/forecasting_data/__pycache__/
+!! src/forecasting_experiment/__pycache__/
+!! src/models/lstm_baseline/__pycache__/
+!! src/models/random_forest/__pycache__/
+!! src/models/sarima/__pycache__/
+!! src/physical_benchmark/__pycache__/
+!! src/pv_thesis/__pycache__/
+!! src/pv_thesis_forecasting.egg-info/
+!! tests/__pycache__/
+!! tests/integration/__pycache__/
+!! tests/scientific_regression/__pycache__/
+!! tests/unit/__pycache__/
+--- SECRET PATTERN SCAN (TEXT) ---
+SECRET_MATCHES=0
+--- EMAIL SCAN (TEXT) ---
+EMAIL_MATCHES=0
+--- ABSOLUTE PATH SCAN (TEXT) ---
+ABSOLUTE_PATH_MATCHES=5
+README.md:30:$Python312 = 'C:\Path\To\Python312\python.exe'
+artifacts/approved_reference/PROVENANCE.json:5:  "phase_2a_manifest": "C:\\Διπλωματικη\\proccess\\thesis_repository_audit\\phase_2a_recovery\\RECOVERY_MANIFEST.json",
+docs/ENVIRONMENT_EL.md:25:$Python312 = 'C:\Path\To\Python312\python.exe'
+docs/FORECASTING_CLEAN_INSTALL_EL.md:6:$Python312 = 'C:\Path\To\Python312\python.exe'
+docs/FORECASTING_RAW_REPRODUCTION_EL.md:6:$env:PV_THESIS_DATA_DIR = 'D:\private\pv-forecasting-data'
+--- NETWORK-CAPABLE SOURCE REFERENCES ---
+NETWORK_REFERENCE_MATCHES=12
+src/data_audit/report.py:92:        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
+src/parametric_pv/pipeline.py:62:            response = requests.get(cfg["endpoint"], params=params, timeout=int(cfg["timeout_seconds"]))
+src/parametric_pv/pipeline.py:223:    raw_dir = output / "pvgis_tmy_raw"; raw_dir.mkdir(exist_ok=True)
+src/parametric_pv/pipeline.py:235:    pvgis_provenance = []
+src/parametric_pv/pipeline.py:237:        payload, raw_path = fetch_tmy(climate, site, cfg["pvgis"], raw_dir)
+src/parametric_pv/pipeline.py:250:        pvgis_provenance.append({
+src/parametric_pv/pipeline.py:263:    weather.to_parquet(output / "pvgis_tmy_poa_weather.parquet", index=False)
+src/parametric_pv/pipeline.py:264:    pd.concat(month_tables, ignore_index=True).to_csv(output / "pvgis_tmy_selected_months.csv", index=False)
+src/parametric_pv/pipeline.py:265:    pd.DataFrame(pvgis_provenance).to_csv(output / "pvgis_tmy_provenance.csv", index=False)
+src/parametric_pv/verify.py:30:    provenance = pd.read_csv(output / "pvgis_tmy_provenance.csv")
+src/parametric_pv/verify.py:54:        "pvgis_sarah3_all_climates": len(provenance) == 6 and set(provenance.radiation_database) == {"PVGIS-SARAH3"},
+src/parametric_pv/verify.py:55:        "pvgis_raw_hashes_match": bool(all(sha256(output / row.raw_file) == row.raw_sha256 for row in provenance.itertuples())),

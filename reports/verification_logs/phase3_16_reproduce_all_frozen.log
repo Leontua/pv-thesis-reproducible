@@ -1,0 +1,163 @@
+COMMAND=.\.venv\Scripts\pv-thesis.exe reproduce --all --mode frozen
+{
+  "status": "PASS",
+  "generated_at": "2026-10-16T12:40:22+03:00",
+  "mode": "frozen",
+  "new_training_or_calibration": false,
+  "branches": {
+    "forecasting": {
+      "status": "PASS",
+      "run_directory": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r5\\outputs\\generated\\consolidated-frozen\\forecasting",
+      "manifest": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r5\\outputs\\generated\\consolidated-frozen\\forecasting\\run_manifest.json",
+      "headline_regression": [
+        {
+          "model": "rf",
+          "expected_nRMSE_percent": 11.87180843,
+          "computed_nRMSE_percent": 11.871808425389979,
+          "absolute_delta": 4.610020809536763e-09,
+          "status": "PASS"
+        },
+        {
+          "model": "sarima",
+          "expected_nRMSE_percent": 12.35076222,
+          "computed_nRMSE_percent": 12.350762220556271,
+          "absolute_delta": 5.562714733287066e-10,
+          "status": "PASS"
+        },
+        {
+          "model": "lstm",
+          "expected_nRMSE_percent": 13.2290209,
+          "computed_nRMSE_percent": 13.22902090354486,
+          "absolute_delta": 3.5448604052135124e-09,
+          "status": "PASS"
+        },
+        {
+          "model": "persistence",
+          "expected_nRMSE_percent": 14.37215958,
+          "computed_nRMSE_percent": 14.372159579970635,
+          "absolute_delta": 2.936495491212554e-11,
+          "status": "PASS"
+        }
+      ]
+    },
+    "physical": {
+      "branch": "physical",
+      "status": "PASS",
+      "checks": {
+        "six_arrays": true,
+        "rows_323574": true,
+        "splits": true,
+        "frozen_parameters": true,
+        "mode_a_mode_b": true,
+        "mode_a_five_arrays": true,
+        "array_dc_normalization": true,
+        "metrics_recomputed": true,
+        "headline_range": true
+      },
+      "benchmark_verification": {
+        "status": "PASS",
+        "checks": {
+          "six_systems_only": true,
+          "three_splits": true,
+          "days_do_not_cross_splits": true,
+          "monthly_60_20_20_with_rounding": true,
+          "one_dc_scalar_per_system": true,
+          "dc_scalar_bounded": true,
+          "component_and_end_to_end_present": true,
+          "validation_and_test_present": true,
+          "manifest_row_count": true,
+          "test_metrics_independently_recomputed": true,
+          "five_minute_grid": true
+        },
+        "hash_checks": {
+          "benchmark_summary.md": true,
+          "calibrated_parameters.csv": true,
+          "component_and_end_to_end_metrics.csv": true,
+          "day_block_split.csv": true,
+          "etsidi_six_technology_5min.parquet": true,
+          "locked_module_desoto_parameters.csv": true,
+          "physical_model_predictions.parquet": true
+        },
+        "rows": 323574,
+        "timestamps": 53929,
+        "days": 290
+      },
+      "recomputed_test_ac": [
+        {
+          "system_id": "T1-S1",
+          "observations": 7094,
+          "nRMSE_percent": 7.341896329740677,
+          "reported_nRMSE_percent": 7.341896329740677,
+          "absolute_delta": 0.0
+        },
+        {
+          "system_id": "T1-S2",
+          "observations": 7094,
+          "nRMSE_percent": 7.76884527470766,
+          "reported_nRMSE_percent": 7.76884527470766,
+          "absolute_delta": 0.0
+        },
+        {
+          "system_id": "T1-S3",
+          "observations": 7094,
+          "nRMSE_percent": 8.198586642507832,
+          "reported_nRMSE_percent": 8.198586642507832,
+          "absolute_delta": 0.0
+        },
+        {
+          "system_id": "T1-S4",
+          "observations": 7094,
+          "nRMSE_percent": 5.409319167580358,
+          "reported_nRMSE_percent": 5.409319167580358,
+          "absolute_delta": 0.0
+        },
+        {
+          "system_id": "T1-S5",
+          "observations": 7094,
+          "nRMSE_percent": 7.103378914919603,
+          "reported_nRMSE_percent": 7.103378914919603,
+          "absolute_delta": 0.0
+        },
+        {
+          "system_id": "T1-S6",
+          "observations": 7094,
+          "nRMSE_percent": 7.333415474498391,
+          "reported_nRMSE_percent": 7.333415474498391,
+          "absolute_delta": 0.0
+        }
+      ],
+      "headline_ac_nRMSE_range_percent": [
+        5.409319167580358,
+        8.198586642507832
+      ],
+      "complete_scientific_rerun": "NOT TESTED"
+    },
+    "parametric": {
+      "branch": "parametric",
+      "status": "PASS",
+      "checks": {
+        "six_technologies": true,
+        "four_capacities": true,
+        "six_climates": true,
+        "exactly_144_scenarios": true,
+        "exactly_1261440_hourly_rows": true,
+        "8760_per_scenario": true,
+        "annual_yield_recomputed": true,
+        "clipping_recomputed": true,
+        "capacity_invariance": true,
+        "headline_yield_range": true
+      },
+      "specific_yield_range_kwh_per_kwp": [
+        1001.7067676457308,
+        2079.514617352517
+      ],
+      "variance_share_percent": {
+        "climate": 98.61149834207004,
+        "technology": 1.2723225943326055
+      },
+      "complete_scientific_rerun": "NOT TESTED"
+    }
+  }
+}
+
+EXIT_CODE=0

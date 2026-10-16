@@ -1,0 +1,9 @@
+SOURCE=C:\Διπλωματικη\proccess\pv-thesis-reproducible
+TARGET=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r5
+HEAD=52f0b45b4b0e5c5ebb831c21fcc5b090bc1c5111
+COMMAND=git clone --no-local <source> <target>
+Cloning into 'C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r5'...
+
+CLONE_HEAD=52f0b45b4b0e5c5ebb831c21fcc5b090bc1c5111
+CLONE_STATUS=
+CLONE_FILES=220

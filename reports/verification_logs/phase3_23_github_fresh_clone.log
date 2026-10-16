@@ -1,0 +1,15 @@
+COMMAND=git clone https://github.com/Leontua/pv-thesis-reproducible.git <target>
+SOURCE_URL=https://github.com/Leontua/pv-thesis-reproducible.git
+TARGET=C:\Διπλωματικη\proccess\pv-thesis-github-fresh-clone
+
+Cloning into 'C:\Διπλωματικη\proccess\pv-thesis-github-fresh-clone'...
+
+HEAD=52f0b45b4b0e5c5ebb831c21fcc5b090bc1c5111
+STATUS_COUNT=0
+
+EXIT_CODE=0
+
+CORRECTED_PROVENANCE_AUDIT
+PROVENANCE_CHECKED=156
+PROVENANCE_FAILURES=0
+AUDIT_EXIT_CODE=0

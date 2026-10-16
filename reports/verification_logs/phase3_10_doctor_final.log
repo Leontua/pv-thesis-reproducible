@@ -1,0 +1,101 @@
+COMMAND=.\.venv\Scripts\pv-thesis.exe doctor
+{
+  "status": "PASS",
+  "python": {
+    "required": "3.12.x",
+    "actual": "3.12.14",
+    "executable": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r4\\.venv\\Scripts\\python.exe",
+    "status": "PASS"
+  },
+  "operating_system": {
+    "tested_family": "Windows 11 x86_64",
+    "actual": "Windows-11-10.0.26200-SP0",
+    "status": "PASS"
+  },
+  "execution_device": {
+    "required": "CPU",
+    "cuda_required": false,
+    "status": "PASS",
+    "torch": {
+      "runtime_version": "2.5.1+cpu",
+      "cuda_available": false
+    }
+  },
+  "dependencies": [
+    {
+      "package": "numpy",
+      "expected": "2.5.3",
+      "actual": "2.5.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pandas",
+      "expected": "3.0.6",
+      "actual": "3.0.6",
+      "status": "PASS"
+    },
+    {
+      "package": "scipy",
+      "expected": "1.18.1",
+      "actual": "1.18.1",
+      "status": "PASS"
+    },
+    {
+      "package": "scikit-learn",
+      "expected": "1.5.2",
+      "actual": "1.5.2",
+      "status": "PASS"
+    },
+    {
+      "package": "statsmodels",
+      "expected": "0.15.0",
+      "actual": "0.15.0",
+      "status": "PASS"
+    },
+    {
+      "package": "torch",
+      "expected": "2.5.1",
+      "actual": "2.5.1",
+      "status": "PASS"
+    },
+    {
+      "package": "pyarrow",
+      "expected": "25.0.1",
+      "actual": "25.0.1",
+      "status": "PASS"
+    },
+    {
+      "package": "matplotlib",
+      "expected": "3.11.2",
+      "actual": "3.11.2",
+      "status": "PASS"
+    },
+    {
+      "package": "PyYAML",
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pvlib",
+      "expected": "0.13.1",
+      "actual": "0.13.1",
+      "status": "PASS"
+    },
+    {
+      "package": "joblib",
+      "expected": "1.4.2",
+      "actual": "1.4.2",
+      "status": "PASS"
+    }
+  ],
+  "provenance_files_checked": 156,
+  "provenance_failures": [],
+  "private_data": {
+    "environment_variable": "PV_THESIS_DATA_DIR",
+    "configured": false,
+    "status": "BLOCKED"
+  }
+}
+
+EXIT_CODE=0

@@ -1,0 +1,3 @@
+COMMAND=git status --short
+ M reports/FINAL_SOFTWARE_VERIFICATION.json
+EXIT_CODE=0

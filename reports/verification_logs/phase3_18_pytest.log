@@ -1,0 +1,19 @@
+COMMAND=.\.venv\Scripts\python.exe -m pytest
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-8.3.5, pluggy-1.7.0
+rootdir: C:\�����������\proccess\pv-thesis-independent-clone-phase3-r5
+configfile: pyproject.toml
+testpaths: tests
+collected 24 items
+
+tests\integration\test_reference_and_cli.py ......                       [ 25%]
+tests\scientific_regression\test_consolidated_branches.py ..             [ 33%]
+tests\scientific_regression\test_frozen_science.py .                     [ 37%]
+tests\scientific_regression\test_robustness_views.py ...                 [ 50%]
+tests\unit\test_metrics_and_bootstrap.py ...                             [ 62%]
+tests\unit\test_models_and_configuration.py ....                         [ 79%]
+tests\unit\test_protocol_time_and_leakage.py .....                       [100%]
+
+============================= 24 passed in 17.97s =============================
+
+EXIT_CODE=0

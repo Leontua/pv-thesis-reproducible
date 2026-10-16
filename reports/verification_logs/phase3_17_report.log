@@ -1,0 +1,10 @@
+COMMAND=.\.venv\Scripts\pv-thesis.exe report
+{
+  "status": "PASS",
+  "reports": [
+    "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r5\\reports\\FINAL_SOFTWARE_VERIFICATION.json",
+    "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r5\\reports\\FINAL_SOFTWARE_REPORT_EL.md"
+  ]
+}
+
+EXIT_CODE=0

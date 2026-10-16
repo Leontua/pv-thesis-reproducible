@@ -1,0 +1,190 @@
+CLEAN_CLONE=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r2
+BASE_RUNTIME=external CPython 3.12 executable (path intentionally omitted)
+
+
+===== & $Python312 --version =====
+Python 3.12.14
+EXIT_CODE=0
+
+===== & $Python312 -m venv .venv =====
+EXIT_CODE=0
+
+===== .venv python -m pip install --requirement requirements-dev.lock =====
+Collecting numpy==2.5.3 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 3))
+  Using cached numpy-2.5.3-cp312-cp312-win_amd64.whl.metadata (6.6 kB)
+Collecting pandas==3.0.6 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 4))
+  Using cached pandas-3.0.6-cp312-cp312-win_amd64.whl.metadata (19 kB)
+Collecting scipy==1.18.1 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 5))
+  Using cached scipy-1.18.1-cp312-cp312-win_amd64.whl.metadata (61 kB)
+Collecting scikit-learn==1.5.2 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 6))
+  Using cached scikit_learn-1.5.2-cp312-cp312-win_amd64.whl.metadata (13 kB)
+Collecting statsmodels==0.15.0 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached statsmodels-0.15.0-cp312-cp312-win_amd64.whl.metadata (9.6 kB)
+Collecting torch==2.5.1 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached torch-2.5.1-cp312-cp312-win_amd64.whl.metadata (28 kB)
+Collecting pyarrow==25.0.1 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 9))
+  Using cached pyarrow-25.0.1-cp312-cp312-win_amd64.whl.metadata (3.0 kB)
+Collecting matplotlib==3.11.2 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached matplotlib-3.11.2-cp312-cp312-win_amd64.whl.metadata (80 kB)
+Collecting PyYAML==6.0.3 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 11))
+  Using cached pyyaml-6.0.3-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Collecting pvlib==0.13.1 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached pvlib-0.13.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting joblib==1.4.2 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 13))
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting tzdata==2026.5 (from -r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 14))
+  Using cached tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting pytest==8.3.5 (from -r requirements-dev.lock (line 2))
+  Using cached pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas==3.0.6->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 4))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.5.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 6))
+  Using cached threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting patsy>=0.5.6 (from statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting packaging>=21.3 (from statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting formulaic>=1.1.0 (from statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached formulaic-1.2.2-py3-none-any.whl.metadata (7.0 kB)
+Collecting filelock (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached filelock-4.2.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.8.0 (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting networkx (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting setuptools (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy==1.13.1 (from torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached contourpy-1.4.0-cp312-cp312-win_amd64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached fonttools-4.67.0-cp312-cp312-win_amd64.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl.metadata (5.2 kB)
+Collecting pillow>=9 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached pillow-12.3.0-cp312-cp312-win_amd64.whl.metadata (9.3 kB)
+Collecting pyparsing>=3 (from matplotlib==3.11.2->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 10))
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting pytz (from pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached pytz-2026.5-py2.py3-none-any.whl.metadata (22 kB)
+Collecting requests (from pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting h5py (from pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached h5py-3.16.0-cp312-cp312-win_amd64.whl.metadata (3.1 kB)
+Collecting colorama (from pytest==8.3.5->-r requirements-dev.lock (line 2))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting iniconfig (from pytest==8.3.5->-r requirements-dev.lock (line 2))
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.3.5->-r requirements-dev.lock (line 2))
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting interface-meta>=1.2.0 (from formulaic>=1.1.0->statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached interface_meta-2.0.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting narwhals>=1.17 (from formulaic>=1.1.0->statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting wrapt>=1.0 (from formulaic>=1.1.0->statsmodels==0.15.0->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 7))
+  Using cached wrapt-2.5.1-cp312-cp312-win_amd64.whl.metadata (7.7 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==3.0.6->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 4))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.5.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 8))
+  Using cached markupsafe-3.0.4-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests->pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl.metadata (47 kB)
+Collecting idna<4,>=2.5 (from requests->pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->pvlib==0.13.1->-r C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\requirements.lock (line 12))
+  Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Using cached numpy-2.5.3-cp312-cp312-win_amd64.whl (12.6 MB)
+Using cached pandas-3.0.6-cp312-cp312-win_amd64.whl (9.7 MB)
+Using cached scipy-1.18.1-cp312-cp312-win_amd64.whl (36.7 MB)
+Using cached scikit_learn-1.5.2-cp312-cp312-win_amd64.whl (11.0 MB)
+Using cached statsmodels-0.15.0-cp312-cp312-win_amd64.whl (11.3 MB)
+Using cached torch-2.5.1-cp312-cp312-win_amd64.whl (203.0 MB)
+Using cached pyarrow-25.0.1-cp312-cp312-win_amd64.whl (28.0 MB)
+Using cached matplotlib-3.11.2-cp312-cp312-win_amd64.whl (9.3 MB)
+Using cached pyyaml-6.0.3-cp312-cp312-win_amd64.whl (154 kB)
+Using cached pvlib-0.13.1-py3-none-any.whl (19.3 MB)
+Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Using cached tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Using cached pytest-8.3.5-py3-none-any.whl (343 kB)
+Using cached sympy-1.13.1-py3-none-any.whl (6.2 MB)
+Using cached contourpy-1.4.0-cp312-cp312-win_amd64.whl (234 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.67.0-cp312-cp312-win_amd64.whl (2.5 MB)
+Using cached formulaic-1.2.2-py3-none-any.whl (118 kB)
+Using cached kiwisolver-1.5.1-cp312-cp312-win_amd64.whl (70 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+Using cached pillow-12.3.0-cp312-cp312-win_amd64.whl (7.2 MB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached filelock-4.2.0-py3-none-any.whl (135 kB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached h5py-3.16.0-cp312-cp312-win_amd64.whl (3.2 MB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached networkx-3.7-py3-none-any.whl (2.1 MB)
+Using cached pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+Using cached charset_normalizer-3.5.2-cp312-cp312-win_amd64.whl (207 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached interface_meta-2.0.1-py3-none-any.whl (15 kB)
+Using cached markupsafe-3.0.4-cp312-cp312-win_amd64.whl (14 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached narwhals-2.27.1-py3-none-any.whl (483 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached wrapt-2.5.1-cp312-cp312-win_amd64.whl (106 kB)
+Installing collected packages: pytz, mpmath, wrapt, urllib3, tzdata, typing-extensions, threadpoolctl, sympy, six, setuptools, PyYAML, pyparsing, pyarrow, pluggy, pillow, packaging, numpy, networkx, narwhals, MarkupSafe, kiwisolver, joblib, interface-meta, iniconfig, idna, fsspec, fonttools, filelock, cycler, colorama, charset_normalizer, certifi, scipy, requests, python-dateutil, pytest, patsy, jinja2, h5py, contourpy, torch, scikit-learn, pandas, matplotlib, pvlib, formulaic, statsmodels
+Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.3 certifi-2026.7.22 charset_normalizer-3.5.2 colorama-0.4.6 contourpy-1.4.0 cycler-0.12.1 filelock-4.2.0 fonttools-4.67.0 formulaic-1.2.2 fsspec-2026.9.0 h5py-3.16.0 idna-3.20 iniconfig-2.3.1 interface-meta-2.0.1 jinja2-3.1.6 joblib-1.4.2 kiwisolver-1.5.1 matplotlib-3.11.2 mpmath-1.3.0 narwhals-2.27.1 networkx-3.7 numpy-2.5.3 packaging-26.3 pandas-3.0.6 patsy-1.0.3 pillow-12.3.0 pluggy-1.7.0 pvlib-0.13.1 pyarrow-25.0.1 pyparsing-3.3.3 pytest-8.3.5 python-dateutil-2.9.0.post0 pytz-2026.5 requests-2.34.2 scikit-learn-1.5.2 scipy-1.18.1 setuptools-84.0.0 six-1.17.0 statsmodels-0.15.0 sympy-1.13.1 threadpoolctl-3.7.0 torch-2.5.1 typing-extensions-4.16.0 tzdata-2026.5 urllib3-2.8.0 wrapt-2.5.1
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\.venv\Scripts\python.exe -m pip install --upgrade pip
+EXIT_CODE=0
+
+===== .venv python -m pip install --editable . --no-deps =====
+Obtaining file:///C:/%CE%94%CE%B9%CF%80%CE%BB%CF%89%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%B7/proccess/pv-thesis-independent-clone-phase3-r2
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: pv-thesis-forecasting
+  Building editable for pv-thesis-forecasting (pyproject.toml): started
+  Building editable for pv-thesis-forecasting (pyproject.toml): finished with status 'done'
+  Created wheel for pv-thesis-forecasting: filename=pv_thesis_forecasting-0.1.0-0.editable-py3-none-any.whl size=5101 sha256=93cd8d90342e7fa5358298f437bdcd3c9457ecdb61da5c9b912be0b83f3a983d
+  Stored in directory: ${USER_HOME}\AppData\Local\Temp\pip-ephem-wheel-cache-dt7kvemc\wheels\e6\c6\54\af53fb1dd5c217bd43555fbc59f8fd48431dafa7669c3d3afb
+Successfully built pv-thesis-forecasting
+Installing collected packages: pv-thesis-forecasting
+Successfully installed pv-thesis-forecasting-0.1.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: C:\�����������\proccess\pv-thesis-independent-clone-phase3-r2\.venv\Scripts\python.exe -m pip install --upgrade pip
+EXIT_CODE=0
+
+===== .venv python --version =====
+Python 3.12.14
+EXIT_CODE=0
+
+===== .venv python -m pip check =====
+No broken requirements found.
+EXIT_CODE=0

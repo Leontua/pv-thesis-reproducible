@@ -1,0 +1,625 @@
+CLEAN_CLONE=C:\Διπλωματικη\proccess\pv-thesis-independent-clone-phase3-r2
+COMMAND=.\.venv\Scripts\pv-thesis.exe doctor
+
+{
+  "status": "FAIL",
+  "python": {
+    "required": "3.12.x",
+    "actual": "3.12.14",
+    "executable": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\.venv\\Scripts\\python.exe",
+    "status": "PASS"
+  },
+  "operating_system": {
+    "tested_family": "Windows 11 x86_64",
+    "actual": "Windows-11-10.0.26200-SP0",
+    "status": "PASS"
+  },
+  "execution_device": {
+    "required": "CPU",
+    "cuda_required": false,
+    "status": "PASS",
+    "torch": {
+      "runtime_version": "2.5.1+cpu",
+      "cuda_available": false
+    }
+  },
+  "dependencies": [
+    {
+      "package": "numpy",
+      "expected": "2.5.3",
+      "actual": "2.5.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pandas",
+      "expected": "3.0.6",
+      "actual": "3.0.6",
+      "status": "PASS"
+    },
+    {
+      "package": "scipy",
+      "expected": "1.18.1",
+      "actual": "1.18.1",
+      "status": "PASS"
+    },
+    {
+      "package": "scikit-learn",
+      "expected": "1.5.2",
+      "actual": "1.5.2",
+      "status": "PASS"
+    },
+    {
+      "package": "statsmodels",
+      "expected": "0.15.0",
+      "actual": "0.15.0",
+      "status": "PASS"
+    },
+    {
+      "package": "torch",
+      "expected": "2.5.1",
+      "actual": "2.5.1",
+      "status": "PASS"
+    },
+    {
+      "package": "pyarrow",
+      "expected": "25.0.1",
+      "actual": "25.0.1",
+      "status": "PASS"
+    },
+    {
+      "package": "matplotlib",
+      "expected": "3.11.2",
+      "actual": "3.11.2",
+      "status": "PASS"
+    },
+    {
+      "package": "PyYAML",
+      "expected": "6.0.3",
+      "actual": "6.0.3",
+      "status": "PASS"
+    },
+    {
+      "package": "pvlib",
+      "expected": "0.13.1",
+      "actual": "0.13.1",
+      "status": "PASS"
+    },
+    {
+      "package": "joblib",
+      "expected": "1.4.2",
+      "actual": "1.4.2",
+      "status": "PASS"
+    }
+  ],
+  "provenance_files_checked": 156,
+  "provenance_failures": [
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\__init__.py",
+      "expected_sha256": "c8d66101eed83196fd9197da4ee87968f216d2b817027336a9d871d6aa67028e",
+      "actual_sha256": "9816942c04297f422cb4280b958b92fc70e48e07d043d6bef83034e51886bd28",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\eligibility.py",
+      "expected_sha256": "acae6cf4ef6287f1241834ec0cdd8bd3352411d7dcc2a0958cf60df2f88960f8",
+      "actual_sha256": "317bbd9dcc32d7a9d17cbc502266478389b423c1e92eef419f2c77df9c8c25a6",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\loaders.py",
+      "expected_sha256": "2bb06eaec01739de587c86b8c051757e148ea274229490f5cf0a09caabbc454e",
+      "actual_sha256": "4e10d490f4fb8f75e54203db44587750da8903e9dcdbac60799b6e4e46aaeae2",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\metadata.py",
+      "expected_sha256": "4b4a3f49a921bc91117474305d48a990c451b513d8298b3e20ce5bfaadb40bfe",
+      "actual_sha256": "c6632c10417b32c7c16deabea206abddebd94038a4d6b708c5035219d17a8113",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\report.py",
+      "expected_sha256": "ee4320ec81f43b0d6ff146c1487cf552e0caba1ef0857de580c87205ed260a57",
+      "actual_sha256": "e72955e9446279a74d1bd550c00b68319029ad83cbfddfd9cf372b1eb5ed2346",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\schema.py",
+      "expected_sha256": "a03822f7f1d7c7579a3e23fcfa9cde9a500a19e5525bb527f0bc3300a4d30e58",
+      "actual_sha256": "d5e1f2307e60adec95790760bc9cc9f95608fbb7a4351269aaad2393ffe5f7f9",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\target_quality.py",
+      "expected_sha256": "6ca1891f3088e829ed063e1f5da741e5d27f4ab0a60ec781747882fb893b81a9",
+      "actual_sha256": "333851f1da76a0ff0d3e80eb98a75c73ca4a1860de809439b892909f8b05f2bf",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\data_audit\\temporal.py",
+      "expected_sha256": "0176759d6352e556310c2e29821d970bd5d5763e99041de853d0ef8e6a4e187a",
+      "actual_sha256": "da2784c686f36ae59df31cc453e0d3cbf4046b01ebe741f45fce6fe70640fe75",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\__init__.py",
+      "expected_sha256": "82cf6df131fe81eea64159d7179678f01f623ba130fda1e16323426cc6eb469a",
+      "actual_sha256": "2fe32df5d0bc7f1ee4eba1d4447f7eae269dd7c3f900d6ddae0f6a363adaae7b",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\build.py",
+      "expected_sha256": "3dd63b7c52c1d4261e09dd902759b3158155fc718b1aba26fa5192d8e4ee7dfc",
+      "actual_sha256": "20b9b311dcbbe08dcc8c894b337fa18e46630ffd0ab421498a63f3abe92994e7",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\deduplication.py",
+      "expected_sha256": "a2740fd519f4968787b19614e7d723d7eb9c97097772d1d01d455a4aa8da258e",
+      "actual_sha256": "55ae42cb8f2847b8616eff9aaa8c0008475fb32146cd4335f6d25f7cf18369a7",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\leakage.py",
+      "expected_sha256": "9655aa1846262fa87e68d1eaf2a89f4aea8471b4617513e979a8bdf768151d08",
+      "actual_sha256": "034428bdbfbc71bafc49f4884180fcc054a7d5fe1168d3d7b6ee20c37645e032",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\normalization.py",
+      "expected_sha256": "96f5ecc692a0d24a581d1b40f5a7da9d8f5714d10ba3bbbc5b97ac20fcbe221c",
+      "actual_sha256": "2038b6d743a709b93a1929113b96497c9728e79a18bf360f010e2b57ff3d26f3",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\qc.py",
+      "expected_sha256": "6ef7f6233a65160ede8d56d9ad3c300181a24d7af2e79c93839c68073580ef50",
+      "actual_sha256": "fe04ec2a74268f0424973c5c2637e6755a8768725ac00f293dd3879eba2f6cdf",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\resampling.py",
+      "expected_sha256": "05e9d30ef84245eab706f1f0ff2a00346f2776b6ba871683bfc6b1ef3953d387",
+      "actual_sha256": "681bda8abadbd683bc5cdecc9aa3b1112f1d200f4bbe969e09fdb1ef1132caff",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\schema.py",
+      "expected_sha256": "92beaad0084395fcfa4ef9da76eadf54d57afd1db1e7d44761d1e0db01253acc",
+      "actual_sha256": "b74dd8a2a3a6c165a2d02e27ad8ccee59e3f6e059fe0076b4de04ecf115439cc",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_data\\target_semantics.py",
+      "expected_sha256": "67e8d37ffc2c4c3504f7e5d6583433e7d52c722433b0235e0cbe2d82d235b311",
+      "actual_sha256": "c70bc7ca253ce64aa2072883b12ffe4bf49f70a52623d379713ba6f246167cd6",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\__init__.py",
+      "expected_sha256": "b5efb8a3469c2c51eed1533ab246ce3bcc068bffec325a5e9aa7f3040d865447",
+      "actual_sha256": "f5a9913453cfa64aaa743c4cd49dd53d0a6071d789b921574bc5cf3ccadb43c4",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\information_set.py",
+      "expected_sha256": "12289f7ba5c60e2504227c9d71bfcfe3e57170a576bcef014ee63fff83a5df08",
+      "actual_sha256": "ecbec9f2b1db80293c1e4c2f25bc69463273ae7109697cf632be205c9c1ae5f6",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\metrics.py",
+      "expected_sha256": "9bbe589fd22b19cdb96bc45754717620514bfea6788fa35ac003595931a54c1b",
+      "actual_sha256": "41cace45be4761e6e46216b934ce9ae1c086f3a96b6bf022d82e1483457296a3",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\persistence.py",
+      "expected_sha256": "a9866f41680d306f62ac13a4916554c7535a831387d2d0de5db7fdd364537da1",
+      "actual_sha256": "cf0d45af9a052805ae0a8041afae883924a618b8cde17d402def2547466c3e2b",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\report.py",
+      "expected_sha256": "96efa16de3b4f2c1b80fe84888d1ee3bdea6a18f1ae35eac2ecf55ccc11d9974",
+      "actual_sha256": "d9d579f29225ed4d413034b794eacf7ce44585c0c569b5707e25867e20cd728a",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\splits.py",
+      "expected_sha256": "225738aba95fe015aa00726b7d91787e5bdc5f6289a5b53d669cd1b6613d65e9",
+      "actual_sha256": "9ecfc225c1ed7f4f3f597d3c55910e537bbcc974e5a09e879e371ba94a805160",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\validation.py",
+      "expected_sha256": "f164b7866c357477444715967a026fbbec9e9c723eff972be4c58457beb96e8a",
+      "actual_sha256": "79f5510f536fc28427fcba12ecc0a9aff140da415c45473789e119ee52f992e2",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\forecasting_experiment\\windows.py",
+      "expected_sha256": "373b1944894b0380fd946a9f9e73855a1e8b92b57e4d6f0b9253e58ff0742edf",
+      "actual_sha256": "2d3eeee171ae6bc52ca64b721c1ecd6951ebbe58232a0081d9a015f6371a5fc9",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\__init__.py",
+      "expected_sha256": "afb246a9c86ad5d50a910a7020140c07032490e43b71c04384db299fb7e31991",
+      "actual_sha256": "820f276ec8e9345484dccc36b404dbdaca3c04167f81701182ea3a0c513ce4f3",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\append_worker.py",
+      "expected_sha256": "94faaeeec2a1705856cd8314d93a680104e6ec42070c2f6c50d441081e5ffb66",
+      "actual_sha256": "eb57f6e1bb5c950331cb178798fc4ecd0663d5f5fc57d0b480818d887da20036",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\candidates.py",
+      "expected_sha256": "21098a0f3fa7e48be330e72f522b8ba2f5bf21c69ad413d53a0b2bfeb2f39667",
+      "actual_sha256": "7ffa822fa8bb16a837be4ba09c015a718b6443524e59750bfd6e5c009ae4ae1c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\diagnostics.py",
+      "expected_sha256": "54ea41e7f155caa9c07ff29dd4f969c0dca067b986e2cb87b4ec103c8926db5c",
+      "actual_sha256": "371f260e39668694cde702c8730db61dd06e8a7a3ed0fd0bf7dae4652c30fb07",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\evaluate.py",
+      "expected_sha256": "2694e03df97e63132bc80b347b60436ac06a9b715599da5e3191d5e4b209dfa7",
+      "actual_sha256": "8243df0b01ce57e715d47fb94056d1c3954c4bee28179329fd21a6eb198fc8d3",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\finalize.py",
+      "expected_sha256": "d6c06d09f67418bbbc690c7c6c93ebcdb62d70dd2e48defd5225501961ec587a",
+      "actual_sha256": "0516c955d6652b499ed839e362d3077ea07369af0673f7b1e653196d7491109d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\fit.py",
+      "expected_sha256": "dcc4183389e1f577c28b949f542370c10fc297076d431a37456ad8cea2c3dc2c",
+      "actual_sha256": "e8c3e74b8709de7ddd0df409e5b0ed20d09105f76d7b189a360aea6fc307cb35",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\modeling_view.py",
+      "expected_sha256": "16026908cc10abec4e153b82de7b8aa106ac16eb4bfa6ee2b6832d91618fcf62",
+      "actual_sha256": "337d737857f63c79856b6b279749b7b0b584aecf359359fae23cc38a20cf9656",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\pipeline.py",
+      "expected_sha256": "e01bcd5b550996130d7eba08fad80afc0c980f80184d12102305635b8f805d53",
+      "actual_sha256": "f34c5b22df91d4a8646ef0a8d3eaae3e52217fed7dfe8efb17c3e574c244fd49",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\rolling_forecast.py",
+      "expected_sha256": "32abc600112adce418271202956640aa0f60f3c4811989d370afc22146827078",
+      "actual_sha256": "18c25922e8ae23a8fe0a5add087628aa075a401acd896c50a02fb7010e6b4ac5",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\sarima\\selection.py",
+      "expected_sha256": "5bd062f632f13de18d7706664b658ba01362f66219c8fcd95766b6cb2486bc03",
+      "actual_sha256": "f381003948eecd8ccef61596242b9a20275a4dff3b3eca56ee1761318e3fcdff",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\__init__.py",
+      "expected_sha256": "fa1baa8aafec7d3fc5c1fc1a32d06d18fe732588876d4e2e2d49cc81a7169ae9",
+      "actual_sha256": "9b2659a11c1152fee2b5c90f2e269d88f5c24cf9b765803eed7ba0e966296f2c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\candidates.py",
+      "expected_sha256": "b19b4dca5a735a715f09d514331bca371d73938b5b7a9e3fb310c246fb33bad4",
+      "actual_sha256": "38c83a68cbb56857ee6cb61f2ceb9d766ffc2e1c81c7020fc1a288db4a75af1c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\evaluate.py",
+      "expected_sha256": "a20afa40e8b70f8cade0f0b3c904243f9bcd1e5e2a526d97d7f746ab78cc1194",
+      "actual_sha256": "900ed6fbeb10194803ef9ad0b2a3551163ae35337cda64e4fe922547fb3a5157",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\features.py",
+      "expected_sha256": "0b7921f62b31104a0fd8ae68a6aba10df3347d233bff53c157baa4c18a7ad265",
+      "actual_sha256": "6af70fc789a1f49b65e94a040ff4419e273432499669da6ca4df78c37793b957",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\fit.py",
+      "expected_sha256": "d372f1fbf5dda48f1fae9096f1c68f17a59f137aab708998b80b819e8d828d38",
+      "actual_sha256": "f230e1cb9956e306e010ebaa20aa5baa9efaa38b5b534f765cc72c98fa5abf86",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\importance.py",
+      "expected_sha256": "b2dfc027421f6ed6375919ddaa39b0626d98bf94276a7c5b113080c23e4dded1",
+      "actual_sha256": "815054966e518ee46de26762a57c96814d89b15f114a74e4edc39d2229639bd1",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\information_set.py",
+      "expected_sha256": "3660b84c5168ecd91a3f11e7e9662bf8c8ef913166cac8afbb8db65f5e1eae3d",
+      "actual_sha256": "04cde7b85e786fa1f43813d2e01eba86287953ce36330090a43cc8d51aa56fdd",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\pipeline.py",
+      "expected_sha256": "8655f14b7cb95df3703f848131ff85f9a8aa1586415bba49829fc732ad380b93",
+      "actual_sha256": "c664cc2b401a92e68ef4053ab138073112a9ff386575125dcbb681d88a05fb9e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\predict.py",
+      "expected_sha256": "e9bcc2af86c6b28fc61795fa1d52716f2af3c2b6c5697cda1606fe83bb7731ec",
+      "actual_sha256": "f92037926e6db4ce80c462b8cd17767e61ff9dd514aaed5af56439864acda419",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\selection.py",
+      "expected_sha256": "2bd3a8915142812bdad78c7431adf3e85b2b0d083ccddc44f40aebd0fa5da181",
+      "actual_sha256": "ed486c2fab0b1e6d64be52c85268391422a5319c0d64bbccd1530e52985ffccd",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\random_forest\\verify.py",
+      "expected_sha256": "d6740f257f53c807615b520963612e87b64f1edad552488ab70109312febd15c",
+      "actual_sha256": "ec2ad6f2ad5722341279a58d9d1d107a5bf43f37257549bd1b1a9da588b9b12e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\__init__.py",
+      "expected_sha256": "c47563c5bf06706e016a6712026a922bf90451770c662f0cc95220857e955e33",
+      "actual_sha256": "d73664ee9d3a301d803d88fae57c93ddaf69d1cb8982a45e200fc60d94d1c224",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\data.py",
+      "expected_sha256": "4457d99115721b5584b9e957c7b154a4acce97811c7a2e58b50050b10a4c3602",
+      "actual_sha256": "6e66df98bf42d3ed62f2b6bf3ca2549df67e0681db9fe99d6e235aa8bad42fcc",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\evaluate.py",
+      "expected_sha256": "53d490e7e60c15887d1efcaa681c6f3296f5508935baabaad97049725d5a74a6",
+      "actual_sha256": "244be796eba96939c5ca6b30eff32cbc8ce0e15f9c730636aa568b6a928b57ee",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\model.py",
+      "expected_sha256": "a24410e8bb01ff5ad3ed238734e3e971a42a14bb7167f4fc6eedd74dffbbd701",
+      "actual_sha256": "22ba2477e20c82b53a5b535978d52977e7b8d51cccb60ba0b9acb9055bf7066e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\pipeline.py",
+      "expected_sha256": "44f9113c622bd8feae070a1ad64a1d6c9d57af6aa38affd2c9019f1366fc496c",
+      "actual_sha256": "1979b627050c7f495941087915df7a0e7adeb96ef38407cad71b60b26885f2f4",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\pipeline_v1_1.py",
+      "expected_sha256": "8f93160e3338f85a8604b659cf168167c24a915c9a941706e0e7dd13d22419e7",
+      "actual_sha256": "60536189a4cb2dd5f0bddda58ac1d81401474e79b4edd6d86f9ae1bebbb6b274",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\train.py",
+      "expected_sha256": "416ba2bb546db81ec0bda3007ee7f2d2c3aa27ca26ac3c84d9d5d41249f5eecd",
+      "actual_sha256": "85c973492c661b1077c4753f13a94f0f837bdfd99bb4d5913f4f670018f8c446",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\models\\lstm_baseline\\train_v1_1.py",
+      "expected_sha256": "f18938a39ab5d950e4bfba69183263a360321fa692ef1436b0ea19793e7b1cda",
+      "actual_sha256": "04b5ef3ba37a48f1aeb39f4c17d3b3bd33d48a9e36721d28eb4c16bd030c80ff",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\__init__.py",
+      "expected_sha256": "5bbc93cac3523c15b3f88fcd8b60934df3aa7bd94368f432a6e24b133095f367",
+      "actual_sha256": "066d51dd0c9cbfe2ddc0250b4d10c84f2e5805e9a3fa611d3c36427139349e4e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\bootstrap.py",
+      "expected_sha256": "752b87129169f23b41f2504ff45639bf1bcce7ed19d272ed28d0f661a7c32d83",
+      "actual_sha256": "ab037951afc07f1df68e92b25c131274aee264324ee2da61033d67b4d3760a4f",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\figures.py",
+      "expected_sha256": "d44f0360ad6529ac31f226fc2223b79508bafc660f932223220caf47a2664303",
+      "actual_sha256": "bf16a67526cdf9fc885a93d4976b59c9ad0dc3878eec7e4be65f852b99ce2763",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\metrics.py",
+      "expected_sha256": "a0aa930b92b0708e3b9bd12a6359e5c1bfa059d8f9274b6a14c018ec2de5c8aa",
+      "actual_sha256": "e67a76be9dacac9767503c8d5aea74fdd24e73125643ae2b47122e03c8c89b82",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\pipeline.py",
+      "expected_sha256": "c7b6335f61a924de2da5e0b159635adb7b8d785367907764d60454f6ad5c3742",
+      "actual_sha256": "1ed6984695bb90edffcd3d5207ba71e4ac7d26d00cf12e1ba2f19c741db6f5dc",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\analysis\\final_forecasting\\verify.py",
+      "expected_sha256": "6734aded290bbd41dd3682a06022eafe1915fd5e973fc3fecb123bd648f525ab",
+      "actual_sha256": "21686d9db8e4c8b567c74a1e876d3261ed2d0b817cbfbcfbca10fdf44bbd53ab",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\dataset_manifest.yaml",
+      "expected_sha256": "631ac5332dafe6eb71ae0bdbc50bca6262bd25314e155ce93bf0584b97c6eed8",
+      "actual_sha256": "9681382512b021360c2be5d82d2a48cb111f6b5341aa09c58eecf99c962af540",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\forecasting_targets.yaml",
+      "expected_sha256": "fe6185ce6412e12bdd1b8bd0fd282011d3609a0e73e54bad10ab0c1894f2824c",
+      "actual_sha256": "18cf3b6c46bc8183076b00b22ba8657d187a09d8ad9be04f829e53592723368c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\forecasting_information_contract.yaml",
+      "expected_sha256": "34ba0b4581aebbf6d36b3ddf8d8618b21b8675206c8733fb33d3628c3cb66ff7",
+      "actual_sha256": "b5c4a2f53d9c19b9637070af1e6c3ce0b4e8ad403cdec64da3e55022687366b8",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\forecast_experiment.yaml",
+      "expected_sha256": "a6a17a31cb2505260a4d9d9e081224f751759d1dae4b97fe75ae5f526f9c39e6",
+      "actual_sha256": "aff99d9448a68df230ff1467a89d452998925a2d0a6050472dd42744969274d0",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\sarima_baseline.yaml",
+      "expected_sha256": "18a8b912e13fcef59faf9158942bf17b7337a432b01224b1aa468d57a6674bdd",
+      "actual_sha256": "47d284ee9ac573eadcfacb7bcb8e951cfe7202d3520b4f8aa6d097ff45c74403",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\random_forest_baseline.yaml",
+      "expected_sha256": "7d9d97916c569fe2eaf34e18c5cd59da8351a857784c9cf08d53b50edae057b6",
+      "actual_sha256": "b4b979d98f6ee378cc5225d5e946b972d2aa061cf8839b22a17db8e885aa2a15",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\lstm_baseline_v1_1.yaml",
+      "expected_sha256": "69614e305346bde5a3f2a8d99f896528a686f7d06a23df21f8b7eb9410e2b8d6",
+      "actual_sha256": "d4a0b31e0d0f45d46de056aa716b9c411212a4aa69d101263d0fab772c85168c",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\forecasting\\final_forecasting_analysis.yaml",
+      "expected_sha256": "d905d83a8a89eb48b113506f181d8ad14341ff9569b780ead732e26ef6ecbb8c",
+      "actual_sha256": "4506e1fb8678e2975d1d94abdd90689fd16a5f36ba19b5aee764e474ff4cb31e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\artifacts\\approved_reference\\dataset_audit\\pv_system_registry.csv",
+      "expected_sha256": "f3d6be56b0cfd47a4a58c35621ecd2adccd283e89e8152f457f84a1398b44a4f",
+      "actual_sha256": "cd75e66c96be0bfbf899f45b4be0c6a2bcd6ab0533a23ee1b5775a65def4cb57",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\artifacts\\approved_reference\\forecasting_experiment\\split_manifest.csv",
+      "expected_sha256": "d1c8a262522f94280c8efe0d8b0e9adfb3df8733f8289abfa8bb0efa6936913d",
+      "actual_sha256": "00485a988928132c17cdd68b145b4d72d1d2a5c40ecce5b5599ef1f8163dd18d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\artifacts\\approved_reference\\forecasting_data\\canonical_system_registry.csv",
+      "expected_sha256": "442506b81a901228cb0a87309dffa8d70b5243be23d4c1adc71a948e4e05bb6a",
+      "actual_sha256": "f508ce4025597ceb709dcbd2ab124558c74e1ba664e75385fd979dd7de8e6a35",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\artifacts\\approved_reference\\notebooks\\03_forecasting_protocol_persistence.ipynb",
+      "expected_sha256": "66e3c5d113a3b346c87fd812f55e40bc8fcfe630598a90825e2f426271c074a8",
+      "actual_sha256": "4d1134f936a38f1b3dff3000664fd574e023cea6af814eface070f5d352805a4",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\physical\\etsidi_physical_benchmark_v1_0.yaml",
+      "expected_sha256": "3893960d2e9c5e54bc28af84d912e03bb9ecbddc02bb4df0fed3e045941edd5c",
+      "actual_sha256": "e1a6a6722a26d170530b63033bdccdeab77bb5a007f2888c325098f255685d4b",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\__init__.py",
+      "expected_sha256": "a189a4997ba23d682b8ccb3333c718f80690e9e6313c99a833b28878ec40863b",
+      "actual_sha256": "ff88b41c8d28129d820294f022aedb756b3bace42787819c89c82840c909bf23",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\data.py",
+      "expected_sha256": "fcbc532a2cd088edc8b7d216b5f1b7cde92e3095e0306a37303334717c0c20c9",
+      "actual_sha256": "71222ef2cb717aba24583a976d0680943cbe6a13e38d2accad6cf4b05c4d4d6e",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\metrics.py",
+      "expected_sha256": "894fb376b6d335ec317878018fb36a6ad1412ab68a16c068e44d640cbdde46b3",
+      "actual_sha256": "08a3fb1a25f3c3461611a6f9b605a58637bdadc682ef8f92ac2aa4b950799ca0",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\models.py",
+      "expected_sha256": "3e07a594376e640473c45b081382f4d6bbaa726a617c50dd0a73a73334d23e20",
+      "actual_sha256": "265e7e11f0117d649507ad5ce4322e69ad48368e32e57926a55421ac0451ab6d",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\pipeline.py",
+      "expected_sha256": "4041881d71482faa92ccdeee850981543592974b28513ce52fdc635991d88645",
+      "actual_sha256": "5048158e694c699ce0527bdbbdc8f196d256e196e4fd18bd13ca1232c49570c8",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\verify.py",
+      "expected_sha256": "b8ed1dbd9a1e3d2a54f38651808e56086637e2a00ac0bf3ae70a313f2f3c9731",
+      "actual_sha256": "5bcb99ec86e17513dab57c47d80143c58459a61f7e457b6ae7e975c49eea8783",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\physical\\physical_model_consistency_transferability_v1_1.yaml",
+      "expected_sha256": "35488802da660422bc579171b4593e9ae299c71e4be3c4330b2c920db7d8d59c",
+      "actual_sha256": "de22b5c70524171146569e68d0031c8c4cdab75da32d31c1d9f035b9c6a746f5",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\addendum_v1_1.py",
+      "expected_sha256": "519e039e317b4fbe12769005f2ae407975e2dc21c857b30a6719188628f951f8",
+      "actual_sha256": "ea10b539070aecf7feee3a269aee748b874323f23abb618dfa37cb1335fb5411",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\physical_benchmark\\verify_addendum_v1_1.py",
+      "expected_sha256": "9055992b52b84819c88782616fb6790ea4dc45160c770cbe05489e010f98043b",
+      "actual_sha256": "d217868acad199929aaa32f78a590ad9dc488e0380efdd5b61f1983a4e57fe52",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\config\\parametric\\parametric_pv_study_v1_0.yaml",
+      "expected_sha256": "5f9643246b97d8e90b00850d227b1a8b4322733271f4e6fddcd19b90bc753343",
+      "actual_sha256": "a412399657009be7ce49f4dab330a898502b49241e7f7562ecfffae7ca19554a",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\parametric_pv\\pipeline.py",
+      "expected_sha256": "8fd07a683e93d2e92ba6cdfc6ef25aa55dd05615cd12212f72202ac375583917",
+      "actual_sha256": "f4c1dbdb867b1b1fc97a8859178fc1a6c9e35353c93f633a9097e7b2622cf0fc",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\parametric_pv\\physics.py",
+      "expected_sha256": "3bee7e91b0c4f586083822cd2f49b9f043f6696c0fd29fbdda1463235bb2e160",
+      "actual_sha256": "18f65ade41b583773557b9c6598da093e9e7e3ada0468c6b430a7a3231c2ab74",
+      "status": "FAIL"
+    },
+    {
+      "path": "C:\\�����������\\proccess\\pv-thesis-independent-clone-phase3-r2\\src\\parametric_pv\\verify.py",
+      "expected_sha256": "5726089ed3fb03b072174effa5088f6b7c298546a8ad96da38776a3367d171e6",
+      "actual_sha256": "5bcf7f42dfa49ebd7164776e819782d8a7baaecb73cad43df75181ca86919e23",
+      "status": "FAIL"
+    }
+  ],
+  "private_data": {
+    "environment_variable": "PV_THESIS_DATA_DIR",
+    "configured": false,
+    "status": "BLOCKED"
+  }
+}
+EXIT_CODE=1
