@@ -1,0 +1,3 @@
+# Preserve every tracked byte exactly as committed. Provenance SHA-256 checks
+# cover source, configuration, CSV, notebook, and binary scientific artifacts.
+* -text
