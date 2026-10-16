@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import contextlib
+import io
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -35,7 +37,10 @@ def verify_physical(root: Path) -> dict:
     base = root / "artifacts/approved_reference/physical"
     benchmark = base / "etsidi_physical_benchmark_v1_0"
     addendum = base / "physical_model_consistency_transferability_v1_1"
-    v1 = verify_v1(benchmark)
+    # The recovered standalone verifier prints its own JSON. Keep that original
+    # source immutable, but suppress the nested document in the unified CLI.
+    with contextlib.redirect_stdout(io.StringIO()):
+        v1 = verify_v1(benchmark)
     data = pd.read_parquet(benchmark / "etsidi_six_technology_5min.parquet")
     mode = pd.read_csv(addendum / "array_normalized_ac_mode_metrics.csv")
     predictions = pd.read_parquet(addendum / "mode_a_predictions.parquet")

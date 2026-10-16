@@ -28,6 +28,19 @@ def test_consolidated_cli_help_pages_work(project_root):
         assert result.returncode == 0, result.stderr
 
 
+def test_consolidated_verify_emits_one_json_document(project_root):
+    result = subprocess.run(
+        [sys.executable, "-m", "pv_thesis", "verify", "--all"],
+        cwd=project_root,
+        text=True,
+        capture_output=True,
+    )
+    assert result.returncode == 0, result.stderr
+    payload = json.loads(result.stdout)
+    assert payload["status"] == "PASS"
+    assert set(payload["branches"]) == {"forecasting", "physical", "parametric"}
+
+
 def test_canonical_requires_explicit_confirmation(project_root):
     result = reproduce_canonical(project_root, None, confirmed=False)
     assert result["status"] == "NOT TESTED"
