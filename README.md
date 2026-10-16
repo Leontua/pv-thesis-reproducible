@@ -24,11 +24,17 @@
 
 ## 6. Εγκατάσταση Python και βιβλιοθηκών
 
+Εγκαταστήστε 64-bit CPython 3.12.x και ορίστε ρητά τη διαδρομή του interpreter. Αυτό αποφεύγει το Windows Store alias ή άλλη εγκατεστημένη έκδοση Python:
+
 ```powershell
-python -m venv .venv
+$Python312 = 'C:\Path\To\Python312\python.exe'
+& $Python312 --version  # πρέπει να εμφανίζει Python 3.12.x
+& $Python312 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --requirement requirements-dev.lock
 .\.venv\Scripts\python.exe -m pip install --editable . --no-deps
 ```
+
+Η πρώτη εγκατάσταση των dependencies απαιτεί πρόσβαση σε συμβατό Python package index ή προγεμισμένο τοπικό pip cache. Το frozen verification μετά την εγκατάσταση δεν απαιτεί δίκτυο ούτε πρόσβαση στα ιδιωτικά raw δεδομένα.
 
 ## 7. Προετοιμασία δεδομένων
 

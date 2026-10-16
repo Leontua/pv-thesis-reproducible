@@ -22,13 +22,16 @@
 ## Εγκατάσταση
 
 ```powershell
-<Python-3.12.14> -m venv .venv
+$Python312 = 'C:\Path\To\Python312\python.exe'
+& $Python312 --version
+& $Python312 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --requirement requirements-dev.lock
 .\.venv\Scripts\python.exe -m pip install --editable . --no-deps
 .\.venv\Scripts\pv-thesis.exe doctor
 ```
 
 Η εγκατάσταση δεν επιτρέπεται να αναβαθμίσει σιωπηρά τις επιστημονικές εξαρτήσεις: όλες είναι pinned στο `requirements.lock`.
+Οι εκδόσεις είναι pinned, αλλά τα lock files δεν περιέχουν hashes των distributions. Η πρώτη εγκατάσταση απαιτεί συμβατό package index ή προγεμισμένο pip cache· για πλήρως offline εγκατάσταση χρειάζεται ξεχωριστό, επαληθευμένο wheelhouse.
 
 ## Υπολογιστικοί πόροι και ντετερμινισμός
 
